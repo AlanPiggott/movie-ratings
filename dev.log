@@ -1,0 +1,10 @@
+
+> movie-discovery-platform@0.1.0 dev
+> next dev
+
+   ▲ Next.js 14.0.4
+   - Local:        http://localhost:3000
+   - Environments: .env.local
+
+ ✓ Ready in 1615ms
+[?25h

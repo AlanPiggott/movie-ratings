@@ -1,0 +1,2610 @@
+🚀 Starting backfill process...
+🔄 Starting media data backfill...
+📊 Found 1000 media items to process
+
+📦 Processing batch 1 of 200
+  ⏳ Processing: Final Destination Bloodlines (MOVIE)
+  ⏳ Processing: Late Night with Seth Meyers (TV_SHOW)
+  ⏳ Processing: Among Friends (TV_SHOW)
+  ⏳ Processing: The Daily Show (TV_SHOW)
+  ⏳ Processing: The Late Show with Stephen Colbert (TV_SHOW)
+  ✅ Updated: The Late Show with Stephen Colbert with 2 genres
+  ✅ Updated: Late Night with Seth Meyers with 2 genres
+  ✅ Updated: Final Destination Bloodlines with 2 genres
+  ✅ Updated: The Daily Show with 2 genres
+  ✅ Updated: Among Friends with 2 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 2 of 200
+  ⏳ Processing: Late Show with David Letterman (TV_SHOW)
+  ⏳ Processing: The Late Late Show with Craig Ferguson (TV_SHOW)
+  ⏳ Processing: The Amazing Race (TV_SHOW)
+  ⏳ Processing: The Tonight Show Starring Jimmy Fallon (TV_SHOW)
+  ⏳ Processing: Watch What Happens Live with Andy Cohen (TV_SHOW)
+  ✅ Updated: The Tonight Show Starring Jimmy Fallon with 2 genres
+  ✅ Updated: Late Show with David Letterman with 2 genres
+  ✅ Updated: Watch What Happens Live with Andy Cohen with 2 genres
+  ✅ Updated: The Late Late Show with Craig Ferguson with 2 genres
+  ✅ Updated: The Amazing Race with 1 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 3 of 200
+  ⏳ Processing: NPR Tiny Desk Concerts (TV_SHOW)
+  ⏳ Processing: STRAW (MOVIE)
+  ⏳ Processing: Alles was zählt (TV_SHOW)
+  ⏳ Processing: The Amateur (MOVIE)
+  ⏳ Processing: Good Mythical Morning (TV_SHOW)
+  ✅ Updated: NPR Tiny Desk Concerts with 0 genres
+  ✅ Updated: Good Mythical Morning with 1 genres
+  ✅ Updated: The Amateur with 2 genres
+  ✅ Updated: Alles was zählt with 2 genres
+  ✅ Updated: STRAW with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 4 of 200
+  ⏳ Processing: Lilo & Stitch (MOVIE)
+  ⏳ Processing: The Tonight Show Starring Johnny Carson (TV_SHOW)
+  ⏳ Processing: Predator: Killer of Killers (MOVIE)
+  ⏳ Processing: Getroud met Rugby: Die Sepie (TV_SHOW)
+  ⏳ Processing: The Kelly Clarkson Show (TV_SHOW)
+  ✅ Updated: The Kelly Clarkson Show with 1 genres
+  ✅ Updated: Getroud met Rugby: Die Sepie with 1 genres
+  ✅ Updated: The Tonight Show Starring Johnny Carson with 1 genres
+  ✅ Updated: Predator: Killer of Killers with 3 genres
+  ✅ Updated: Lilo & Stitch with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 5 of 200
+  ⏳ Processing: Grey's Anatomy (TV_SHOW)
+  ⏳ Processing: How to Train Your Dragon (MOVIE)
+  ⏳ Processing: Gute Zeiten, schlechte Zeiten (TV_SHOW)
+  ⏳ Processing: The Late Late Show with James Corden (TV_SHOW)
+  ⏳ Processing: Rooster Teeth Animated Adventures (TV_SHOW)
+  ✅ Updated: The Late Late Show with James Corden with 1 genres
+  ✅ Updated: Grey's Anatomy with 1 genres
+  ✅ Updated: Gute Zeiten, schlechte Zeiten with 2 genres
+  ✅ Updated: Rooster Teeth Animated Adventures with 3 genres
+  ✅ Updated: How to Train Your Dragon with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 6 of 200
+  ⏳ Processing: The Accountant² (MOVIE)
+  ⏳ Processing: Egoli: Place of Gold (TV_SHOW)
+  ⏳ Processing: Law & Order: Special Victims Unit (TV_SHOW)
+  ⏳ Processing: Sesame Street (TV_SHOW)
+  ⏳ Processing: Game of Thrones (TV_SHOW)
+  ✅ Updated: Egoli: Place of Gold with 1 genres
+  ✅ Updated: Sesame Street with 2 genres
+  ✅ Updated: The Accountant² with 3 genres
+  ✅ Updated: Law & Order: Special Victims Unit with 3 genres
+  ✅ Updated: Game of Thrones with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 7 of 200
+  ⏳ Processing: Goede Tijden, Slechte Tijden (TV_SHOW)
+  ⏳ Processing: America's Next Top Model (TV_SHOW)
+  ⏳ Processing: Cops (TV_SHOW)
+  ⏳ Processing: Deep Cover (MOVIE)
+  ⏳ Processing: Family Guy (TV_SHOW)
+  ✅ Updated: America's Next Top Model with 1 genres
+  ✅ Updated: Goede Tijden, Slechte Tijden with 1 genres
+  ✅ Updated: Cops with 1 genres
+  ✅ Updated: Family Guy with 2 genres
+  ✅ Updated: Deep Cover with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 8 of 200
+  ⏳ Processing: CSI: Crime Scene Investigation (TV_SHOW)
+  ⏳ Processing: The Rookie (TV_SHOW)
+  ⏳ Processing: Criminal Minds (TV_SHOW)
+  ⏳ Processing: The Simpsons (TV_SHOW)
+  ⏳ Processing: Clown in a Cornfield (MOVIE)
+  ✅ Updated: CSI: Crime Scene Investigation with 3 genres
+  ✅ Updated: Clown in a Cornfield with 3 genres
+  ✅ Updated: The Simpsons with 3 genres
+  ✅ Updated: Criminal Minds with 3 genres
+  ✅ Updated: The Rookie with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 9 of 200
+  ⏳ Processing: Real Time with Bill Maher (TV_SHOW)
+  ⏳ Processing: Coronation Street (TV_SHOW)
+  ⏳ Processing: The Colbert Report (TV_SHOW)
+  ⏳ Processing: Hamtaro (TV_SHOW)
+  ⏳ Processing: Devon Ke Dev...Mahadev (TV_SHOW)
+  ✅ Updated: Coronation Street with 1 genres
+  ✅ Updated: Devon Ke Dev...Mahadev with 1 genres
+  ✅ Updated: Real Time with Bill Maher with 2 genres
+  ✅ Updated: The Colbert Report with 2 genres
+  ✅ Updated: Hamtaro with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 10 of 200
+  ⏳ Processing: NCIS (TV_SHOW)
+  ⏳ Processing: Degrassi (TV_SHOW)
+  ⏳ Processing: Conan (TV_SHOW)
+  ⏳ Processing: Supernatural (TV_SHOW)
+  ⏳ Processing: The Roundup: Punishment (MOVIE)
+  ✅ Updated: Degrassi with 2 genres
+  ✅ Updated: NCIS with 3 genres
+  ✅ Updated: Supernatural with 3 genres
+  ✅ Updated: Conan with 3 genres
+  ✅ Updated: The Roundup: Punishment with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 11 of 200
+  ⏳ Processing: Law & Order (TV_SHOW)
+  ⏳ Processing: K.O. (MOVIE)
+  ⏳ Processing: Rick and Morty (TV_SHOW)
+  ⏳ Processing: Inazuma Eleven (TV_SHOW)
+  ⏳ Processing: Sinners (MOVIE)
+  ✅ Updated: Inazuma Eleven with 2 genres
+  ✅ Updated: Law & Order with 2 genres
+  ✅ Updated: K.O. with 3 genres
+  ✅ Updated: Sinners with 3 genres
+  ✅ Updated: Rick and Morty with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 12 of 200
+  ⏳ Processing: NCIS: Los Angeles (TV_SHOW)
+  ⏳ Processing: Bob's Burgers (TV_SHOW)
+  ⏳ Processing: Hell Girl (TV_SHOW)
+  ⏳ Processing: My Little Pony: Friendship Is Magic (TV_SHOW)
+  ⏳ Processing: Doraemon (TV_SHOW)
+  ✅ Updated: Bob's Burgers with 2 genres
+  ✅ Updated: My Little Pony: Friendship Is Magic with 4 genres
+  ✅ Updated: NCIS: Los Angeles with 4 genres
+  ✅ Updated: Hell Girl with 4 genres
+  ✅ Updated: Doraemon with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 13 of 200
+  ⏳ Processing: Star Trek: The Next Generation (TV_SHOW)
+  ⏳ Processing: Star Trek: Deep Space Nine (TV_SHOW)
+  ⏳ Processing: Explorer (TV_SHOW)
+  ⏳ Processing: Tagesschau (TV_SHOW)
+  ⏳ Processing: Seinfeld (TV_SHOW)
+  ✅ Updated: Tagesschau with 1 genres
+  ✅ Updated: Explorer with 1 genres
+  ✅ Updated: Seinfeld with 1 genres
+  ✅ Updated: Star Trek: Deep Space Nine with 3 genres
+  ✅ Updated: Star Trek: The Next Generation with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 14 of 200
+  ⏳ Processing: A Minecraft Movie (MOVIE)
+  ⏳ Processing: Jeopardy! (TV_SHOW)
+  ⏳ Processing: EastEnders (TV_SHOW)
+  ⏳ Processing: El Señor de los Cielos (TV_SHOW)
+  ⏳ Processing: PAW Patrol (TV_SHOW)
+  ✅ Updated: Jeopardy! with 2 genres
+  ✅ Updated: PAW Patrol with 2 genres
+  ✅ Updated: EastEnders with 3 genres
+  ✅ Updated: A Minecraft Movie with 4 genres
+  ✅ Updated: El Señor de los Cielos with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 15 of 200
+  ⏳ Processing: Hawaii Five-0 (TV_SHOW)
+  ⏳ Processing: American Dad! (TV_SHOW)
+  ⏳ Processing: Keeping Up with the Kardashians (TV_SHOW)
+  ⏳ Processing: America's Got Talent (TV_SHOW)
+  ⏳ Processing: Candy Candy (TV_SHOW)
+  ✅ Updated: Keeping Up with the Kardashians with 1 genres
+  ✅ Updated: America's Got Talent with 1 genres
+  ✅ Updated: American Dad! with 2 genres
+  ✅ Updated: Candy Candy with 3 genres
+  ✅ Updated: Hawaii Five-0 with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 16 of 200
+  ⏳ Processing: Stargate SG-1 (TV_SHOW)
+  ⏳ Processing: Two and a Half Men (TV_SHOW)
+  ⏳ Processing: The Blacklist (TV_SHOW)
+  ⏳ Processing: Tyler Perry's The Haves and the Have Nots (TV_SHOW)
+  ⏳ Processing: Ghost Adventures (TV_SHOW)
+  ✅ Updated: Two and a Half Men with 1 genres
+  ✅ Updated: Ghost Adventures with 1 genres
+  ✅ Updated: Stargate SG-1 with 2 genres
+  ✅ Updated: Tyler Perry's The Haves and the Have Nots with 2 genres
+  ✅ Updated: The Blacklist with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 17 of 200
+  ⏳ Processing: It's Always Sunny in Philadelphia (TV_SHOW)
+  ⏳ Processing: Hunter × Hunter (TV_SHOW)
+  ⏳ Processing: Dancing with the Stars (TV_SHOW)
+  ⏳ Processing: Star Wars: The Clone Wars (TV_SHOW)
+  ⏳ Processing: House (TV_SHOW)
+  ✅ Updated: It's Always Sunny in Philadelphia with 1 genres
+  ✅ Updated: House with 3 genres
+  ✅ Updated: Star Wars: The Clone Wars with 3 genres
+  ✅ Updated: Dancing with the Stars with 2 genres
+  ✅ Updated: Hunter × Hunter with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 18 of 200
+  ⏳ Processing: How I Met Your Mother (TV_SHOW)
+  ⏳ Processing: Pokémon (TV_SHOW)
+  ⏳ Processing: The Flash (TV_SHOW)
+  ⏳ Processing: Teen Titans Go! (TV_SHOW)
+  ⏳ Processing: The Graham Norton Show (TV_SHOW)
+  ✅ Updated: How I Met Your Mother with 1 genres
+  ✅ Updated: The Graham Norton Show with 2 genres
+  ✅ Updated: The Flash with 2 genres
+  ✅ Updated: Pokémon with 3 genres
+  ✅ Updated: Teen Titans Go! with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 19 of 200
+  ⏳ Processing: Garfield and Friends (TV_SHOW)
+  ⏳ Processing: Bones (TV_SHOW)
+  ⏳ Processing: Ninjago: Masters of Spinjitzu (TV_SHOW)
+  ⏳ Processing: The X-Files (TV_SHOW)
+  ⏳ Processing: Chicago Fire (TV_SHOW)
+  ✅ Updated: Chicago Fire with 1 genres
+  ✅ Updated: Bones with 2 genres
+  ✅ Updated: Garfield and Friends with 3 genres
+  ✅ Updated: The X-Files with 3 genres
+  ✅ Updated: Ninjago: Masters of Spinjitzu with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 20 of 200
+  ⏳ Processing: Brooklyn Nine-Nine (TV_SHOW)
+  ⏳ Processing: Project Runway (TV_SHOW)
+  ⏳ Processing: American Idol (TV_SHOW)
+  ⏳ Processing: King of the Hill (TV_SHOW)
+  ⏳ Processing: We Bare Bears (TV_SHOW)
+  ✅ Updated: American Idol with 1 genres
+  ✅ Updated: Brooklyn Nine-Nine with 2 genres
+  ✅ Updated: Project Runway with 1 genres
+  ✅ Updated: King of the Hill with 3 genres
+  ✅ Updated: We Bare Bears with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 21 of 200
+  ⏳ Processing: Ballerina (MOVIE)
+  ⏳ Processing: A Working Man (MOVIE)
+  ⏳ Processing: Star Trek: Voyager (TV_SHOW)
+  ⏳ Processing: Miraculous: Tales of Ladybug & Cat Noir (TV_SHOW)
+  ⏳ Processing: Last Week Tonight with John Oliver (TV_SHOW)
+  ✅ Updated: Star Trek: Voyager with 3 genres
+  ✅ Updated: Last Week Tonight with John Oliver with 3 genres
+  ✅ Updated: Ballerina with 3 genres
+  ✅ Updated: A Working Man with 3 genres
+  ✅ Updated: Miraculous: Tales of Ladybug & Cat Noir with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 22 of 200
+  ⏳ Processing: The Vampire Diaries (TV_SHOW)
+  ⏳ Processing: Survivor (TV_SHOW)
+  ⏳ Processing: My Name Is Earl (TV_SHOW)
+  ⏳ Processing: The Last of Us (TV_SHOW)
+  ⏳ Processing: South Park (TV_SHOW)
+  ✅ Updated: My Name Is Earl with 1 genres
+  ✅ Updated: Survivor with 1 genres
+  ✅ Updated: The Last of Us with 1 genres
+  ✅ Updated: South Park with 2 genres
+  ✅ Updated: The Vampire Diaries with 2 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 23 of 200
+  ⏳ Processing: RuPaul's Drag Race All Stars (TV_SHOW)
+  ⏳ Processing: Mission: Impossible - The Final Reckoning (MOVIE)
+  ⏳ Processing: RuPaul's Drag Race (TV_SHOW)
+  ⏳ Processing: Shameless (TV_SHOW)
+  ⏳ Processing: Chicago P.D. (TV_SHOW)
+  ✅ Updated: RuPaul's Drag Race All Stars with 1 genres
+  ✅ Updated: RuPaul's Drag Race with 1 genres
+  ✅ Updated: Chicago P.D. with 2 genres
+  ✅ Updated: Shameless with 2 genres
+  ✅ Updated: Mission: Impossible - The Final Reckoning with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 24 of 200
+  ⏳ Processing: The Ugly Stepsister (MOVIE)
+  ⏳ Processing: Quincy, M.E. (TV_SHOW)
+  ⏳ Processing: Jimmy Kimmel Live! (TV_SHOW)
+  ⏳ Processing: Peppa Pig (TV_SHOW)
+  ⏳ Processing: Dexter (TV_SHOW)
+  ✅ Updated: Peppa Pig with 2 genres
+  ✅ Updated: Jimmy Kimmel Live! with 2 genres
+  ✅ Updated: Quincy, M.E. with 3 genres
+  ✅ Updated: Dexter with 3 genres
+  ✅ Updated: The Ugly Stepsister with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 25 of 200
+  ⏳ Processing: Breaking Bad (TV_SHOW)
+  ⏳ Processing: The Voice (TV_SHOW)
+  ⏳ Processing: Thomas & Friends (TV_SHOW)
+  ⏳ Processing: Teenage Mutant Ninja Turtles (TV_SHOW)
+  ⏳ Processing: The Mentalist (TV_SHOW)
+  ✅ Updated: The Voice with 1 genres
+  ✅ Updated: Thomas & Friends with 2 genres
+  ✅ Updated: Breaking Bad with 2 genres
+  ✅ Updated: Teenage Mutant Ninja Turtles with 3 genres
+  ✅ Updated: The Mentalist with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 26 of 200
+  ⏳ Processing: Blue Bloods (TV_SHOW)
+  ⏳ Processing: Blade of the Immortal (TV_SHOW)
+  ⏳ Processing: Ginny & Georgia (TV_SHOW)
+  ⏳ Processing: Regular Show (TV_SHOW)
+  ⏳ Processing: Shin Chan (TV_SHOW)
+  ✅ Updated: Blue Bloods with 2 genres
+  ✅ Updated: Regular Show with 2 genres
+  ✅ Updated: Ginny & Georgia with 2 genres
+  ✅ Updated: Shin Chan with 3 genres
+  ✅ Updated: Blade of the Immortal with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 27 of 200
+  ⏳ Processing: The Ellen DeGeneres Show (TV_SHOW)
+  ⏳ Processing: Murder, She Wrote (TV_SHOW)
+  ⏳ Processing: Pretty Little Liars (TV_SHOW)
+  ⏳ Processing: Whose Line Is It Anyway? (TV_SHOW)
+  ⏳ Processing: Mayday (TV_SHOW)
+  ✅ Updated: The Ellen DeGeneres Show with 2 genres
+  ✅ Updated: Pretty Little Liars with 2 genres
+  ✅ Updated: Whose Line Is It Anyway? with 2 genres
+  ✅ Updated: Mayday with 3 genres
+  ✅ Updated: Murder, She Wrote with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 28 of 200
+  ⏳ Processing: Babylon 5 (TV_SHOW)
+  ⏳ Processing: Friends (TV_SHOW)
+  ⏳ Processing: Timon and Pumbaa (TV_SHOW)
+  ⏳ Processing: Lost (TV_SHOW)
+  ⏳ Processing: Midsomer Murders (TV_SHOW)
+  ✅ Updated: Friends with 1 genres
+  ✅ Updated: Lost with 3 genres
+  ✅ Updated: Midsomer Murders with 3 genres
+  ✅ Updated: Timon and Pumbaa with 4 genres
+  ✅ Updated: Babylon 5 with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 29 of 200
+  ⏳ Processing: Dirty Linen (TV_SHOW)
+  ⏳ Processing: Modern Family (TV_SHOW)
+  ⏳ Processing: S.W.A.T. (TV_SHOW)
+  ⏳ Processing: One Tree Hill (TV_SHOW)
+  ⏳ Processing: The O.C. (TV_SHOW)
+  ✅ Updated: Modern Family with 1 genres
+  ✅ Updated: One Tree Hill with 1 genres
+  ✅ Updated: The O.C. with 1 genres
+  ✅ Updated: Dirty Linen with 2 genres
+  ✅ Updated: S.W.A.T. with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 30 of 200
+  ⏳ Processing: Ridiculousness (TV_SHOW)
+  ⏳ Processing: Star Trek: Enterprise (TV_SHOW)
+  ⏳ Processing: God Eater (TV_SHOW)
+  ⏳ Processing: CSI: NY (TV_SHOW)
+  ⏳ Processing: Late Night with Conan O'Brien (TV_SHOW)
+  ✅ Updated: Late Night with Conan O'Brien with 2 genres
+  ✅ Updated: God Eater with 2 genres
+  ✅ Updated: Ridiculousness with 3 genres
+  ✅ Updated: CSI: NY with 3 genres
+  ✅ Updated: Star Trek: Enterprise with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 31 of 200
+  ⏳ Processing: The Loud House (TV_SHOW)
+  ⏳ Processing: Snow White (MOVIE)
+  ⏳ Processing: Frasier (TV_SHOW)
+  ⏳ Processing: Without a Trace (TV_SHOW)
+  ⏳ Processing: Lucifer (TV_SHOW)
+  ✅ Updated: Frasier with 2 genres
+  ✅ Updated: Lucifer with 2 genres
+  ✅ Updated: Snow White with 2 genres
+  ✅ Updated: Without a Trace with 4 genres
+  ✅ Updated: The Loud House with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 32 of 200
+  ⏳ Processing: The Handmaid's Tale (TV_SHOW)
+  ⏳ Processing: Una familia con suerte (TV_SHOW)
+  ⏳ Processing: Dallas (TV_SHOW)
+  ⏳ Processing: CSI: Miami (TV_SHOW)
+  ⏳ Processing: Big Brother (TV_SHOW)
+  ✅ Updated: Big Brother with 1 genres
+  ✅ Updated: The Handmaid's Tale with 2 genres
+  ✅ Updated: CSI: Miami with 3 genres
+  ✅ Updated: Una familia con suerte with 3 genres
+  ✅ Updated: Dallas with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 33 of 200
+  ⏳ Processing: Prison Break (TV_SHOW)
+  ⏳ Processing: Adventure Time (TV_SHOW)
+  ⏳ Processing: Yo soy Betty, la fea (TV_SHOW)
+  ⏳ Processing: Hogan's Heroes (TV_SHOW)
+  ⏳ Processing: Doctor Who (TV_SHOW)
+  ✅ Updated: Hogan's Heroes with 2 genres
+  ✅ Updated: Yo soy Betty, la fea with 3 genres
+  ✅ Updated: Prison Break with 3 genres
+  ✅ Updated: Doctor Who with 3 genres
+  ✅ Updated: Adventure Time with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 34 of 200
+  ⏳ Processing: Suits (TV_SHOW)
+  ⏳ Processing: Desperate Housewives (TV_SHOW)
+  ⏳ Processing: Fear the Walking Dead (TV_SHOW)
+  ⏳ Processing: The Amazing World of Gumball (TV_SHOW)
+  ⏳ Processing: Alarm for Cobra 11: The Motorway Police (TV_SHOW)
+  ✅ Updated: Suits with 1 genres
+  ✅ Updated: Fear the Walking Dead with 2 genres
+  ✅ Updated: Desperate Housewives with 3 genres
+  ✅ Updated: Alarm for Cobra 11: The Motorway Police with 3 genres
+  ✅ Updated: The Amazing World of Gumball with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 35 of 200
+  ⏳ Processing: Xena: Warrior Princess (TV_SHOW)
+  ⏳ Processing: Echo Valley (MOVIE)
+  ⏳ Processing: Stranger Things (TV_SHOW)
+  ⏳ Processing: Hell's Kitchen (TV_SHOW)
+  ⏳ Processing: Eek! The Cat (TV_SHOW)
+  ✅ Updated: Hell's Kitchen with 1 genres
+  ✅ Updated: Eek! The Cat with 2 genres
+  ✅ Updated: Echo Valley with 2 genres
+  ✅ Updated: Stranger Things with 3 genres
+  ✅ Updated: Xena: Warrior Princess with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 36 of 200
+  ⏳ Processing: Raw (TV_SHOW)
+  ⏳ Processing: Oggy and the Cockroaches (TV_SHOW)
+  ⏳ Processing: The Goldbergs (TV_SHOW)
+  ⏳ Processing: DC's Legends of Tomorrow (TV_SHOW)
+  ⏳ Processing: Peaky Blinders (TV_SHOW)
+  ✅ Updated: Raw with 1 genres
+  ✅ Updated: The Goldbergs with 2 genres
+  ✅ Updated: Peaky Blinders with 2 genres
+  ✅ Updated: DC's Legends of Tomorrow with 3 genres
+  ✅ Updated: Oggy and the Cockroaches with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 37 of 200
+  ⏳ Processing: Beverly Hills, 90210 (TV_SHOW)
+  ⏳ Processing: FBI: Most Wanted (TV_SHOW)
+  ⏳ Processing: Bhagya Lakshmi (TV_SHOW)
+  ⏳ Processing: Ghost Whisperer (TV_SHOW)
+  ⏳ Processing: Curious George (TV_SHOW)
+  ✅ Updated: Bhagya Lakshmi with 1 genres
+  ✅ Updated: Beverly Hills, 90210 with 2 genres
+  ✅ Updated: FBI: Most Wanted with 2 genres
+  ✅ Updated: Ghost Whisperer with 3 genres
+  ✅ Updated: Curious George with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 38 of 200
+  ⏳ Processing: The Curse of Oak Island (TV_SHOW)
+  ⏳ Processing: Taandob (MOVIE)
+  ⏳ Processing: Bleach (TV_SHOW)
+  ⏳ Processing: Married... with Children (TV_SHOW)
+  ⏳ Processing: The Avengers: Earth's Mightiest Heroes (TV_SHOW)
+  ✅ Updated: Married... with Children with 1 genres
+  ✅ Updated: Bleach with 3 genres
+  ✅ Updated: Taandob with 3 genres
+  ✅ Updated: The Curse of Oak Island with 4 genres
+  ✅ Updated: The Avengers: Earth's Mightiest Heroes with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 39 of 200
+  ⏳ Processing: Looney Tunes Cartoons (TV_SHOW)
+  ⏳ Processing: Squid Game (TV_SHOW)
+  ⏳ Processing: Castle (TV_SHOW)
+  ⏳ Processing: I Dream of Jeannie (TV_SHOW)
+  ⏳ Processing: The Office (TV_SHOW)
+  ✅ Updated: The Office with 1 genres
+  ✅ Updated: Squid Game with 3 genres
+  ✅ Updated: Castle with 2 genres
+  ✅ Updated: I Dream of Jeannie with 3 genres
+  ✅ Updated: Looney Tunes Cartoons with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 40 of 200
+  ⏳ Processing: Vikings (TV_SHOW)
+  ⏳ Processing: Marvel's Agents of S.H.I.E.L.D. (TV_SHOW)
+  ⏳ Processing: The Avengers (TV_SHOW)
+  ⏳ Processing: Happy Days (TV_SHOW)
+  ⏳ Processing: The Resident (TV_SHOW)
+  ✅ Updated: The Resident with 1 genres
+  ✅ Updated: Happy Days with 1 genres
+  ✅ Updated: Marvel's Agents of S.H.I.E.L.D. with 3 genres
+  ✅ Updated: Vikings with 3 genres
+  ✅ Updated: The Avengers with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 41 of 200
+  ⏳ Processing: When Calls the Heart (TV_SHOW)
+  ⏳ Processing: Agatha Christie's Poirot (TV_SHOW)
+  ⏳ Processing: Diagnosis: Murder (TV_SHOW)
+  ⏳ Processing: This Is Us (TV_SHOW)
+  ⏳ Processing: Bonanza (TV_SHOW)
+  ✅ Updated: This Is Us with 1 genres
+  ✅ Updated: Agatha Christie's Poirot with 3 genres
+  ✅ Updated: When Calls the Heart with 2 genres
+  ✅ Updated: Bonanza with 4 genres
+  ✅ Updated: Diagnosis: Murder with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 42 of 200
+  ⏳ Processing: Naruto Shippūden (TV_SHOW)
+  ⏳ Processing: Hunter x Hunter (TV_SHOW)
+  ⏳ Processing: Better Call Saul (TV_SHOW)
+  ⏳ Processing: Teen Wolf (TV_SHOW)
+  ⏳ Processing: How to Get Away with Murder (TV_SHOW)
+  ✅ Updated: Better Call Saul with 2 genres
+  ✅ Updated: Hunter x Hunter with 3 genres
+  ✅ Updated: How to Get Away with Murder with 3 genres
+  ✅ Updated: Teen Wolf with 3 genres
+  ✅ Updated: Naruto Shippūden with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 43 of 200
+  ⏳ Processing: Bob the Builder (TV_SHOW)
+  ⏳ Processing: Dr. Quinn, Medicine Woman (TV_SHOW)
+  ⏳ Processing: MobLand (TV_SHOW)
+  ⏳ Processing: Case Closed (TV_SHOW)
+  ⏳ Processing: That '70s Show (TV_SHOW)
+  ✅ Updated: MobLand with 2 genres
+  ✅ Updated: Dr. Quinn, Medicine Woman with 2 genres
+  ✅ Updated: Bob the Builder with 3 genres
+  ✅ Updated: That '70s Show with 3 genres
+  ✅ Updated: Case Closed with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 44 of 200
+  ⏳ Processing: The Good Wife (TV_SHOW)
+  ⏳ Processing: The 100 (TV_SHOW)
+  ⏳ Processing: Magnum, P.I. (TV_SHOW)
+  ⏳ Processing: Lilo & Stitch: The Series (TV_SHOW)
+  ⏳ Processing: Murderbot (TV_SHOW)
+  ✅ Updated: The Good Wife with 1 genres
+  ✅ Updated: Murderbot with 3 genres
+  ✅ Updated: The 100 with 3 genres
+  ✅ Updated: Magnum, P.I. with 4 genres
+  ✅ Updated: Lilo & Stitch: The Series with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 45 of 200
+  ⏳ Processing: The Sopranos (TV_SHOW)
+  ⏳ Processing: Chicago Med (TV_SHOW)
+  ⏳ Processing: Mercy for None (TV_SHOW)
+  ⏳ Processing: Death in Paradise (TV_SHOW)
+  ⏳ Processing: One Piece (TV_SHOW)
+  ✅ Updated: Chicago Med with 1 genres
+  ✅ Updated: The Sopranos with 2 genres
+  ✅ Updated: One Piece with 3 genres
+  ✅ Updated: Mercy for None with 2 genres
+  ✅ Updated: Death in Paradise with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 46 of 200
+  ⏳ Processing: Impractical Jokers (TV_SHOW)
+  ⏳ Processing: Yellowstone (TV_SHOW)
+  ⏳ Processing: Marvel's Daredevil (TV_SHOW)
+  ⏳ Processing: Dragon Ball Z (TV_SHOW)
+  ⏳ Processing: Curb Your Enthusiasm (TV_SHOW)
+  ✅ Updated: Curb Your Enthusiasm with 1 genres
+  ✅ Updated: Impractical Jokers with 1 genres
+  ✅ Updated: Yellowstone with 2 genres
+  ✅ Updated: Marvel's Daredevil with 3 genres
+  ✅ Updated: Dragon Ball Z with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 47 of 200
+  ⏳ Processing: Naruto (TV_SHOW)
+  ⏳ Processing: Monk (TV_SHOW)
+  ⏳ Processing: The Wonder Years (TV_SHOW)
+  ⏳ Processing: Once Upon a Time (TV_SHOW)
+  ⏳ Processing: FROM (TV_SHOW)
+  ✅ Updated: Once Upon a Time with 2 genres
+  ✅ Updated: The Wonder Years with 3 genres
+  ✅ Updated: Monk with 3 genres
+  ✅ Updated: FROM with 3 genres
+  ✅ Updated: Naruto with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 48 of 200
+  ⏳ Processing: Star Trek: Discovery (TV_SHOW)
+  ⏳ Processing: Would I Lie to You? (TV_SHOW)
+  ⏳ Processing: New Looney Tunes (TV_SHOW)
+  ⏳ Processing: The Smurfs (TV_SHOW)
+  ⏳ Processing: Kid vs. Kat (TV_SHOW)
+  ✅ Updated: Would I Lie to You? with 1 genres
+  ✅ Updated: Star Trek: Discovery with 3 genres
+  ✅ Updated: New Looney Tunes with 3 genres
+  ✅ Updated: The Smurfs with 5 genres
+  ✅ Updated: Kid vs. Kat with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 49 of 200
+  ⏳ Processing: The Good Doctor (TV_SHOW)
+  ⏳ Processing: Warfare (MOVIE)
+  ⏳ Processing: Sons of Anarchy (TV_SHOW)
+  ⏳ Processing: Robot Chicken (TV_SHOW)
+  ⏳ Processing: Dexter's Laboratory (TV_SHOW)
+  ✅ Updated: The Good Doctor with 1 genres
+  ✅ Updated: Warfare with 2 genres
+  ✅ Updated: Robot Chicken with 2 genres
+  ✅ Updated: Sons of Anarchy with 2 genres
+  ✅ Updated: Dexter's Laboratory with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 50 of 200
+  ⏳ Processing: Heartland (TV_SHOW)
+  ⏳ Processing: Tom & Jerry Kids Show (TV_SHOW)
+  ⏳ Processing: Moana 2 (MOVIE)
+  ⏳ Processing: Buffy the Vampire Slayer (TV_SHOW)
+  ⏳ Processing: The King of Queens (TV_SHOW)
+  ✅ Updated: The King of Queens with 1 genres
+  ✅ Updated: Heartland with 3 genres
+  ✅ Updated: Tom & Jerry Kids Show with 3 genres
+  ✅ Updated: Buffy the Vampire Slayer with 4 genres
+  ✅ Updated: Moana 2 with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 51 of 200
+  ⏳ Processing: Top Gear (TV_SHOW)
+  ⏳ Processing: The Boys (TV_SHOW)
+  ⏳ Processing: Switched at Birth (TV_SHOW)
+  ⏳ Processing: Beavis and Butt-Head (TV_SHOW)
+  ⏳ Processing: Riverdale (TV_SHOW)
+  ✅ Updated: Top Gear with 1 genres
+  ✅ Updated: Beavis and Butt-Head with 2 genres
+  ✅ Updated: Switched at Birth with 2 genres
+  ✅ Updated: The Boys with 2 genres
+  ✅ Updated: Riverdale with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 52 of 200
+  ⏳ Processing: The West Wing (TV_SHOW)
+  ⏳ Processing: NCIS: New Orleans (TV_SHOW)
+  ⏳ Processing: Archer (TV_SHOW)
+  ⏳ Processing: NOVA (TV_SHOW)
+  ⏳ Processing: Law & Order: Criminal Intent (TV_SHOW)
+  ✅ Updated: The West Wing with 1 genres
+  ✅ Updated: Law & Order: Criminal Intent with 1 genres
+  ✅ Updated: NOVA with 1 genres
+  ✅ Updated: NCIS: New Orleans with 3 genres
+  ✅ Updated: Archer with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 53 of 200
+  ⏳ Processing: 9-1-1 (TV_SHOW)
+  ⏳ Processing: M*A*S*H (TV_SHOW)
+  ⏳ Processing: INVINCIBLE (TV_SHOW)
+  ⏳ Processing: How Not to Summon a Demon Lord (TV_SHOW)
+  ⏳ Processing: American Horror Story (TV_SHOW)
+  ✅ Updated: 9-1-1 with 3 genres
+  ✅ Updated: American Horror Story with 3 genres
+  ✅ Updated: M*A*S*H with 3 genres
+  ✅ Updated: How Not to Summon a Demon Lord with 4 genres
+  ✅ Updated: INVINCIBLE with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 54 of 200
+  ⏳ Processing: The Bold and the Beautiful (TV_SHOW)
+  ⏳ Processing: Star vs. the Forces of Evil (TV_SHOW)
+  ⏳ Processing: Black Mirror (TV_SHOW)
+  ⏳ Processing: Teenage Mutant Ninja Turtles (TV_SHOW)
+  ⏳ Processing: Who's the Boss? (TV_SHOW)
+  ✅ Updated: Who's the Boss? with 1 genres
+  ✅ Updated: The Bold and the Beautiful with 2 genres
+  ✅ Updated: Black Mirror with 3 genres
+  ✅ Updated: Teenage Mutant Ninja Turtles with 5 genres
+  ✅ Updated: Star vs. the Forces of Evil with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 55 of 200
+  ⏳ Processing: The Six Million Dollar Man (TV_SHOW)
+  ⏳ Processing: Smallville (TV_SHOW)
+  ⏳ Processing: Mad About You (TV_SHOW)
+  ⏳ Processing: Saturday Night Live (TV_SHOW)
+  ⏳ Processing: Craig of the Creek (TV_SHOW)
+  ✅ Updated: Mad About You with 1 genres
+  ✅ Updated: Saturday Night Live with 2 genres
+  ✅ Updated: The Six Million Dollar Man with 3 genres
+  ✅ Updated: Smallville with 3 genres
+  ✅ Updated: Craig of the Creek with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 56 of 200
+  ⏳ Processing: Fist of the North Star (TV_SHOW)
+  ⏳ Processing: The Apothecary Diaries (TV_SHOW)
+  ⏳ Processing: You (TV_SHOW)
+  ⏳ Processing: Orange Is the New Black (TV_SHOW)
+  ⏳ Processing: Thunderbolts* (MOVIE)
+  ✅ Updated: You with 1 genres
+  ✅ Updated: Orange Is the New Black with 2 genres
+  ✅ Updated: The Apothecary Diaries with 3 genres
+  ✅ Updated: Fist of the North Star with 4 genres
+  ✅ Updated: Thunderbolts* with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 57 of 200
+  ⏳ Processing: Everybody Loves Raymond (TV_SHOW)
+  ⏳ Processing: Grimm (TV_SHOW)
+  ⏳ Processing: Hot in Cleveland (TV_SHOW)
+  ⏳ Processing: The Real Housewives of Atlanta (TV_SHOW)
+  ⏳ Processing: Dawson's Creek (TV_SHOW)
+  ✅ Updated: The Real Housewives of Atlanta with 1 genres
+  ✅ Updated: Everybody Loves Raymond with 1 genres
+  ✅ Updated: Hot in Cleveland with 1 genres
+  ✅ Updated: Dawson's Creek with 2 genres
+  ✅ Updated: Grimm with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 58 of 200
+  ⏳ Processing: Medium (TV_SHOW)
+  ⏳ Processing: Phineas and Ferb (TV_SHOW)
+  ⏳ Processing: Wizards of Waverly Place (TV_SHOW)
+  ⏳ Processing: The Love Boat (TV_SHOW)
+  ⏳ Processing: Kuruluş Osman (TV_SHOW)
+  ✅ Updated: The Love Boat with 2 genres
+  ✅ Updated: Kuruluş Osman with 3 genres
+  ✅ Updated: Medium with 4 genres
+  ✅ Updated: Phineas and Ferb with 4 genres
+  ✅ Updated: Wizards of Waverly Place with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 59 of 200
+  ⏳ Processing: Murdoch Mysteries (TV_SHOW)
+  ⏳ Processing: Psych (TV_SHOW)
+  ⏳ Processing: Sofia the First (TV_SHOW)
+  ⏳ Processing: The Last Man on Earth (TV_SHOW)
+  ⏳ Processing: NYPD Blue (TV_SHOW)
+  ✅ Updated: NYPD Blue with 1 genres
+  ✅ Updated: The Last Man on Earth with 2 genres
+  ✅ Updated: Murdoch Mysteries with 2 genres
+  ✅ Updated: Sofia the First with 3 genres
+  ✅ Updated: Psych with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 60 of 200
+  ⏳ Processing: How to Train Your Dragon (MOVIE)
+  ⏳ Processing: A Million Little Things (TV_SHOW)
+  ⏳ Processing: Pablo Escobar: The Drug Lord (TV_SHOW)
+  ⏳ Processing: Young Sheldon (TV_SHOW)
+  ⏳ Processing: Shaman King (TV_SHOW)
+  ✅ Updated: A Million Little Things with 1 genres
+  ✅ Updated: Pablo Escobar: The Drug Lord with 2 genres
+  ✅ Updated: Young Sheldon with 3 genres
+  ✅ Updated: Shaman King with 3 genres
+  ✅ Updated: How to Train Your Dragon with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 61 of 200
+  ⏳ Processing: Fresh Off the Boat (TV_SHOW)
+  ⏳ Processing: I Love Lucy (TV_SHOW)
+  ⏳ Processing: Top Gear (TV_SHOW)
+  ⏳ Processing: The Drew Carey Show (TV_SHOW)
+  ⏳ Processing: Good Luck Charlie (TV_SHOW)
+  ✅ Updated: Fresh Off the Boat with 1 genres
+  ✅ Updated: The Drew Carey Show with 1 genres
+  ✅ Updated: Top Gear with 2 genres
+  ✅ Updated: I Love Lucy with 2 genres
+  ✅ Updated: Good Luck Charlie with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 62 of 200
+  ⏳ Processing: Batang Quiapo (TV_SHOW)
+  ⏳ Processing: Super Dragon Ball Heroes (TV_SHOW)
+  ⏳ Processing: Mushoku Tensei: Jobless Reincarnation (TV_SHOW)
+  ⏳ Processing: Disney's Adventures of the Gummi Bears (TV_SHOW)
+  ⏳ Processing: Captain America: Brave New World (MOVIE)
+  ✅ Updated: Mushoku Tensei: Jobless Reincarnation with 3 genres
+  ✅ Updated: Disney's Adventures of the Gummi Bears with 3 genres
+  ✅ Updated: Super Dragon Ball Heroes with 3 genres
+  ✅ Updated: Batang Quiapo with 3 genres
+  ✅ Updated: Captain America: Brave New World with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 63 of 200
+  ⏳ Processing: Shark Tank (TV_SHOW)
+  ⏳ Processing: Until Dawn (MOVIE)
+  ⏳ Processing: In the Lost Lands (MOVIE)
+  ⏳ Processing: Karate Kid: Legends (MOVIE)
+  ⏳ Processing: Marvel's Avengers (TV_SHOW)
+  ✅ Updated: Shark Tank with 1 genres
+  ✅ Updated: Until Dawn with 2 genres
+  ✅ Updated: Marvel's Avengers with 3 genres
+  ✅ Updated: In the Lost Lands with 3 genres
+  ✅ Updated: Karate Kid: Legends with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 64 of 200
+  ⏳ Processing: My Old Ass (MOVIE)
+  ⏳ Processing: Our Times (MOVIE)
+  ⏳ Processing: Mentiras, The Series (TV_SHOW)
+  ⏳ Processing: Lilo & Stitch (MOVIE)
+  ⏳ Processing: Andor (TV_SHOW)
+  ✅ Updated: My Old Ass with 2 genres
+  ✅ Updated: Mentiras, The Series with 2 genres
+  ✅ Updated: Our Times with 3 genres
+  ✅ Updated: Lilo & Stitch with 3 genres
+  ✅ Updated: Andor with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 65 of 200
+  ⏳ Processing: My Fault (MOVIE)
+  ⏳ Processing: FUBAR (TV_SHOW)
+  ⏳ Processing: Marvel Disk Wars: The Avengers (TV_SHOW)
+  ⏳ Processing: Sonic the Hedgehog 3 (MOVIE)
+  ⏳ Processing: How to Train Your Dragon 2 (MOVIE)
+  ✅ Updated: My Fault with 2 genres
+  ✅ Updated: Marvel Disk Wars: The Avengers with 3 genres
+  ✅ Updated: FUBAR with 3 genres
+  ✅ Updated: Sonic the Hedgehog 3 with 4 genres
+  ✅ Updated: How to Train Your Dragon 2 with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 66 of 200
+  ⏳ Processing: The Chosen (TV_SHOW)
+  ⏳ Processing: Love Island (TV_SHOW)
+  ⏳ Processing: The Containment (MOVIE)
+  ⏳ Processing: Tin Soldier (MOVIE)
+  ⏳ Processing: Exterritorial (MOVIE)
+  ✅ Updated: Exterritorial with 2 genres
+  ✅ Updated: Love Island with 1 genres
+  ✅ Updated: The Containment with 2 genres
+  ✅ Updated: Tin Soldier with 2 genres
+  ✅ Updated: The Chosen with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 67 of 200
+  ⏳ Processing: The Legend of Ochi (MOVIE)
+  ⏳ Processing: Mufasa: The Lion King (MOVIE)
+  ⏳ Processing: xXx (MOVIE)
+  ⏳ Processing: The Walking Dead: Dead City (TV_SHOW)
+  ⏳ Processing: Attack on Titan (TV_SHOW)
+  ✅ Updated: Mufasa: The Lion King with 3 genres
+  ✅ Updated: The Legend of Ochi with 3 genres
+  ✅ Updated: The Walking Dead: Dead City with 3 genres
+  ✅ Updated: Attack on Titan with 3 genres
+  ✅ Updated: xXx with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 68 of 200
+  ⏳ Processing: Titan: The OceanGate Submersible Disaster (MOVIE)
+  ⏳ Processing: 28 Years Later (MOVIE)
+  ⏳ Processing: The Gorge (MOVIE)
+  ⏳ Processing: Materialists (MOVIE)
+  ⏳ Processing: How to Train Your Dragon: The Hidden World (MOVIE)
+  ✅ Updated: Materialists with 2 genres
+  ✅ Updated: Titan: The OceanGate Submersible Disaster with 2 genres
+  ✅ Updated: 28 Years Later with 3 genres
+  ✅ Updated: The Gorge with 3 genres
+  ✅ Updated: How to Train Your Dragon: The Hidden World with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 69 of 200
+  ⏳ Processing: The Accountant (MOVIE)
+  ⏳ Processing: Dept. Q (TV_SHOW)
+  ⏳ Processing: Your Fault (MOVIE)
+  ⏳ Processing: Jurassic World Rebirth (MOVIE)
+  ⏳ Processing: Fear Street: Prom Queen (MOVIE)
+  ✅ Updated: Your Fault with 2 genres
+  ✅ Updated: Fear Street: Prom Queen with 2 genres
+  ✅ Updated: The Accountant with 3 genres
+  ✅ Updated: Jurassic World Rebirth with 3 genres
+  ✅ Updated: Dept. Q with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 70 of 200
+  ⏳ Processing: Inside Out 2 (MOVIE)
+  ⏳ Processing: 28 Days Later (MOVIE)
+  ⏳ Processing: Deadpool & Wolverine (MOVIE)
+  ⏳ Processing: The Wild Robot (MOVIE)
+  ⏳ Processing: Venom: The Last Dance (MOVIE)
+  ✅ Updated: The Wild Robot with 3 genres
+  ✅ Updated: 28 Days Later with 3 genres
+  ✅ Updated: Deadpool & Wolverine with 3 genres
+  ✅ Updated: Inside Out 2 with 4 genres
+  ✅ Updated: Venom: The Last Dance with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 71 of 200
+  ⏳ Processing: Despicable Me 4 (MOVIE)
+  ⏳ Processing: The Monkey (MOVIE)
+  ⏳ Processing: Last Bullet (MOVIE)
+  ⏳ Processing: Havoc (MOVIE)
+  ⏳ Processing: Panda Plan (MOVIE)
+  ✅ Updated: Panda Plan with 2 genres
+  ✅ Updated: The Monkey with 2 genres
+  ✅ Updated: Havoc with 3 genres
+  ✅ Updated: Despicable Me 4 with 4 genres
+  ✅ Updated: Last Bullet with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 72 of 200
+  ⏳ Processing: Death of a Unicorn (MOVIE)
+  ⏳ Processing: Fountain of Youth (MOVIE)
+  ⏳ Processing: Superman (MOVIE)
+  ⏳ Processing: Avengers: Infinity War (MOVIE)
+  ⏳ Processing: The Substance (MOVIE)
+  ✅ Updated: Death of a Unicorn with 3 genres
+  ✅ Updated: Fountain of Youth with 3 genres
+  ✅ Updated: Superman with 3 genres
+  ✅ Updated: The Substance with 3 genres
+  ✅ Updated: Avengers: Infinity War with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 73 of 200
+  ⏳ Processing: Elio (MOVIE)
+  ⏳ Processing: Masameer Junior (MOVIE)
+  ⏳ Processing: My Fault: London (MOVIE)
+  ⏳ Processing: F1 The Movie (MOVIE)
+  ⏳ Processing: Vermiglio (MOVIE)
+  ✅ Updated: Vermiglio with 1 genres
+  ✅ Updated: My Fault: London with 2 genres
+  ✅ Updated: F1 The Movie with 2 genres
+  ✅ Updated: Masameer Junior with 4 genres
+  ✅ Updated: Elio with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 74 of 200
+  ⏳ Processing: Kung Fu Panda 4 (MOVIE)
+  ⏳ Processing: Mission: Impossible - Dead Reckoning Part One (MOVIE)
+  ⏳ Processing: Flight Risk (MOVIE)
+  ⏳ Processing: Flow (MOVIE)
+  ⏳ Processing: The Godfather (MOVIE)
+  ✅ Updated: Flight Risk with 2 genres
+  ✅ Updated: The Godfather with 2 genres
+  ✅ Updated: Mission: Impossible - Dead Reckoning Part One with 3 genres
+  ✅ Updated: Flow with 3 genres
+  ✅ Updated: Kung Fu Panda 4 with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 75 of 200
+  ⏳ Processing: Ask Me What You Want (MOVIE)
+  ⏳ Processing: Novocaine (MOVIE)
+  ⏳ Processing: 365 Days: This Day (MOVIE)
+  ⏳ Processing: Interstellar (MOVIE)
+  ⏳ Processing: Diablo (MOVIE)
+  ✅ Updated: 365 Days: This Day with 2 genres
+  ✅ Updated: Ask Me What You Want with 2 genres
+  ✅ Updated: Diablo with 2 genres
+  ✅ Updated: Interstellar with 3 genres
+  ✅ Updated: Novocaine with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 76 of 200
+  ⏳ Processing: Final Destination (MOVIE)
+  ⏳ Processing: Mobile Suit Gundam GQuuuuuuX (TV_SHOW)
+  ⏳ Processing: The Shawshank Redemption (MOVIE)
+  ⏳ Processing: Jurassic World: Fallen Kingdom (MOVIE)
+  ⏳ Processing: A Widow's Game (MOVIE)
+  ✅ Updated: Final Destination with 1 genres
+  ✅ Updated: A Widow's Game with 2 genres
+  ✅ Updated: The Shawshank Redemption with 2 genres
+  ✅ Updated: Mobile Suit Gundam GQuuuuuuX with 4 genres
+  ✅ Updated: Jurassic World: Fallen Kingdom with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 77 of 200
+  ⏳ Processing: John Wick: Chapter 4 (MOVIE)
+  ⏳ Processing: Kraven the Hunter (MOVIE)
+  ⏳ Processing: Lilo & Stitch 2: Stitch Has a Glitch (MOVIE)
+  ⏳ Processing: Spider-Man: Across the Spider-Verse (MOVIE)
+  ⏳ Processing: Star Wars (MOVIE)
+  ✅ Updated: John Wick: Chapter 4 with 3 genres
+  ✅ Updated: Kraven the Hunter with 3 genres
+  ✅ Updated: Star Wars with 3 genres
+  ✅ Updated: Spider-Man: Across the Spider-Verse with 4 genres
+  ✅ Updated: Lilo & Stitch 2: Stitch Has a Glitch with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 78 of 200
+  ⏳ Processing: Devara: Part 1 (MOVIE)
+  ⏳ Processing: The Super Mario Bros. Movie (MOVIE)
+  ⏳ Processing: Gladiator II (MOVIE)
+  ⏳ Processing: Harry Potter and the Philosopher's Stone (MOVIE)
+  ⏳ Processing: Dune: Part Two (MOVIE)
+  ✅ Updated: Dune: Part Two with 2 genres
+  ✅ Updated: Devara: Part 1 with 2 genres
+  ✅ Updated: Harry Potter and the Philosopher's Stone with 2 genres
+  ✅ Updated: The Super Mario Bros. Movie with 4 genres
+  ✅ Updated: Gladiator II with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 79 of 200
+  ⏳ Processing: Ne Zha 2 (MOVIE)
+  ⏳ Processing: The Litchi Road (TV_SHOW)
+  ⏳ Processing: Titanic (MOVIE)
+  ⏳ Processing: The Buccaneers (TV_SHOW)
+  ⏳ Processing: Oppenheimer (MOVIE)
+  ✅ Updated: The Litchi Road with 1 genres
+  ✅ Updated: The Buccaneers with 1 genres
+  ✅ Updated: Titanic with 2 genres
+  ✅ Updated: Oppenheimer with 2 genres
+  ✅ Updated: Ne Zha 2 with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 80 of 200
+  ⏳ Processing: Companion (MOVIE)
+  ⏳ Processing: Alien: Romulus (MOVIE)
+  ⏳ Processing: Wicked (MOVIE)
+  ⏳ Processing: Anora (MOVIE)
+  ⏳ Processing: Mickey 17 (MOVIE)
+  ✅ Updated: Alien: Romulus with 2 genres
+  ✅ Updated: Anora with 3 genres
+  ✅ Updated: Companion with 3 genres
+  ✅ Updated: Wicked with 3 genres
+  ✅ Updated: Mickey 17 with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 81 of 200
+  ⏳ Processing: Final Destination 5 (MOVIE)
+  ⏳ Processing: The Woman in the Yard (MOVIE)
+  ⏳ Processing: Locked (MOVIE)
+  ⏳ Processing: G20 (MOVIE)
+  ⏳ Processing: The Avengers (MOVIE)
+  ✅ Updated: The Woman in the Yard with 2 genres
+  ✅ Updated: Final Destination 5 with 2 genres
+  ✅ Updated: Locked with 2 genres
+  ✅ Updated: G20 with 3 genres
+  ✅ Updated: The Avengers with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 82 of 200
+  ⏳ Processing: Top Gun: Maverick (MOVIE)
+  ⏳ Processing: Thor: Ragnarok (MOVIE)
+  ⏳ Processing: Fifty Shades of Grey (MOVIE)
+  ⏳ Processing: Amaran (MOVIE)
+  ⏳ Processing: Bad Boys: Ride or Die (MOVIE)
+  ✅ Updated: Top Gun: Maverick with 2 genres
+  ✅ Updated: Thor: Ragnarok with 3 genres
+  ✅ Updated: Fifty Shades of Grey with 3 genres
+  ✅ Updated: Amaran with 4 genres
+  ✅ Updated: Bad Boys: Ride or Die with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 83 of 200
+  ⏳ Processing: Harry Potter and the Chamber of Secrets (MOVIE)
+  ⏳ Processing: The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (MOVIE)
+  ⏳ Processing: The Maze Runner (MOVIE)
+  ⏳ Processing: Fast X (MOVIE)
+  ⏳ Processing: Red One (MOVIE)
+  ✅ Updated: Harry Potter and the Chamber of Secrets with 2 genres
+  ✅ Updated: The Chronicles of Narnia: The Lion, the Witch and the Wardrobe with 3 genres
+  ✅ Updated: Red One with 3 genres
+  ✅ Updated: The Maze Runner with 4 genres
+  ✅ Updated: Fast X with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 84 of 200
+  ⏳ Processing: Graduation Trip: Mallorca (MOVIE)
+  ⏳ Processing: Final Destination 3 (MOVIE)
+  ⏳ Processing: Harry Potter and the Goblet of Fire (MOVIE)
+  ⏳ Processing: Memoir of a Snail (MOVIE)
+  ⏳ Processing: Cleaner (MOVIE)
+  ✅ Updated: Graduation Trip: Mallorca with 1 genres
+  ✅ Updated: Harry Potter and the Goblet of Fire with 2 genres
+  ✅ Updated: Cleaner with 2 genres
+  ✅ Updated: Final Destination 3 with 2 genres
+  ✅ Updated: Memoir of a Snail with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 85 of 200
+  ⏳ Processing: Coraline (MOVIE)
+  ⏳ Processing: How to Train Your Dragon: Homecoming (MOVIE)
+  ⏳ Processing: Barbie (MOVIE)
+  ⏳ Processing: The Tomorrow War (MOVIE)
+  ⏳ Processing: Inception (MOVIE)
+  ✅ Updated: Barbie with 2 genres
+  ✅ Updated: The Tomorrow War with 3 genres
+  ✅ Updated: Inception with 3 genres
+  ✅ Updated: Coraline with 3 genres
+  ✅ Updated: How to Train Your Dragon: Homecoming with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 86 of 200
+  ⏳ Processing: Babygirl (MOVIE)
+  ⏳ Processing: Puss in Boots: The Last Wish (MOVIE)
+  ⏳ Processing: Counterattack (MOVIE)
+  ⏳ Processing: Lost in Starlight (MOVIE)
+  ⏳ Processing: Spider-Man: No Way Home (MOVIE)
+  ✅ Updated: Babygirl with 1 genres
+  ✅ Updated: Spider-Man: No Way Home with 3 genres
+  ✅ Updated: Lost in Starlight with 3 genres
+  ✅ Updated: Counterattack with 3 genres
+  ✅ Updated: Puss in Boots: The Last Wish with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 87 of 200
+  ⏳ Processing: Spaceballs (MOVIE)
+  ⏳ Processing: Hunter with a Scalpel (TV_SHOW)
+  ⏳ Processing: Parasite (MOVIE)
+  ⏳ Processing: Demon City (MOVIE)
+  ⏳ Processing: 28 Weeks Later (MOVIE)
+  ✅ Updated: Hunter with a Scalpel with 2 genres
+  ✅ Updated: Spaceballs with 2 genres
+  ✅ Updated: 28 Weeks Later with 3 genres
+  ✅ Updated: Parasite with 3 genres
+  ✅ Updated: Demon City with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 88 of 200
+  ⏳ Processing: Mission: Impossible (MOVIE)
+  ⏳ Processing: Ironheart (TV_SHOW)
+  ⏳ Processing: Miraculous World: London, At the Edge of Time (MOVIE)
+  ⏳ Processing: The Flash (MOVIE)
+  ⏳ Processing: Final Destination 2 (MOVIE)
+  ✅ Updated: Ironheart with 2 genres
+  ✅ Updated: Final Destination 2 with 2 genres
+  ✅ Updated: The Flash with 3 genres
+  ✅ Updated: Mission: Impossible with 3 genres
+  ✅ Updated: Miraculous World: London, At the Edge of Time with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 89 of 200
+  ⏳ Processing: The Lord of the Rings: The Fellowship of the Ring (MOVIE)
+  ⏳ Processing: Drop (MOVIE)
+  ⏳ Processing: The Matrix (MOVIE)
+  ⏳ Processing: The Conjuring (MOVIE)
+  ⏳ Processing: Shrek (MOVIE)
+  ✅ Updated: The Conjuring with 2 genres
+  ✅ Updated: Drop with 2 genres
+  ✅ Updated: The Matrix with 2 genres
+  ✅ Updated: The Lord of the Rings: The Fellowship of the Ring with 3 genres
+  ✅ Updated: Shrek with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 90 of 200
+  ⏳ Processing: Apocalypse Z: The Beginning of the End (MOVIE)
+  ⏳ Processing: Terrifier 3 (MOVIE)
+  ⏳ Processing: Harry Potter and the Prisoner of Azkaban (MOVIE)
+  ⏳ Processing: Bullet Train Explosion (MOVIE)
+  ⏳ Processing: The Good, the Bad and the Ugly (MOVIE)
+  ✅ Updated: The Good, the Bad and the Ugly with 1 genres
+  ✅ Updated: Harry Potter and the Prisoner of Azkaban with 2 genres
+  ✅ Updated: Apocalypse Z: The Beginning of the End with 3 genres
+  ✅ Updated: Terrifier 3 with 2 genres
+  ✅ Updated: Bullet Train Explosion with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 91 of 200
+  ⏳ Processing: The Final Destination (MOVIE)
+  ⏳ Processing: After (MOVIE)
+  ⏳ Processing: Me Before You (MOVIE)
+  ⏳ Processing: Avatar: The Way of Water (MOVIE)
+  ⏳ Processing: Batman Ninja vs. Yakuza League (MOVIE)
+  ✅ Updated: Me Before You with 2 genres
+  ✅ Updated: Batman Ninja vs. Yakuza League with 2 genres
+  ✅ Updated: After with 2 genres
+  ✅ Updated: The Final Destination with 2 genres
+  ✅ Updated: Avatar: The Way of Water with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 92 of 200
+  ⏳ Processing: Twilight (MOVIE)
+  ⏳ Processing: Harry Potter and the Order of the Phoenix (MOVIE)
+  ⏳ Processing: Dune (MOVIE)
+  ⏳ Processing: Solo Leveling -ReAwakening- (MOVIE)
+  ⏳ Processing: Dirty Angels (MOVIE)
+  ✅ Updated: Dune with 2 genres
+  ✅ Updated: Harry Potter and the Order of the Phoenix with 2 genres
+  ✅ Updated: Twilight with 3 genres
+  ✅ Updated: Dirty Angels with 4 genres
+  ✅ Updated: Solo Leveling -ReAwakening- with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 93 of 200
+  ⏳ Processing: Zootopia (MOVIE)
+  ⏳ Processing: Room in Rome (MOVIE)
+  ⏳ Processing: Suspicious Minds (TV_SHOW)
+  ⏳ Processing: Pirates of the Caribbean: The Curse of the Black Pearl (MOVIE)
+  ⏳ Processing: Prey (MOVIE)
+  ✅ Updated: Room in Rome with 2 genres
+  ✅ Updated: Suspicious Minds with 3 genres
+  ✅ Updated: Prey with 3 genres
+  ✅ Updated: Pirates of the Caribbean: The Curse of the Black Pearl with 3 genres
+  ✅ Updated: Zootopia with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 94 of 200
+  ⏳ Processing: Prisoners (MOVIE)
+  ⏳ Processing: Ratatouille (MOVIE)
+  ⏳ Processing: Hotel Desire (MOVIE)
+  ⏳ Processing: The Dark Knight (MOVIE)
+  ⏳ Processing: Smile 2 (MOVIE)
+  ✅ Updated: Hotel Desire with 2 genres
+  ✅ Updated: Smile 2 with 2 genres
+  ✅ Updated: Prisoners with 3 genres
+  ✅ Updated: The Dark Knight with 4 genres
+  ✅ Updated: Ratatouille with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 95 of 200
+  ⏳ Processing: The Phoenician Scheme (MOVIE)
+  ⏳ Processing: Spider-Man: Homecoming (MOVIE)
+  ⏳ Processing: 12 Angry Men (MOVIE)
+  ⏳ Processing: The Wolf of Wall Street (MOVIE)
+  ⏳ Processing: Fight Club (MOVIE)
+  ✅ Updated: Fight Club with 1 genres
+  ✅ Updated: 12 Angry Men with 1 genres
+  ✅ Updated: The Phoenician Scheme with 2 genres
+  ✅ Updated: The Wolf of Wall Street with 3 genres
+  ✅ Updated: Spider-Man: Homecoming with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 96 of 200
+  ⏳ Processing: Pulp Fiction (MOVIE)
+  ⏳ Processing: Harry Potter and the Half-Blood Prince (MOVIE)
+  ⏳ Processing: Jurassic World Dominion (MOVIE)
+  ⏳ Processing: The Lion King (MOVIE)
+  ⏳ Processing: Carjackers (MOVIE)
+  ✅ Updated: Harry Potter and the Half-Blood Prince with 2 genres
+  ✅ Updated: Pulp Fiction with 3 genres
+  ✅ Updated: Jurassic World Dominion with 3 genres
+  ✅ Updated: Carjackers with 2 genres
+  ✅ Updated: The Lion King with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 97 of 200
+  ⏳ Processing: John Wick: Chapter 2 (MOVIE)
+  ⏳ Processing: Dog Man (MOVIE)
+  ⏳ Processing: Predator (MOVIE)
+  ⏳ Processing: Avatar (MOVIE)
+  ⏳ Processing: Friendship (MOVIE)
+  ✅ Updated: Friendship with 1 genres
+  ✅ Updated: John Wick: Chapter 2 with 3 genres
+  ✅ Updated: Predator with 4 genres
+  ✅ Updated: Dog Man with 4 genres
+  ✅ Updated: Avatar with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 98 of 200
+  ⏳ Processing: Toy Story (MOVIE)
+  ⏳ Processing: The Hangover (MOVIE)
+  ⏳ Processing: Fast & Furious Presents: Hobbs & Shaw (MOVIE)
+  ⏳ Processing: Mission: Impossible - Fallout (MOVIE)
+  ⏳ Processing: Harry Potter and the Deathly Hallows: Part 2 (MOVIE)
+  ✅ Updated: The Hangover with 1 genres
+  ✅ Updated: Mission: Impossible - Fallout with 2 genres
+  ✅ Updated: Harry Potter and the Deathly Hallows: Part 2 with 2 genres
+  ✅ Updated: Fast & Furious Presents: Hobbs & Shaw with 3 genres
+  ✅ Updated: Toy Story with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 99 of 200
+  ⏳ Processing: Transformers One (MOVIE)
+  ⏳ Processing: Another Simple Favor (MOVIE)
+  ⏳ Processing: Avengers: Endgame (MOVIE)
+  ⏳ Processing: The Karate Kid (MOVIE)
+  ⏳ Processing: Monsters, Inc. (MOVIE)
+  ✅ Updated: Monsters, Inc. with 3 genres
+  ✅ Updated: Avengers: Endgame with 3 genres
+  ✅ Updated: Another Simple Favor with 3 genres
+  ✅ Updated: The Karate Kid with 4 genres
+  ✅ Updated: Transformers One with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 100 of 200
+  ⏳ Processing: Nosferatu (MOVIE)
+  ⏳ Processing: Your Name. (MOVIE)
+  ⏳ Processing: Leroy & Stitch (MOVIE)
+  ⏳ Processing: Coco (MOVIE)
+  ⏳ Processing: Transformers: Rise of the Beasts (MOVIE)
+  ✅ Updated: Transformers: Rise of the Beasts with 3 genres
+  ✅ Updated: Nosferatu with 3 genres
+  ✅ Updated: Your Name. with 3 genres
+  ✅ Updated: Leroy & Stitch with 4 genres
+  ✅ Updated: Coco with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 101 of 200
+  ⏳ Processing: Baywatch (MOVIE)
+  ⏳ Processing: The Garfield Movie (MOVIE)
+  ⏳ Processing: Toy Story 2 (MOVIE)
+  ⏳ Processing: Plankton: The Movie (MOVIE)
+  ⏳ Processing: Beauty and the Beast (MOVIE)
+  ✅ Updated: Baywatch with 3 genres
+  ✅ Updated: Toy Story 2 with 3 genres
+  ✅ Updated: Beauty and the Beast with 3 genres
+  ✅ Updated: The Garfield Movie with 4 genres
+  ✅ Updated: Plankton: The Movie with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 102 of 200
+  ⏳ Processing: The Batman (MOVIE)
+  ⏳ Processing: Harry Potter and the Deathly Hallows: Part 1 (MOVIE)
+  ⏳ Processing: Once Upon a Witch's Death (TV_SHOW)
+  ⏳ Processing: Guardians of the Galaxy Vol. 2 (MOVIE)
+  ⏳ Processing: Fury (MOVIE)
+  ✅ Updated: Once Upon a Witch's Death with 3 genres
+  ✅ Updated: Fury with 3 genres
+  ✅ Updated: Harry Potter and the Deathly Hallows: Part 1 with 2 genres
+  ✅ Updated: Guardians of the Galaxy Vol. 2 with 3 genres
+  ✅ Updated: The Batman with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 103 of 200
+  ⏳ Processing: Godzilla x Kong: The New Empire (MOVIE)
+  ⏳ Processing: Spider-Man: Far From Home (MOVIE)
+  ⏳ Processing: Se7en (MOVIE)
+  ⏳ Processing: Big Hero 6 (MOVIE)
+  ⏳ Processing: The Notebook (MOVIE)
+  ✅ Updated: The Notebook with 2 genres
+  ✅ Updated: Se7en with 3 genres
+  ✅ Updated: Godzilla x Kong: The New Empire with 3 genres
+  ✅ Updated: Big Hero 6 with 5 genres
+  ✅ Updated: Spider-Man: Far From Home with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 104 of 200
+  ⏳ Processing: John Wick: Chapter 3 - Parabellum (MOVIE)
+  ⏳ Processing: Conclave (MOVIE)
+  ⏳ Processing: Forrest Gump (MOVIE)
+  ⏳ Processing: Léon: The Professional (MOVIE)
+  ⏳ Processing: The Beekeeper (MOVIE)
+  ✅ Updated: Conclave with 2 genres
+  ✅ Updated: The Beekeeper with 3 genres
+  ✅ Updated: John Wick: Chapter 3 - Parabellum with 3 genres
+  ✅ Updated: Léon: The Professional with 3 genres
+  ✅ Updated: Forrest Gump with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 105 of 200
+  ⏳ Processing: Sonic the Hedgehog 2 (MOVIE)
+  ⏳ Processing: Pleasure (MOVIE)
+  ⏳ Processing: Frozen (MOVIE)
+  ⏳ Processing: Elevation (MOVIE)
+  ⏳ Processing: Doctor Strange in the Multiverse of Madness (MOVIE)
+  ✅ Updated: Pleasure with 1 genres
+  ✅ Updated: Doctor Strange in the Multiverse of Madness with 3 genres
+  ✅ Updated: Elevation with 3 genres
+  ✅ Updated: Sonic the Hedgehog 2 with 4 genres
+  ✅ Updated: Frozen with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 106 of 200
+  ⏳ Processing: Fifty Shades Freed (MOVIE)
+  ⏳ Processing: Spirited Away (MOVIE)
+  ⏳ Processing: Blade Runner 2049 (MOVIE)
+  ⏳ Processing: Iron Man (MOVIE)
+  ⏳ Processing: Fight or Flight (MOVIE)
+  ✅ Updated: Fifty Shades Freed with 2 genres
+  ✅ Updated: Blade Runner 2049 with 2 genres
+  ✅ Updated: Iron Man with 3 genres
+  ✅ Updated: Spirited Away with 3 genres
+  ✅ Updated: Fight or Flight with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 107 of 200
+  ⏳ Processing: Furiosa: A Mad Max Saga (MOVIE)
+  ⏳ Processing: Scarface (MOVIE)
+  ⏳ Processing: Elemental (MOVIE)
+  ⏳ Processing: The Lord of the Rings: The Return of the King (MOVIE)
+  ⏳ Processing: The Lord of the Rings: The War of the Rohirrim (MOVIE)
+  ✅ Updated: Furiosa: A Mad Max Saga with 3 genres
+  ✅ Updated: Scarface with 3 genres
+  ✅ Updated: The Lord of the Rings: The Return of the King with 3 genres
+  ✅ Updated: The Lord of the Rings: The War of the Rohirrim with 4 genres
+  ✅ Updated: Elemental with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 108 of 200
+  ⏳ Processing: Kingdom of the Planet of the Apes (MOVIE)
+  ⏳ Processing: Alien (MOVIE)
+  ⏳ Processing: Jurassic World (MOVIE)
+  ⏳ Processing: Alarum (MOVIE)
+  ⏳ Processing: Popeye the Slayer Man (MOVIE)
+  ✅ Updated: Popeye the Slayer Man with 1 genres
+  ✅ Updated: Alien with 2 genres
+  ✅ Updated: Alarum with 3 genres
+  ✅ Updated: Jurassic World with 4 genres
+  ✅ Updated: Kingdom of the Planet of the Apes with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 109 of 200
+  ⏳ Processing: Train to Busan (MOVIE)
+  ⏳ Processing: Fall (MOVIE)
+  ⏳ Processing: Spider-Man (MOVIE)
+  ⏳ Processing: Star Wars: The Last Jedi (MOVIE)
+  ⏳ Processing: Grown Ups (MOVIE)
+  ✅ Updated: Fall with 1 genres
+  ✅ Updated: Grown Ups with 1 genres
+  ✅ Updated: Spider-Man with 2 genres
+  ✅ Updated: Star Wars: The Last Jedi with 3 genres
+  ✅ Updated: Train to Busan with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 110 of 200
+  ⏳ Processing: Migration (MOVIE)
+  ⏳ Processing: The Handmaiden (MOVIE)
+  ⏳ Processing: World War Z (MOVIE)
+  ⏳ Processing: Pirates of the Caribbean: Dead Man's Chest (MOVIE)
+  ⏳ Processing: It (MOVIE)
+  ✅ Updated: It with 2 genres
+  ✅ Updated: The Handmaiden with 3 genres
+  ✅ Updated: Migration with 4 genres
+  ✅ Updated: World War Z with 4 genres
+  ✅ Updated: Pirates of the Caribbean: Dead Man's Chest with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 111 of 200
+  ⏳ Processing: Civil War (MOVIE)
+  ⏳ Processing: Peter Pan's Neverland Nightmare (MOVIE)
+  ⏳ Processing: Gladiator (MOVIE)
+  ⏳ Processing: Gone Girl (MOVIE)
+  ⏳ Processing: Ice Age (MOVIE)
+  ✅ Updated: Civil War with 3 genres
+  ✅ Updated: Gone Girl with 3 genres
+  ✅ Updated: Ice Age with 4 genres
+  ✅ Updated: Peter Pan's Neverland Nightmare with 3 genres
+  ✅ Updated: Gladiator with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 112 of 200
+  ⏳ Processing: Five Nights at Freddy's (MOVIE)
+  ⏳ Processing: Ready Player One (MOVIE)
+  ⏳ Processing: Heretic (MOVIE)
+  ⏳ Processing: Inglourious Basterds (MOVIE)
+  ⏳ Processing: Tangled (MOVIE)
+  ✅ Updated: Heretic with 2 genres
+  ✅ Updated: Five Nights at Freddy's with 2 genres
+  ✅ Updated: Inglourious Basterds with 3 genres
+  ✅ Updated: Tangled with 3 genres
+  ✅ Updated: Ready Player One with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 113 of 200
+  ⏳ Processing: The Idea of You (MOVIE)
+  ⏳ Processing: Road House (MOVIE)
+  ⏳ Processing: Bad Influence (MOVIE)
+  ⏳ Processing: Making Of (MOVIE)
+  ⏳ Processing: Henry Danger: The Movie (MOVIE)
+  ✅ Updated: Road House with 2 genres
+  ✅ Updated: Making Of with 2 genres
+  ✅ Updated: Bad Influence with 3 genres
+  ✅ Updated: The Idea of You with 3 genres
+  ✅ Updated: Henry Danger: The Movie with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 114 of 200
+  ⏳ Processing: 10 Things I Hate About You (MOVIE)
+  ⏳ Processing: Back to the Future (MOVIE)
+  ⏳ Processing: Top Gun (MOVIE)
+  ⏳ Processing: John Wick (MOVIE)
+  ⏳ Processing: Ford v Ferrari (MOVIE)
+  ✅ Updated: John Wick with 2 genres
+  ✅ Updated: Top Gun with 2 genres
+  ✅ Updated: 10 Things I Hate About You with 3 genres
+  ✅ Updated: Ford v Ferrari with 3 genres
+  ✅ Updated: Back to the Future with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 115 of 200
+  ⏳ Processing: Inside Out (MOVIE)
+  ⏳ Processing: Mulan (MOVIE)
+  ⏳ Processing: Snowpiercer (MOVIE)
+  ⏳ Processing: Guardians of the Galaxy Vol. 3 (MOVIE)
+  ⏳ Processing: The Green Mile (MOVIE)
+  ✅ Updated: The Green Mile with 3 genres
+  ✅ Updated: Snowpiercer with 3 genres
+  ✅ Updated: Mulan with 3 genres
+  ✅ Updated: Guardians of the Galaxy Vol. 3 with 4 genres
+  ✅ Updated: Inside Out with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 116 of 200
+  ⏳ Processing: Survive (MOVIE)
+  ⏳ Processing: IF (MOVIE)
+  ⏳ Processing: Trainwreck (MOVIE)
+  ⏳ Processing: The Lion King (MOVIE)
+  ⏳ Processing: Mission: Impossible - Ghost Protocol (MOVIE)
+  ✅ Updated: The Lion King with 3 genres
+  ✅ Updated: Trainwreck with 2 genres
+  ✅ Updated: Mission: Impossible - Ghost Protocol with 3 genres
+  ✅ Updated: Survive with 4 genres
+  ✅ Updated: IF with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 117 of 200
+  ⏳ Processing: Below Her Mouth (MOVIE)
+  ⏳ Processing: Encanto (MOVIE)
+  ⏳ Processing: Black Panther: Wakanda Forever (MOVIE)
+  ⏳ Processing: Pirates of the Caribbean: At World's End (MOVIE)
+  ⏳ Processing: Pirates of the Caribbean: On Stranger Tides (MOVIE)
+  ✅ Updated: Below Her Mouth with 2 genres
+  ✅ Updated: Pirates of the Caribbean: At World's End with 3 genres
+  ✅ Updated: Pirates of the Caribbean: On Stranger Tides with 3 genres
+  ✅ Updated: Black Panther: Wakanda Forever with 3 genres
+  ✅ Updated: Encanto with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 118 of 200
+  ⏳ Processing: Love Hurts (MOVIE)
+  ⏳ Processing: Legend of the BoneKnapper Dragon (MOVIE)
+  ⏳ Processing: Kingsman: The Golden Circle (MOVIE)
+  ⏳ Processing: Venom (MOVIE)
+  ⏳ Processing: The Equalizer (MOVIE)
+  ✅ Updated: Venom with 2 genres
+  ✅ Updated: Love Hurts with 3 genres
+  ✅ Updated: The Equalizer with 3 genres
+  ✅ Updated: Kingsman: The Golden Circle with 4 genres
+  ✅ Updated: Legend of the BoneKnapper Dragon with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 119 of 200
+  ⏳ Processing: Anon (MOVIE)
+  ⏳ Processing: Joker (MOVIE)
+  ⏳ Processing: Shutter Island (MOVIE)
+  ⏳ Processing: Shrek 2 (MOVIE)
+  ⏳ Processing: Black Bag (MOVIE)
+  ✅ Updated: Black Bag with 3 genres
+  ✅ Updated: Shutter Island with 3 genres
+  ✅ Updated: Joker with 3 genres
+  ✅ Updated: Shrek 2 with 5 genres
+  ✅ Updated: Anon with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 120 of 200
+  ⏳ Processing: Presence (MOVIE)
+  ⏳ Processing: Aquaman and the Lost Kingdom (MOVIE)
+  ⏳ Processing: The Truman Show (MOVIE)
+  ⏳ Processing: Werewolves (MOVIE)
+  ⏳ Processing: Cinderella (MOVIE)
+  ✅ Updated: The Truman Show with 2 genres
+  ✅ Updated: Aquaman and the Lost Kingdom with 3 genres
+  ✅ Updated: Presence with 3 genres
+  ✅ Updated: Werewolves with 3 genres
+  ✅ Updated: Cinderella with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 121 of 200
+  ⏳ Processing: Whiplash (MOVIE)
+  ⏳ Processing: The Godfather Part II (MOVIE)
+  ⏳ Processing: Revival (TV_SHOW)
+  ⏳ Processing: Ghosted (MOVIE)
+  ⏳ Processing: The Terminator (MOVIE)
+  ✅ Updated: The Godfather Part II with 2 genres
+  ✅ Updated: Whiplash with 2 genres
+  ✅ Updated: The Terminator with 3 genres
+  ✅ Updated: Ghosted with 3 genres
+  ✅ Updated: Revival with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 122 of 200
+  ⏳ Processing: The Lord of the Rings: The Two Towers (MOVIE)
+  ⏳ Processing: The Brutalist (MOVIE)
+  ⏳ Processing: Through My Window (MOVIE)
+  ⏳ Processing: Kung Fu Panda (MOVIE)
+  ⏳ Processing: The Hobbit: The Battle of the Five Armies (MOVIE)
+  ✅ Updated: The Brutalist with 1 genres
+  ✅ Updated: Through My Window with 3 genres
+  ✅ Updated: The Hobbit: The Battle of the Five Armies with 3 genres
+  ✅ Updated: The Lord of the Rings: The Two Towers with 3 genres
+  ✅ Updated: Kung Fu Panda with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 123 of 200
+  ⏳ Processing: Once Upon a Time in the West (MOVIE)
+  ⏳ Processing: Marvel's Future Avengers (TV_SHOW)
+  ⏳ Processing: Back in Action (MOVIE)
+  ⏳ Processing: Ballerina (MOVIE)
+  ⏳ Processing: Azrael (MOVIE)
+  ✅ Updated: Ballerina with 2 genres
+  ✅ Updated: Back in Action with 2 genres
+  ✅ Updated: Once Upon a Time in the West with 2 genres
+  ✅ Updated: Azrael with 3 genres
+  ✅ Updated: Marvel's Future Avengers with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 124 of 200
+  ⏳ Processing: Girl in the Basement (MOVIE)
+  ⏳ Processing: Spider-Man: Into the Spider-Verse (MOVIE)
+  ⏳ Processing: The Twilight Saga: Breaking Dawn - Part 1 (MOVIE)
+  ⏳ Processing: The Conjuring 2 (MOVIE)
+  ⏳ Processing: Jaws (MOVIE)
+  ✅ Updated: The Conjuring 2 with 1 genres
+  ✅ Updated: Girl in the Basement with 3 genres
+  ✅ Updated: The Twilight Saga: Breaking Dawn - Part 1 with 3 genres
+  ✅ Updated: Jaws with 3 genres
+  ✅ Updated: Spider-Man: Into the Spider-Verse with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 125 of 200
+  ⏳ Processing: Intimacy (MOVIE)
+  ⏳ Processing: Finding Nemo (MOVIE)
+  ⏳ Processing: Borgo (MOVIE)
+  ⏳ Processing: Maleficent (MOVIE)
+  ⏳ Processing: No Hard Feelings (MOVIE)
+  ✅ Updated: No Hard Feelings with 2 genres
+  ✅ Updated: Borgo with 2 genres
+  ✅ Updated: Finding Nemo with 2 genres
+  ✅ Updated: Intimacy with 3 genres
+  ✅ Updated: Maleficent with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 126 of 200
+  ⏳ Processing: Catch Me If You Can (MOVIE)
+  ⏳ Processing: Captain America: Civil War (MOVIE)
+  ⏳ Processing: 2012 (MOVIE)
+  ⏳ Processing: The Next 365 Days (MOVIE)
+  ⏳ Processing: The Conjuring: The Devil Made Me Do It (MOVIE)
+  ✅ Updated: The Next 365 Days with 2 genres
+  ✅ Updated: Catch Me If You Can with 2 genres
+  ✅ Updated: Captain America: Civil War with 3 genres
+  ✅ Updated: The Conjuring: The Devil Made Me Do It with 3 genres
+  ✅ Updated: 2012 with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 127 of 200
+  ⏳ Processing: Howl's Moving Castle (MOVIE)
+  ⏳ Processing: Charlie and the Chocolate Factory (MOVIE)
+  ⏳ Processing: Cruella (MOVIE)
+  ⏳ Processing: The Twilight Saga: Breaking Dawn - Part 2 (MOVIE)
+  ⏳ Processing: Deadpool (MOVIE)
+  ✅ Updated: Cruella with 3 genres
+  ✅ Updated: Howl's Moving Castle with 3 genres
+  ✅ Updated: Deadpool with 3 genres
+  ✅ Updated: Charlie and the Chocolate Factory with 4 genres
+  ✅ Updated: The Twilight Saga: Breaking Dawn - Part 2 with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 128 of 200
+  ⏳ Processing: Up (MOVIE)
+  ⏳ Processing: Heat (MOVIE)
+  ⏳ Processing: Doctor Strange (MOVIE)
+  ⏳ Processing: The Equalizer 3 (MOVIE)
+  ⏳ Processing: Winter Spring Summer or Fall (MOVIE)
+  ✅ Updated: Winter Spring Summer or Fall with 3 genres
+  ✅ Updated: Doctor Strange with 3 genres
+  ✅ Updated: The Equalizer 3 with 3 genres
+  ✅ Updated: Heat with 3 genres
+  ✅ Updated: Up with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 129 of 200
+  ⏳ Processing: Sonic the Hedgehog (MOVIE)
+  ⏳ Processing: Arrival (MOVIE)
+  ⏳ Processing: Avengers: Age of Ultron (MOVIE)
+  ⏳ Processing: M3GAN (MOVIE)
+  ⏳ Processing: Mission: Impossible - Rogue Nation (MOVIE)
+  ✅ Updated: M3GAN with 2 genres
+  ✅ Updated: Mission: Impossible - Rogue Nation with 2 genres
+  ✅ Updated: Avengers: Age of Ultron with 3 genres
+  ✅ Updated: Arrival with 3 genres
+  ✅ Updated: Sonic the Hedgehog with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 130 of 200
+  ⏳ Processing: Nobody (MOVIE)
+  ⏳ Processing: The Nun (MOVIE)
+  ⏳ Processing: Stitch! The Movie (MOVIE)
+  ⏳ Processing: The Family Plan (MOVIE)
+  ⏳ Processing: Black Panther (MOVIE)
+  ✅ Updated: The Nun with 1 genres
+  ✅ Updated: Nobody with 2 genres
+  ✅ Updated: The Family Plan with 3 genres
+  ✅ Updated: Black Panther with 3 genres
+  ✅ Updated: Stitch! The Movie with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 131 of 200
+  ⏳ Processing: Hacksaw Ridge (MOVIE)
+  ⏳ Processing: Spider-Man 3 (MOVIE)
+  ⏳ Processing: Schindler's List (MOVIE)
+  ⏳ Processing: The Little Mermaid (MOVIE)
+  ⏳ Processing: GoodFellas (MOVIE)
+  ✅ Updated: GoodFellas with 2 genres
+  ✅ Updated: Spider-Man 3 with 3 genres
+  ✅ Updated: Hacksaw Ridge with 3 genres
+  ✅ Updated: The Little Mermaid with 4 genres
+  ✅ Updated: Schindler's List with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 132 of 200
+  ⏳ Processing: Rush Hour (MOVIE)
+  ⏳ Processing: Hijack 1971 (MOVIE)
+  ⏳ Processing: The Gardener (MOVIE)
+  ⏳ Processing: The Crow (MOVIE)
+  ⏳ Processing: Challengers (MOVIE)
+  ✅ Updated: The Gardener with 2 genres
+  ✅ Updated: Challengers with 2 genres
+  ✅ Updated: Hijack 1971 with 3 genres
+  ✅ Updated: Rush Hour with 3 genres
+  ✅ Updated: The Crow with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 133 of 200
+  ⏳ Processing: Oldboy (MOVIE)
+  ⏳ Processing: Beating Hearts (MOVIE)
+  ⏳ Processing: Paddington in Peru (MOVIE)
+  ⏳ Processing: The Amazing Spider-Man (MOVIE)
+  ⏳ Processing: Django Unchained (MOVIE)
+  ✅ Updated: Beating Hearts with 3 genres
+  ✅ Updated: The Amazing Spider-Man with 3 genres
+  ✅ Updated: Django Unchained with 2 genres
+  ✅ Updated: Paddington in Peru with 3 genres
+  ✅ Updated: Oldboy with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 134 of 200
+  ⏳ Processing: Troy (MOVIE)
+  ⏳ Processing: Iron Man 2 (MOVIE)
+  ⏳ Processing: The Dark Knight Rises (MOVIE)
+  ⏳ Processing: Kingdom of Heaven (MOVIE)
+  ⏳ Processing: Squid Game: Making Season 2 (MOVIE)
+  ✅ Updated: Squid Game: Making Season 2 with 1 genres
+  ✅ Updated: Troy with 3 genres
+  ✅ Updated: Iron Man 2 with 3 genres
+  ✅ Updated: The Dark Knight Rises with 4 genres
+  ✅ Updated: Kingdom of Heaven with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 135 of 200
+  ⏳ Processing: The Emperor's New Groove (MOVIE)
+  ⏳ Processing: Terminator 2: Judgment Day (MOVIE)
+  ⏳ Processing: Scream (MOVIE)
+  ⏳ Processing: La La Land (MOVIE)
+  ⏳ Processing: Batman Begins (MOVIE)
+  ✅ Updated: Scream with 3 genres
+  ✅ Updated: Terminator 2: Judgment Day with 3 genres
+  ✅ Updated: Batman Begins with 3 genres
+  ✅ Updated: La La Land with 4 genres
+  ✅ Updated: The Emperor's New Groove with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 136 of 200
+  ⏳ Processing: The Karate Kid (MOVIE)
+  ⏳ Processing: 20th Century Girl (MOVIE)
+  ⏳ Processing: Good Will Hunting (MOVIE)
+  ⏳ Processing: Life (MOVIE)
+  ⏳ Processing: Gran Turismo (MOVIE)
+  ✅ Updated: Good Will Hunting with 1 genres
+  ✅ Updated: Gran Turismo with 3 genres
+  ✅ Updated: 20th Century Girl with 2 genres
+  ✅ Updated: Life with 4 genres
+  ✅ Updated: The Karate Kid with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 137 of 200
+  ⏳ Processing: The Boy and the Heron (MOVIE)
+  ⏳ Processing: Get Out (MOVIE)
+  ⏳ Processing: Wonka (MOVIE)
+  ⏳ Processing: A Quiet Place: Day One (MOVIE)
+  ⏳ Processing: Star Wars: The Rise of Skywalker (MOVIE)
+  ✅ Updated: A Quiet Place: Day One with 3 genres
+  ✅ Updated: Get Out with 3 genres
+  ✅ Updated: Wonka with 3 genres
+  ✅ Updated: Star Wars: The Rise of Skywalker with 3 genres
+  ✅ Updated: The Boy and the Heron with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 138 of 200
+  ⏳ Processing: Underdogs (TV_SHOW)
+  ⏳ Processing: Killers of the Flower Moon (MOVIE)
+  ⏳ Processing: The Nun II (MOVIE)
+  ⏳ Processing: Hidden Figures (MOVIE)
+  ⏳ Processing: Furious 7 (MOVIE)
+  ✅ Updated: The Nun II with 1 genres
+  ✅ Updated: Underdogs with 1 genres
+  ✅ Updated: Hidden Figures with 2 genres
+  ✅ Updated: Killers of the Flower Moon with 3 genres
+  ✅ Updated: Furious 7 with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 139 of 200
+  ⏳ Processing: The Hunger Games: Mockingjay - Part 1 (MOVIE)
+  ⏳ Processing: Wrath of Man (MOVIE)
+  ⏳ Processing: Mad Max: Fury Road (MOVIE)
+  ⏳ Processing: Friday the 13th (MOVIE)
+  ⏳ Processing: Annabelle (MOVIE)
+  ✅ Updated: Annabelle with 1 genres
+  ✅ Updated: Wrath of Man with 3 genres
+  ✅ Updated: Friday the 13th with 1 genres
+  ✅ Updated: The Hunger Games: Mockingjay - Part 1 with 3 genres
+  ✅ Updated: Mad Max: Fury Road with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 140 of 200
+  ⏳ Processing: Meg 2: The Trench (MOVIE)
+  ⏳ Processing: Turno nocturno (MOVIE)
+  ⏳ Processing: The Hobbit: An Unexpected Journey (MOVIE)
+  ⏳ Processing: Sniper: The Last Stand (MOVIE)
+  ⏳ Processing: Grown Ups 2 (MOVIE)
+  ✅ Updated: Grown Ups 2 with 1 genres
+  ✅ Updated: Turno nocturno with 1 genres
+  ✅ Updated: Sniper: The Last Stand with 2 genres
+  ✅ Updated: Meg 2: The Trench with 3 genres
+  ✅ Updated: The Hobbit: An Unexpected Journey with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 141 of 200
+  ⏳ Processing: Cars (MOVIE)
+  ⏳ Processing: Mission: Impossible II (MOVIE)
+  ⏳ Processing: Sing 2 (MOVIE)
+  ⏳ Processing: Shrek Forever After (MOVIE)
+  ⏳ Processing: The Devil Wears Prada (MOVIE)
+  ✅ Updated: The Devil Wears Prada with 2 genres
+  ✅ Updated: Mission: Impossible II with 3 genres
+  ✅ Updated: Sing 2 with 4 genres
+  ✅ Updated: Cars with 4 genres
+  ✅ Updated: Shrek Forever After with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 142 of 200
+  ⏳ Processing: Luca (MOVIE)
+  ⏳ Processing: A Bronx Tale (MOVIE)
+  ⏳ Processing: Man of Steel (MOVIE)
+  ⏳ Processing: Palmer (MOVIE)
+  ⏳ Processing: Braveheart (MOVIE)
+  ✅ Updated: Palmer with 1 genres
+  ✅ Updated: A Bronx Tale with 2 genres
+  ✅ Updated: Man of Steel with 3 genres
+  ✅ Updated: Braveheart with 4 genres
+  ✅ Updated: Luca with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 143 of 200
+  ⏳ Processing: White Chicks (MOVIE)
+  ⏳ Processing: Cars 2 (MOVIE)
+  ⏳ Processing: Pirates of the Caribbean: Dead Men Tell No Tales (MOVIE)
+  ⏳ Processing: The Witch: Part 2. The Other One (MOVIE)
+  ⏳ Processing: Pacific Rim (MOVIE)
+  ✅ Updated: White Chicks with 2 genres
+  ✅ Updated: Pacific Rim with 3 genres
+  ✅ Updated: Pirates of the Caribbean: Dead Men Tell No Tales with 3 genres
+  ✅ Updated: The Witch: Part 2. The Other One with 4 genres
+  ✅ Updated: Cars 2 with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 144 of 200
+  ⏳ Processing: Subservience (MOVIE)
+  ⏳ Processing: Expend4bles (MOVIE)
+  ⏳ Processing: Corpse Bride (MOVIE)
+  ⏳ Processing: Now You See Me (MOVIE)
+  ⏳ Processing: Black Widow (MOVIE)
+  ✅ Updated: Now You See Me with 2 genres
+  ✅ Updated: Subservience with 3 genres
+  ✅ Updated: Corpse Bride with 3 genres
+  ✅ Updated: Black Widow with 3 genres
+  ✅ Updated: Expend4bles with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 145 of 200
+  ⏳ Processing: The Incredibles (MOVIE)
+  ⏳ Processing: The Martian (MOVIE)
+  ⏳ Processing: Real Steel (MOVIE)
+  ⏳ Processing: Shang-Chi and the Legend of the Ten Rings (MOVIE)
+  ⏳ Processing: Saving Private Ryan (MOVIE)
+  ✅ Updated: Real Steel with 3 genres
+  ✅ Updated: The Martian with 3 genres
+  ✅ Updated: Shang-Chi and the Legend of the Ten Rings with 3 genres
+  ✅ Updated: Saving Private Ryan with 3 genres
+  ✅ Updated: The Incredibles with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 146 of 200
+  ⏳ Processing: My Neighbor Totoro (MOVIE)
+  ⏳ Processing: Predators (MOVIE)
+  ⏳ Processing: The Transporter (MOVIE)
+  ⏳ Processing: Raiders of the Lost Ark (MOVIE)
+  ⏳ Processing: The Ministry of Ungentlemanly Warfare (MOVIE)
+  ✅ Updated: Raiders of the Lost Ark with 2 genres
+  ✅ Updated: Predators with 3 genres
+  ✅ Updated: The Transporter with 3 genres
+  ✅ Updated: My Neighbor Totoro with 3 genres
+  ✅ Updated: The Ministry of Ungentlemanly Warfare with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 147 of 200
+  ⏳ Processing: The Suicide Squad (MOVIE)
+  ⏳ Processing: Plane (MOVIE)
+  ⏳ Processing: Talk to Me (MOVIE)
+  ⏳ Processing: Everything Everywhere All at Once (MOVIE)
+  ⏳ Processing: It Chapter Two (MOVIE)
+  ✅ Updated: Talk to Me with 1 genres
+  ✅ Updated: It Chapter Two with 2 genres
+  ✅ Updated: Plane with 3 genres
+  ✅ Updated: Everything Everywhere All at Once with 3 genres
+  ✅ Updated: The Suicide Squad with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 148 of 200
+  ⏳ Processing: Carry-On (MOVIE)
+  ⏳ Processing: Cars 3 (MOVIE)
+  ⏳ Processing: Black Hawk Down (MOVIE)
+  ⏳ Processing: Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train (MOVIE)
+  ⏳ Processing: Her (MOVIE)
+  ✅ Updated: Carry-On with 2 genres
+  ✅ Updated: Her with 3 genres
+  ✅ Updated: Black Hawk Down with 3 genres
+  ✅ Updated: Cars 3 with 4 genres
+  ✅ Updated: Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 149 of 200
+  ⏳ Processing: Abigail (MOVIE)
+  ⏳ Processing: Mean Girls (MOVIE)
+  ⏳ Processing: Knives Out (MOVIE)
+  ⏳ Processing: WALL·E (MOVIE)
+  ⏳ Processing: The Creator (MOVIE)
+  ✅ Updated: Abigail with 2 genres
+  ✅ Updated: Mean Girls with 2 genres
+  ✅ Updated: Knives Out with 3 genres
+  ✅ Updated: WALL·E with 3 genres
+  ✅ Updated: The Creator with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 150 of 200
+  ⏳ Processing: We Were Liars (TV_SHOW)
+  ⏳ Processing: Shrek the Third (MOVIE)
+  ⏳ Processing: The Voyeurs (MOVIE)
+  ⏳ Processing: Lucy (MOVIE)
+  ⏳ Processing: The Princess and the Frog (MOVIE)
+  ✅ Updated: The Voyeurs with 1 genres
+  ✅ Updated: We Were Liars with 2 genres
+  ✅ Updated: Lucy with 2 genres
+  ✅ Updated: The Princess and the Frog with 4 genres
+  ✅ Updated: Shrek the Third with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 151 of 200
+  ⏳ Processing: Borderlands (MOVIE)
+  ⏳ Processing: A Quiet Place (MOVIE)
+  ⏳ Processing: Batman v Superman: Dawn of Justice (MOVIE)
+  ⏳ Processing: A Complete Unknown (MOVIE)
+  ⏳ Processing: The Electric State (MOVIE)
+  ✅ Updated: A Complete Unknown with 2 genres
+  ✅ Updated: The Electric State with 3 genres
+  ✅ Updated: Borderlands with 3 genres
+  ✅ Updated: Batman v Superman: Dawn of Justice with 3 genres
+  ✅ Updated: A Quiet Place with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 152 of 200
+  ⏳ Processing: Beauty and the Beast (MOVIE)
+  ⏳ Processing: The Twilight Saga: Eclipse (MOVIE)
+  ⏳ Processing: Project Silence (MOVIE)
+  ⏳ Processing: Rampage (MOVIE)
+  ⏳ Processing: Midsommar (MOVIE)
+  ✅ Updated: Midsommar with 3 genres
+  ✅ Updated: Rampage with 3 genres
+  ✅ Updated: Beauty and the Beast with 4 genres
+  ✅ Updated: Project Silence with 5 genres
+  ✅ Updated: The Twilight Saga: Eclipse with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 153 of 200
+  ⏳ Processing: Heart Eyes (MOVIE)
+  ⏳ Processing: Bullet Train (MOVIE)
+  ⏳ Processing: The Magnificent Seven (MOVIE)
+  ⏳ Processing: Mission: Impossible III (MOVIE)
+  ⏳ Processing: The Alto Knights (MOVIE)
+  ✅ Updated: Mission: Impossible III with 3 genres
+  ✅ Updated: Bullet Train with 3 genres
+  ✅ Updated: The Magnificent Seven with 3 genres
+  ✅ Updated: The Alto Knights with 3 genres
+  ✅ Updated: Heart Eyes with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 154 of 200
+  ⏳ Processing: The Intouchables (MOVIE)
+  ⏳ Processing: The Hunger Games: The Ballad of Songbirds & Snakes (MOVIE)
+  ⏳ Processing: Dragons: Gift of the Night Fury (MOVIE)
+  ⏳ Processing: The Meg (MOVIE)
+  ⏳ Processing: The Count of Monte Cristo (MOVIE)
+  ✅ Updated: The Intouchables with 2 genres
+  ✅ Updated: The Count of Monte Cristo with 3 genres
+  ✅ Updated: The Meg with 3 genres
+  ✅ Updated: Dragons: Gift of the Night Fury with 4 genres
+  ✅ Updated: The Hunger Games: The Ballad of Songbirds & Snakes with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 155 of 200
+  ⏳ Processing: Turning Red (MOVIE)
+  ⏳ Processing: Deadpool 2 (MOVIE)
+  ⏳ Processing: The Prestige (MOVIE)
+  ⏳ Processing: The Fall Guy (MOVIE)
+  ⏳ Processing: Hotel Transylvania: Transformania (MOVIE)
+  ✅ Updated: The Prestige with 3 genres
+  ✅ Updated: Turning Red with 4 genres
+  ✅ Updated: Deadpool 2 with 3 genres
+  ✅ Updated: The Fall Guy with 4 genres
+  ✅ Updated: Hotel Transylvania: Transformania with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 156 of 200
+  ⏳ Processing: RE:BORN (MOVIE)
+  ⏳ Processing: Malena (MOVIE)
+  ⏳ Processing: American Pie (MOVIE)
+  ⏳ Processing: Eternal Sunshine of the Spotless Mind (MOVIE)
+  ⏳ Processing: Blink Twice (MOVIE)
+  ✅ Updated: Malena with 1 genres
+  ✅ Updated: American Pie with 2 genres
+  ✅ Updated: RE:BORN with 2 genres
+  ✅ Updated: Eternal Sunshine of the Spotless Mind with 3 genres
+  ✅ Updated: Blink Twice with 2 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 157 of 200
+  ⏳ Processing: The Predator (MOVIE)
+  ⏳ Processing: Alice in Wonderland (MOVIE)
+  ⏳ Processing: Absolution (MOVIE)
+  ⏳ Processing: The Life List (MOVIE)
+  ⏳ Processing: Star Wars: The Force Awakens (MOVIE)
+  ✅ Updated: Alice in Wonderland with 3 genres
+  ✅ Updated: The Life List with 3 genres
+  ✅ Updated: Star Wars: The Force Awakens with 3 genres
+  ✅ Updated: The Predator with 3 genres
+  ✅ Updated: Absolution with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 158 of 200
+  ⏳ Processing: Colombiana (MOVIE)
+  ⏳ Processing: Madame Web (MOVIE)
+  ⏳ Processing: Diary of a Nymphomaniac (MOVIE)
+  ⏳ Processing: Dead Poets Society (MOVIE)
+  ⏳ Processing: Ne Zha (MOVIE)
+  ✅ Updated: Dead Poets Society with 1 genres
+  ✅ Updated: Diary of a Nymphomaniac with 2 genres
+  ✅ Updated: Madame Web with 2 genres
+  ✅ Updated: Colombiana with 4 genres
+  ✅ Updated: Ne Zha with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 159 of 200
+  ⏳ Processing: The Mask (MOVIE)
+  ⏳ Processing: Logan (MOVIE)
+  ⏳ Processing: Zack Snyder's Justice League (MOVIE)
+  ⏳ Processing: Embrace in the Dark Night (TV_SHOW)
+  ⏳ Processing: Wonder Woman (MOVIE)
+  ✅ Updated: Embrace in the Dark Night with 3 genres
+  ✅ Updated: Logan with 3 genres
+  ✅ Updated: Wonder Woman with 3 genres
+  ✅ Updated: Zack Snyder's Justice League with 3 genres
+  ✅ Updated: The Mask with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 160 of 200
+  ⏳ Processing: Aladdin (MOVIE)
+  ⏳ Processing: Beetlejuice Beetlejuice (MOVIE)
+  ⏳ Processing: Guy Ritchie's The Covenant (MOVIE)
+  ⏳ Processing: Madagascar (MOVIE)
+  ⏳ Processing: Blade Runner (MOVIE)
+  ✅ Updated: Guy Ritchie's The Covenant with 3 genres
+  ✅ Updated: Beetlejuice Beetlejuice with 3 genres
+  ✅ Updated: Aladdin with 4 genres
+  ✅ Updated: Blade Runner with 3 genres
+  ✅ Updated: Madagascar with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 161 of 200
+  ⏳ Processing: Rogue One: A Star Wars Story (MOVIE)
+  ⏳ Processing: Miraculous World: Paris, Tales of Shadybug and Claw Noir (MOVIE)
+  ⏳ Processing: Cheeky (MOVIE)
+  ⏳ Processing: The Mummy (MOVIE)
+  ⏳ Processing: Karol G: Tomorrow Was Beautiful (MOVIE)
+  ✅ Updated: Karol G: Tomorrow Was Beautiful with 2 genres
+  ✅ Updated: Cheeky with 3 genres
+  ✅ Updated: The Mummy with 3 genres
+  ✅ Updated: Rogue One: A Star Wars Story with 3 genres
+  ✅ Updated: Miraculous World: Paris, Tales of Shadybug and Claw Noir with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 162 of 200
+  ⏳ Processing: Arcadian (MOVIE)
+  ⏳ Processing: Trap (MOVIE)
+  ⏳ Processing: Luck (MOVIE)
+  ⏳ Processing: Platoon (MOVIE)
+  ⏳ Processing: Pride & Prejudice (MOVIE)
+  ✅ Updated: Pride & Prejudice with 2 genres
+  ✅ Updated: Trap with 3 genres
+  ✅ Updated: Platoon with 3 genres
+  ✅ Updated: Luck with 4 genres
+  ✅ Updated: Arcadian with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 163 of 200
+  ⏳ Processing: Taken (MOVIE)
+  ⏳ Processing: Nonnas (MOVIE)
+  ⏳ Processing: Ted 2 (MOVIE)
+  ⏳ Processing: Boyka: Undisputed IV (MOVIE)
+  ⏳ Processing: Anyone But You (MOVIE)
+  ✅ Updated: Nonnas with 1 genres
+  ✅ Updated: Anyone But You with 2 genres
+  ✅ Updated: Ted 2 with 2 genres
+  ✅ Updated: Boyka: Undisputed IV with 3 genres
+  ✅ Updated: Taken with 2 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 164 of 200
+  ⏳ Processing: Despicable Me (MOVIE)
+  ⏳ Processing: The Amazing Spider-Man 2 (MOVIE)
+  ⏳ Processing: Bohemian Rhapsody (MOVIE)
+  ⏳ Processing: Thor: Love and Thunder (MOVIE)
+  ⏳ Processing: Princess Mononoke (MOVIE)
+  ✅ Updated: Bohemian Rhapsody with 2 genres
+  ✅ Updated: Thor: Love and Thunder with 3 genres
+  ✅ Updated: The Amazing Spider-Man 2 with 3 genres
+  ✅ Updated: Princess Mononoke with 3 genres
+  ✅ Updated: Despicable Me with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 165 of 200
+  ⏳ Processing: Donnie Darko (MOVIE)
+  ⏳ Processing: Taxi Driver (MOVIE)
+  ⏳ Processing: The Black Phone (MOVIE)
+  ⏳ Processing: The Marvels (MOVIE)
+  ⏳ Processing: Smile (MOVIE)
+  ✅ Updated: Taxi Driver with 2 genres
+  ✅ Updated: Smile with 2 genres
+  ✅ Updated: The Marvels with 3 genres
+  ✅ Updated: Donnie Darko with 3 genres
+  ✅ Updated: The Black Phone with 2 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 166 of 200
+  ⏳ Processing: Book of Dragons (MOVIE)
+  ⏳ Processing: Superbad (MOVIE)
+  ⏳ Processing: The Girl Next Door (MOVIE)
+  ⏳ Processing: Toy Story 3 (MOVIE)
+  ⏳ Processing: Deep Water (MOVIE)
+  ✅ Updated: Superbad with 1 genres
+  ✅ Updated: The Girl Next Door with 2 genres
+  ✅ Updated: Deep Water with 3 genres
+  ✅ Updated: Toy Story 3 with 3 genres
+  ✅ Updated: Book of Dragons with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 167 of 200
+  ⏳ Processing: Transformers: The Last Knight (MOVIE)
+  ⏳ Processing: The Little Mermaid (MOVIE)
+  ⏳ Processing: The Devil's Advocate (MOVIE)
+  ⏳ Processing: Descendants: The Rise of Red (MOVIE)
+  ⏳ Processing: Alien: Covenant (MOVIE)
+  ✅ Updated: Transformers: The Last Knight with 3 genres
+  ✅ Updated: Alien: Covenant with 3 genres
+  ✅ Updated: The Little Mermaid with 3 genres
+  ✅ Updated: The Devil's Advocate with 4 genres
+  ✅ Updated: Descendants: The Rise of Red with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 168 of 200
+  ⏳ Processing: Ash (MOVIE)
+  ⏳ Processing: Paprika (MOVIE)
+  ⏳ Processing: Pretty Woman (MOVIE)
+  ⏳ Processing: Past Lives (MOVIE)
+  ⏳ Processing: The Croods (MOVIE)
+  ✅ Updated: Paprika with 1 genres
+  ✅ Updated: Pretty Woman with 2 genres
+  ✅ Updated: Past Lives with 2 genres
+  ✅ Updated: Ash with 3 genres
+  ✅ Updated: The Croods with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 169 of 200
+  ⏳ Processing: After We Collided (MOVIE)
+  ⏳ Processing: Dragonkeeper (MOVIE)
+  ⏳ Processing: Mr. & Mrs. Smith (MOVIE)
+  ⏳ Processing: The Twilight Saga: New Moon (MOVIE)
+  ⏳ Processing: Scream VI (MOVIE)
+  ✅ Updated: After We Collided with 2 genres
+  ✅ Updated: Scream VI with 3 genres
+  ✅ Updated: The Twilight Saga: New Moon with 4 genres
+  ✅ Updated: Mr. & Mrs. Smith with 4 genres
+  ✅ Updated: Dragonkeeper with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 170 of 200
+  ⏳ Processing: War for the Planet of the Apes (MOVIE)
+  ⏳ Processing: Scream (MOVIE)
+  ⏳ Processing: Terrifier (MOVIE)
+  ⏳ Processing: Toy Story 4 (MOVIE)
+  ⏳ Processing: Iron Man 3 (MOVIE)
+  ✅ Updated: Scream with 2 genres
+  ✅ Updated: Terrifier with 2 genres
+  ✅ Updated: Iron Man 3 with 3 genres
+  ✅ Updated: War for the Planet of the Apes with 3 genres
+  ✅ Updated: Toy Story 4 with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 171 of 200
+  ⏳ Processing: Brave (MOVIE)
+  ⏳ Processing: Den of Thieves 2: Pantera (MOVIE)
+  ⏳ Processing: Soul (MOVIE)
+  ⏳ Processing: The Hangover Part II (MOVIE)
+  ⏳ Processing: Psycho (MOVIE)
+  ✅ Updated: The Hangover Part II with 1 genres
+  ✅ Updated: Psycho with 3 genres
+  ✅ Updated: Den of Thieves 2: Pantera with 3 genres
+  ✅ Updated: Soul with 4 genres
+  ✅ Updated: Brave with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 172 of 200
+  ⏳ Processing: Eyes Wide Shut (MOVIE)
+  ⏳ Processing: Longlegs (MOVIE)
+  ⏳ Processing: The Shining (MOVIE)
+  ⏳ Processing: Wolf Man (MOVIE)
+  ⏳ Processing: American Psycho (MOVIE)
+  ✅ Updated: Wolf Man with 2 genres
+  ✅ Updated: The Shining with 2 genres
+  ✅ Updated: Longlegs with 3 genres
+  ✅ Updated: American Psycho with 3 genres
+  ✅ Updated: Eyes Wide Shut with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 173 of 200
+  ⏳ Processing: Kung Fu Panda 3 (MOVIE)
+  ⏳ Processing: Once Upon a Time... in Hollywood (MOVIE)
+  ⏳ Processing: Aliens (MOVIE)
+  ⏳ Processing: Terrifier 2 (MOVIE)
+  ⏳ Processing: Holland (MOVIE)
+  ✅ Updated: Holland with 2 genres
+  ✅ Updated: Once Upon a Time... in Hollywood with 3 genres
+  ✅ Updated: Terrifier 2 with 2 genres
+  ✅ Updated: Aliens with 3 genres
+  ✅ Updated: Kung Fu Panda 3 with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 174 of 200
+  ⏳ Processing: Solo: A Star Wars Story (MOVIE)
+  ⏳ Processing: Godzilla Minus One (MOVIE)
+  ⏳ Processing: I'm Still Here (MOVIE)
+  ⏳ Processing: Transformers: Age of Extinction (MOVIE)
+  ⏳ Processing: Edward Scissorhands (MOVIE)
+  ✅ Updated: I'm Still Here with 2 genres
+  ✅ Updated: Solo: A Star Wars Story with 3 genres
+  ✅ Updated: Transformers: Age of Extinction with 3 genres
+  ✅ Updated: Godzilla Minus One with 3 genres
+  ✅ Updated: Edward Scissorhands with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 175 of 200
+  ⏳ Processing: Red, White & Royal Blue (MOVIE)
+  ⏳ Processing: (500) Days of Summer (MOVIE)
+  ⏳ Processing: Hotel Transylvania (MOVIE)
+  ⏳ Processing: Aquaman (MOVIE)
+  ⏳ Processing: Snow White and the Seven Dwarfs (MOVIE)
+  ✅ Updated: Red, White & Royal Blue with 2 genres
+  ✅ Updated: Snow White and the Seven Dwarfs with 3 genres
+  ✅ Updated: (500) Days of Summer with 3 genres
+  ✅ Updated: Aquaman with 3 genres
+  ✅ Updated: Hotel Transylvania with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 176 of 200
+  ⏳ Processing: Despicable Me 2 (MOVIE)
+  ⏳ Processing: Twisters (MOVIE)
+  ⏳ Processing: The Bad Guys: Haunted Heist (MOVIE)
+  ⏳ Processing: Alita: Battle Angel (MOVIE)
+  ⏳ Processing: Poor Things (MOVIE)
+  ✅ Updated: The Bad Guys: Haunted Heist with 2 genres
+  ✅ Updated: Twisters with 2 genres
+  ✅ Updated: Alita: Battle Angel with 3 genres
+  ✅ Updated: Poor Things with 3 genres
+  ✅ Updated: Despicable Me 2 with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 177 of 200
+  ⏳ Processing: Constantine (MOVIE)
+  ⏳ Processing: Napoleon (MOVIE)
+  ⏳ Processing: Kingsman: The Secret Service (MOVIE)
+  ⏳ Processing: Kung Fu Panda 2 (MOVIE)
+  ⏳ Processing: Tarzan (MOVIE)
+  ✅ Updated: Napoleon with 3 genres
+  ✅ Updated: Constantine with 3 genres
+  ✅ Updated: Tarzan with 4 genres
+  ✅ Updated: Kung Fu Panda 2 with 3 genres
+  ✅ Updated: Kingsman: The Secret Service with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 178 of 200
+  ⏳ Processing: Fifty Shades Darker (MOVIE)
+  ⏳ Processing: Uncharted (MOVIE)
+  ⏳ Processing: Old Guy (MOVIE)
+  ⏳ Processing: Miraculous: Ladybug & Cat Noir, The Movie (MOVIE)
+  ⏳ Processing: Dungeons & Dragons: Honor Among Thieves (MOVIE)
+  ✅ Updated: Fifty Shades Darker with 2 genres
+  ✅ Updated: Uncharted with 2 genres
+  ✅ Updated: Old Guy with 3 genres
+  ✅ Updated: Dungeons & Dragons: Honor Among Thieves with 3 genres
+  ✅ Updated: Miraculous: Ladybug & Cat Noir, The Movie with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 179 of 200
+  ⏳ Processing: Pixels (MOVIE)
+  ⏳ Processing: Storks (MOVIE)
+  ⏳ Processing: Speak No Evil (MOVIE)
+  ⏳ Processing: Joker: Folie à Deux (MOVIE)
+  ⏳ Processing: Salon De Holmes (TV_SHOW)
+  ✅ Updated: Salon De Holmes with 1 genres
+  ✅ Updated: Speak No Evil with 2 genres
+  ✅ Updated: Joker: Folie à Deux with 3 genres
+  ✅ Updated: Storks with 4 genres
+  ✅ Updated: Pixels with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 180 of 200
+  ⏳ Processing: X-Men: Days of Future Past (MOVIE)
+  ⏳ Processing: 2001: A Space Odyssey (MOVIE)
+  ⏳ Processing: Jumanji: Welcome to the Jungle (MOVIE)
+  ⏳ Processing: Mulan (MOVIE)
+  ⏳ Processing: PAW Patrol: The Mighty Movie (MOVIE)
+  ✅ Updated: Mulan with 3 genres
+  ✅ Updated: X-Men: Days of Future Past with 3 genres
+  ✅ Updated: 2001: A Space Odyssey with 3 genres
+  ✅ Updated: PAW Patrol: The Mighty Movie with 4 genres
+  ✅ Updated: Jumanji: Welcome to the Jungle with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 181 of 200
+  ⏳ Processing: I Am Legend (MOVIE)
+  ⏳ Processing: The Social Network (MOVIE)
+  ⏳ Processing: The Pursuit of Happyness (MOVIE)
+  ⏳ Processing: After Ever Happy (MOVIE)
+  ⏳ Processing: Scary Movie (MOVIE)
+  ✅ Updated: The Pursuit of Happyness with 1 genres
+  ✅ Updated: Scary Movie with 1 genres
+  ✅ Updated: The Social Network with 1 genres
+  ✅ Updated: After Ever Happy with 2 genres
+  ✅ Updated: I Am Legend with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 182 of 200
+  ⏳ Processing: Creed II (MOVIE)
+  ⏳ Processing: Kill Bill: Vol. 1 (MOVIE)
+  ⏳ Processing: Call Me by Your Name (MOVIE)
+  ⏳ Processing: Hell Motel (TV_SHOW)
+  ⏳ Processing: The Lego Batman Movie (MOVIE)
+  ✅ Updated: Creed II with 2 genres
+  ✅ Updated: Call Me by Your Name with 2 genres
+  ✅ Updated: Kill Bill: Vol. 1 with 2 genres
+  ✅ Updated: Hell Motel with 3 genres
+  ✅ Updated: The Lego Batman Movie with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 183 of 200
+  ⏳ Processing: Spirit: Stallion of the Cimarron (MOVIE)
+  ⏳ Processing: Upgraded (MOVIE)
+  ⏳ Processing: The Lorax (MOVIE)
+  ⏳ Processing: The Bad Guys (MOVIE)
+  ⏳ Processing: Wish (MOVIE)
+  ✅ Updated: The Lorax with 2 genres
+  ✅ Updated: Upgraded with 2 genres
+  ✅ Updated: Wish with 4 genres
+  ✅ Updated: The Bad Guys with 5 genres
+  ✅ Updated: Spirit: Stallion of the Cimarron with 6 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 184 of 200
+  ⏳ Processing: A Bug's Life (MOVIE)
+  ⏳ Processing: Three Steps Above Heaven (MOVIE)
+  ⏳ Processing: The Godfather Part III (MOVIE)
+  ⏳ Processing: Fargo (MOVIE)
+  ⏳ Processing: Frozen II (MOVIE)
+  ✅ Updated: Three Steps Above Heaven with 2 genres
+  ✅ Updated: The Godfather Part III with 3 genres
+  ✅ Updated: Fargo with 3 genres
+  ✅ Updated: A Bug's Life with 4 genres
+  ✅ Updated: Frozen II with 5 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 185 of 200
+  ⏳ Processing: Jurassic Park (MOVIE)
+  ⏳ Processing: Indiana Jones and the Dial of Destiny (MOVIE)
+  ⏳ Processing: Blonde (MOVIE)
+  ⏳ Processing: Hereditary (MOVIE)
+  ⏳ Processing: Con Air (MOVIE)
+  ✅ Updated: Blonde with 1 genres
+  ✅ Updated: Jurassic Park with 2 genres
+  ✅ Updated: Hereditary with 3 genres
+  ✅ Updated: Indiana Jones and the Dial of Destiny with 2 genres
+  ✅ Updated: Con Air with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 186 of 200
+  ⏳ Processing: Thor (MOVIE)
+  ⏳ Processing: Ghost in the Shell (MOVIE)
+  ⏳ Processing: We Live in Time (MOVIE)
+  ⏳ Processing: Terminator Genisys (MOVIE)
+  ⏳ Processing: Cinderella (MOVIE)
+  ✅ Updated: We Live in Time with 2 genres
+  ✅ Updated: Ghost in the Shell with 3 genres
+  ✅ Updated: Thor with 3 genres
+  ✅ Updated: Terminator Genisys with 4 genres
+  ✅ Updated: Cinderella with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 187 of 200
+  ⏳ Processing: Star Wars: Episode III - Revenge of the Sith (MOVIE)
+  ⏳ Processing: The Dictator (MOVIE)
+  ⏳ Processing: Rush Hour 2 (MOVIE)
+  ⏳ Processing: Life Is Beautiful (MOVIE)
+  ⏳ Processing: The Great Wall (MOVIE)
+  ✅ Updated: The Dictator with 1 genres
+  ✅ Updated: Life Is Beautiful with 2 genres
+  ✅ Updated: Star Wars: Episode III - Revenge of the Sith with 3 genres
+  ✅ Updated: Rush Hour 2 with 3 genres
+  ✅ Updated: The Great Wall with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 188 of 200
+  ⏳ Processing: Through My Window 3: Looking at You (MOVIE)
+  ⏳ Processing: Making Squid Game: The Challenge (MOVIE)
+  ⏳ Processing: About Time (MOVIE)
+  ⏳ Processing: Shane (MOVIE)
+  ⏳ Processing: Beetlejuice (MOVIE)
+  ✅ Updated: Making Squid Game: The Challenge with 1 genres
+  ✅ Updated: Beetlejuice with 2 genres
+  ✅ Updated: Shane with 2 genres
+  ✅ Updated: Through My Window 3: Looking at You with 3 genres
+  ✅ Updated: About Time with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 189 of 200
+  ⏳ Processing: Last Breath (MOVIE)
+  ⏳ Processing: The Platform 2 (MOVIE)
+  ⏳ Processing: Bridge to Terabithia (MOVIE)
+  ⏳ Processing: Black Adam (MOVIE)
+  ⏳ Processing: Homefront (MOVIE)
+  ✅ Updated: Homefront with 2 genres
+  ✅ Updated: Last Breath with 2 genres
+  ✅ Updated: Black Adam with 3 genres
+  ✅ Updated: Bridge to Terabithia with 3 genres
+  ✅ Updated: The Platform 2 with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 190 of 200
+  ⏳ Processing: Babylon (MOVIE)
+  ⏳ Processing: The Man Who Shot Liberty Valance (MOVIE)
+  ⏳ Processing: Watchmen (MOVIE)
+  ⏳ Processing: Venom: Let There Be Carnage (MOVIE)
+  ⏳ Processing: The Price of Money: A Largo Winch Adventure (MOVIE)
+  ✅ Updated: The Man Who Shot Liberty Valance with 1 genres
+  ✅ Updated: Babylon with 2 genres
+  ✅ Updated: The Price of Money: A Largo Winch Adventure with 3 genres
+  ✅ Updated: Watchmen with 3 genres
+  ✅ Updated: Venom: Let There Be Carnage with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 191 of 200
+  ⏳ Processing: The Incredible Hulk (MOVIE)
+  ⏳ Processing: Fantastic Beasts: The Secrets of Dumbledore (MOVIE)
+  ⏳ Processing: Dark Night and Dawn (TV_SHOW)
+  ⏳ Processing: Geostorm (MOVIE)
+  ⏳ Processing: Penguins of Madagascar (MOVIE)
+  ✅ Updated: Dark Night and Dawn with 2 genres
+  ✅ Updated: Fantastic Beasts: The Secrets of Dumbledore with 2 genres
+  ✅ Updated: Geostorm with 3 genres
+  ✅ Updated: The Incredible Hulk with 3 genres
+  ✅ Updated: Penguins of Madagascar with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 192 of 200
+  ⏳ Processing: Sing (MOVIE)
+  ⏳ Processing: Under the Same Moon (MOVIE)
+  ⏳ Processing: Rocky (MOVIE)
+  ⏳ Processing: He's Just Not That Into You (MOVIE)
+  ⏳ Processing: The Tearsmith (MOVIE)
+  ✅ Updated: Rocky with 1 genres
+  ✅ Updated: Under the Same Moon with 1 genres
+  ✅ Updated: The Tearsmith with 2 genres
+  ✅ Updated: Sing with 4 genres
+  ✅ Updated: He's Just Not That Into You with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 193 of 200
+  ⏳ Processing: The Imitation Game (MOVIE)
+  ⏳ Processing: I Still Know What You Did Last Summer (MOVIE)
+  ⏳ Processing: Incredibles 2 (MOVIE)
+  ⏳ Processing: Apocalypto (MOVIE)
+  ⏳ Processing: American Sniper (MOVIE)
+  ✅ Updated: American Sniper with 2 genres
+  ✅ Updated: Apocalypto with 3 genres
+  ✅ Updated: I Still Know What You Did Last Summer with 3 genres
+  ✅ Updated: Incredibles 2 with 4 genres
+  ✅ Updated: The Imitation Game with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 194 of 200
+  ⏳ Processing: Indiana Jones and the Last Crusade (MOVIE)
+  ⏳ Processing: The Hobbit: The Desolation of Smaug (MOVIE)
+  ⏳ Processing: Strange Darling (MOVIE)
+  ⏳ Processing: Thor: The Dark World (MOVIE)
+  ⏳ Processing: Green Book (MOVIE)
+  ✅ Updated: Green Book with 2 genres
+  ✅ Updated: Indiana Jones and the Last Crusade with 2 genres
+  ✅ Updated: Strange Darling with 3 genres
+  ✅ Updated: Thor: The Dark World with 3 genres
+  ✅ Updated: The Hobbit: The Desolation of Smaug with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 195 of 200
+  ⏳ Processing: She's the Man (MOVIE)
+  ⏳ Processing: Scouts Guide to the Zombie Apocalypse (MOVIE)
+  ⏳ Processing: Meet Joe Black (MOVIE)
+  ⏳ Processing: The Sadness (MOVIE)
+  ⏳ Processing: Grease (MOVIE)
+  ✅ Updated: She's the Man with 2 genres
+  ✅ Updated: The Sadness with 2 genres
+  ✅ Updated: Scouts Guide to the Zombie Apocalypse with 2 genres
+  ✅ Updated: Grease with 2 genres
+  ✅ Updated: Meet Joe Black with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 196 of 200
+  ⏳ Processing: Lie with Me (MOVIE)
+  ⏳ Processing: No Time to Die (MOVIE)
+  ⏳ Processing: The Fifth Element (MOVIE)
+  ⏳ Processing: Star Wars: Episode I - The Phantom Menace (MOVIE)
+  ⏳ Processing: Tenet (MOVIE)
+  ✅ Updated: Lie with Me with 1 genres
+  ✅ Updated: No Time to Die with 3 genres
+  ✅ Updated: The Fifth Element with 3 genres
+  ✅ Updated: Tenet with 3 genres
+  ✅ Updated: Star Wars: Episode I - The Phantom Menace with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 197 of 200
+  ⏳ Processing: Damsel (MOVIE)
+  ⏳ Processing: The Fate of the Furious (MOVIE)
+  ⏳ Processing: A Nightmare on Elm Street (MOVIE)
+  ⏳ Processing: No Country for Old Men (MOVIE)
+  ⏳ Processing: Ted (MOVIE)
+  ✅ Updated: A Nightmare on Elm Street with 1 genres
+  ✅ Updated: Damsel with 3 genres
+  ✅ Updated: The Fate of the Furious with 3 genres
+  ✅ Updated: No Country for Old Men with 3 genres
+  ✅ Updated: Ted with 2 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 198 of 200
+  ⏳ Processing: The Parent Trap (MOVIE)
+  ⏳ Processing: Infinite (MOVIE)
+  ⏳ Processing: Beautiful Boy (MOVIE)
+  ⏳ Processing: Legally Blonde (MOVIE)
+  ⏳ Processing: Land of Bad (MOVIE)
+  ✅ Updated: Beautiful Boy with 1 genres
+  ✅ Updated: Legally Blonde with 2 genres
+  ✅ Updated: The Parent Trap with 3 genres
+  ✅ Updated: Infinite with 3 genres
+  ✅ Updated: Land of Bad with 3 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 199 of 200
+  ⏳ Processing: Drawing Closer (MOVIE)
+  ⏳ Processing: Friday the 13th (MOVIE)
+  ⏳ Processing: Jumanji: The Next Level (MOVIE)
+  ⏳ Processing: Sing: Thriller (MOVIE)
+  ⏳ Processing: Ocean's Eleven (MOVIE)
+  ✅ Updated: Drawing Closer with 2 genres
+  ✅ Updated: Friday the 13th with 2 genres
+  ✅ Updated: Ocean's Eleven with 2 genres
+  ✅ Updated: Jumanji: The Next Level with 3 genres
+  ✅ Updated: Sing: Thriller with 4 genres
+  ⏸️  Waiting 2s before next batch...
+
+📦 Processing batch 200 of 200
+  ⏳ Processing: Annabelle Comes Home (MOVIE)
+  ⏳ Processing: Hercules (MOVIE)
+  ⏳ Processing: The Departed (MOVIE)
+  ⏳ Processing: Bird Box (MOVIE)
+  ⏳ Processing: Maze Runner: The Scorch Trials (MOVIE)
+  ✅ Updated: Annabelle Comes Home with 1 genres
+  ✅ Updated: The Departed with 3 genres
+  ✅ Updated: Maze Runner: The Scorch Trials with 4 genres
+  ✅ Updated: Bird Box with 3 genres
+  ✅ Updated: Hercules with 6 genres
+
+📊 Backfill Summary:
+  Total items: 1000
+  Processed: 1000
+  Updated: 1000
+  Failed: 0
+
+✨ Backfill complete!

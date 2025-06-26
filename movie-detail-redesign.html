@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Club - Movie Details</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        'accent': '#F5C518',
+                        'accent-dark': '#E4B406',
+                        'neon-purple': '#B794F4',
+                        'neon-blue': '#63B3ED',
+                        'dark-bg': '#0E0F13',
+                        'dark-surface': '#1A1B23',
+                        'dark-surface-light': '#23242F',
+                    },
+                    animation: {
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        glow: {
+                            'from': { boxShadow: '0 0 20px rgba(245, 197, 24, 0.5)' },
+                            'to': { boxShadow: '0 0 30px rgba(245, 197, 24, 0.8), 0 0 40px rgba(245, 197, 24, 0.5)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom scrollbar styles */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #F5C518 0%, #E4B406 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Neon glow effect */
+        .neon-glow {
+            filter: drop-shadow(0 0 20px rgba(183, 148, 244, 0.5));
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-white font-sans antialiased">
+    <!-- Background Effects -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="min-h-screen">
+        <!-- Hero Section -->
+        <div class="relative min-h-[85vh] lg:min-h-[90vh]">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="https://image.tmdb.org/t/p/original/hZkgoQYus5vegHoetLkCJzb17zJ.jpg" 
+                     alt="Fight Club Backdrop" 
+                     class="w-full h-full object-cover">
+                <!-- Multiple gradient overlays -->
+                <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/80 to-dark-bg/40"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-dark-bg/90 via-dark-bg/50 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-dark-bg/60 via-transparent to-dark-bg"></div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="absolute top-0 left-0 right-0 z-20 p-4 md:p-8">
+                <div class="max-w-7xl mx-auto">
+                    <button class="group flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-md rounded-full border border-white/10 hover:bg-white/10 transition-all duration-300">
+                        <svg class="w-5 h-5 text-white/70 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        <span class="text-white/70 group-hover:text-white font-medium transition-colors">Back to Browse</span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Hero Content -->
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-12 lg:p-16">
+                <div class="max-w-7xl mx-auto">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-end">
+                        <!-- Movie Poster -->
+                        <div class="hidden lg:block flex-shrink-0">
+                            <div class="relative w-80 rounded-2xl overflow-hidden shadow-2xl animate-float">
+                                <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-50"></div>
+                                <img src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" 
+                                     alt="Fight Club Poster" 
+                                     class="w-full h-auto">
+                                <div class="absolute inset-0 ring-2 ring-white/10 rounded-2xl"></div>
+                            </div>
+                        </div>
+
+                        <!-- Movie Info -->
+                        <div class="flex-1 space-y-6">
+                            <!-- Title and Tagline -->
+                            <div>
+                                <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-3 tracking-tight">
+                                    Fight Club
+                                </h1>
+                                <p class="text-xl md:text-2xl text-white/70 italic font-light">
+                                    "Mischief. Mayhem. Soap."
+                                </p>
+                            </div>
+
+                            <!-- Meta Info -->
+                            <div class="flex flex-wrap items-center gap-3 text-sm md:text-base">
+                                <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 font-semibold">
+                                    1999
+                                </span>
+                                <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 flex items-center gap-2">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    2h 19m
+                                </span>
+                                <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+                                    Drama
+                                </span>
+                                <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+                                    Thriller
+                                </span>
+                            </div>
+
+                            <!-- Ratings Section -->
+                            <div class="flex flex-wrap items-center gap-4">
+                                <!-- Audience Score - Highlighted -->
+                                <div class="relative group">
+                                    <div class="absolute inset-0 bg-gradient-to-br from-accent to-accent-dark rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                                    <div class="relative bg-gradient-to-br from-accent to-accent-dark text-black rounded-2xl p-6 shadow-2xl transform hover:scale-105 transition-all duration-300">
+                                        <div class="flex items-center gap-4">
+                                            <div>
+                                                <div class="text-5xl md:text-6xl font-black">88%</div>
+                                                <div class="text-sm font-bold uppercase tracking-wider flex items-center gap-1 mt-1">
+                                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"></path>
+                                                    </svg>
+                                                    Audience Liked
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- IMDb Rating -->
+                                <div class="bg-dark-surface/60 backdrop-blur-md rounded-xl px-5 py-4 border border-white/10 hover:border-accent/50 transition-all duration-300">
+                                    <div class="flex items-center gap-3">
+                                        <div class="text-yellow-500">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="text-2xl font-bold">8.4</div>
+                                            <div class="text-xs text-white/50 uppercase tracking-wider">IMDb</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Critics Rating -->
+                                <div class="bg-dark-surface/60 backdrop-blur-md rounded-xl px-5 py-4 border border-white/10 hover:border-neon-purple/50 transition-all duration-300">
+                                    <div class="flex items-center gap-3">
+                                        <div class="text-neon-purple">
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="text-2xl font-bold">79%</div>
+                                            <div class="text-xs text-white/50 uppercase tracking-wider">Critics</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex flex-wrap gap-3">
+                                <!-- Primary Button - Watch Trailer -->
+                                <button class="group relative overflow-hidden bg-gradient-to-r from-accent to-accent-dark text-black px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-accent/25 transform hover:scale-105 transition-all duration-300">
+                                    <span class="relative z-10 flex items-center gap-2">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                        Watch Trailer
+                                    </span>
+                                    <div class="absolute inset-0 bg-gradient-to-r from-accent-dark to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </button>
+
+                                <!-- Secondary Button - My List -->
+                                <button class="group bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-semibold border border-white/20 hover:bg-white/20 hover:border-white/40 transform hover:scale-105 transition-all duration-300">
+                                    <span class="flex items-center gap-2">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                                        </svg>
+                                        My List
+                                    </span>
+                                </button>
+
+                                <!-- Secondary Button - Like -->
+                                <button class="group bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-semibold border border-white/20 hover:bg-white/20 hover:border-white/40 transform hover:scale-105 transition-all duration-300">
+                                    <span class="flex items-center gap-2">
+                                        <svg class="w-5 h-5 text-white group-hover:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                        </svg>
+                                        Like
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Container -->
+        <div class="relative z-10 -mt-20 bg-dark-bg">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 pb-20">
+                <!-- Quick Info Bar -->
+                <div class="bg-gradient-to-r from-dark-surface to-dark-surface-light backdrop-blur-md rounded-2xl p-6 mb-12 border border-white/5 shadow-xl">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div>
+                            <div class="text-sm text-white/50 mb-1 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                </svg>
+                                Director
+                            </div>
+                            <div class="text-white font-semibold">David Fincher</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-white/50 mb-1 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Status
+                            </div>
+                            <div class="text-white font-semibold">Released</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-white/50 mb-1 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                                </svg>
+                                Original Language
+                            </div>
+                            <div class="text-white font-semibold">English</div>
+                        </div>
+                        <div>
+                            <div class="text-sm text-white/50 mb-1 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Budget
+                            </div>
+                            <div class="text-white font-semibold">$63M</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Synopsis Section -->
+                <section class="mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Synopsis</h2>
+                    <p class="text-lg text-white/80 leading-relaxed max-w-4xl">
+                        A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground "fight clubs" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.
+                    </p>
+                </section>
+
+                <!-- Where to Watch Section -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-neon-purple/10 to-neon-blue/10 rounded-2xl p-8 border border-white/10">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+                            <div class="p-3 bg-gradient-to-br from-neon-purple to-neon-blue rounded-xl">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            Where to Watch
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <!-- Stream Now -->
+                            <div>
+                                <h3 class="text-sm text-white/50 uppercase tracking-wider mb-4 font-semibold">Stream Now</h3>
+                                <div class="flex flex-wrap gap-4">
+                                    <div class="group relative">
+                                        <div class="absolute inset-0 bg-gradient-to-br from-neon-purple/50 to-neon-blue/50 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                        <div class="relative w-20 h-20 bg-white rounded-xl p-3 shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 cursor-pointer">
+                                            <img src="https://image.tmdb.org/t/p/original/emthp39XA2YScoYL1p0sdbAH2WA.jpg" 
+                                                 alt="Amazon Prime Video" 
+                                                 class="w-full h-full object-contain">
+                                        </div>
+                                    </div>
+                                    <div class="group relative">
+                                        <div class="absolute inset-0 bg-gradient-to-br from-neon-purple/50 to-neon-blue/50 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                        <div class="relative w-20 h-20 bg-white rounded-xl p-3 shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 cursor-pointer">
+                                            <img src="https://image.tmdb.org/t/p/original/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg" 
+                                                 alt="Netflix" 
+                                                 class="w-full h-full object-contain">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Rent or Buy -->
+                            <div>
+                                <h3 class="text-sm text-white/50 uppercase tracking-wider mb-4 font-semibold">Rent or Buy</h3>
+                                <div class="flex flex-wrap gap-3">
+                                    <div class="w-16 h-16 bg-dark-surface rounded-lg p-2 border border-white/10 hover:border-white/30 transform hover:scale-110 transition-all duration-300 cursor-pointer">
+                                        <img src="https://image.tmdb.org/t/p/original/peURlLlr8jggOwK53fJ5wdQl05y.jpg" 
+                                             alt="Apple TV" 
+                                             class="w-full h-full object-contain">
+                                    </div>
+                                    <div class="w-16 h-16 bg-dark-surface rounded-lg p-2 border border-white/10 hover:border-white/30 transform hover:scale-110 transition-all duration-300 cursor-pointer">
+                                        <img src="https://image.tmdb.org/t/p/original/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg" 
+                                             alt="Google Play Movies" 
+                                             class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 p-4 bg-white/5 rounded-xl">
+                            <p class="text-sm text-white/70 flex items-start gap-2">
+                                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Availability shown for your region (US). Streaming options may vary by location.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cast Section -->
+                <section class="mb-16">
+                    <div class="flex justify-between items-center mb-8">
+                        <h2 class="text-3xl md:text-4xl font-bold gradient-text">Cast</h2>
+                        <div class="flex gap-2">
+                            <button id="castPrev" class="p-3 bg-dark-surface rounded-full border border-white/10 hover:bg-dark-surface-light hover:border-white/20 transition-all duration-300">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <button id="castNext" class="p-3 bg-dark-surface rounded-full border border-white/10 hover:bg-dark-surface-light hover:border-white/20 transition-all duration-300">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div id="castContainer" class="flex gap-6 overflow-x-auto scrollbar-hide pb-4">
+                            <!-- Cast Member Card 1 -->
+                            <div class="flex-shrink-0 w-48 group cursor-pointer">
+                                <div class="relative overflow-hidden rounded-xl bg-dark-surface border border-white/5 hover:border-accent/30 transition-all duration-300 transform hover:scale-105">
+                                    <div class="aspect-[3/4] relative">
+                                        <img src="https://image.tmdb.org/t/p/w342/kU3B75TyRiCgE270EyZnHjfivoq.jpg" 
+                                             alt="Brad Pitt" 
+                                             class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-60"></div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                                        <h3 class="font-semibold text-white text-base group-hover:text-accent transition-colors">Brad Pitt</h3>
+                                        <p class="text-sm text-white/60">Tyler Durden</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cast Member Card 2 -->
+                            <div class="flex-shrink-0 w-48 group cursor-pointer">
+                                <div class="relative overflow-hidden rounded-xl bg-dark-surface border border-white/5 hover:border-accent/30 transition-all duration-300 transform hover:scale-105">
+                                    <div class="aspect-[3/4] relative">
+                                        <img src="https://image.tmdb.org/t/p/w342/5XBzD5WuTyVQZeS4VI25z2moMeY.jpg" 
+                                             alt="Edward Norton" 
+                                             class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-60"></div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                                        <h3 class="font-semibold text-white text-base group-hover:text-accent transition-colors">Edward Norton</h3>
+                                        <p class="text-sm text-white/60">The Narrator</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cast Member Card 3 -->
+                            <div class="flex-shrink-0 w-48 group cursor-pointer">
+                                <div class="relative overflow-hidden rounded-xl bg-dark-surface border border-white/5 hover:border-accent/30 transition-all duration-300 transform hover:scale-105">
+                                    <div class="aspect-[3/4] relative">
+                                        <img src="https://image.tmdb.org/t/p/w342/llkbyWKwpfowZ6C8peBjIV9jj99.jpg" 
+                                             alt="Helena Bonham Carter" 
+                                             class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-60"></div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                                        <h3 class="font-semibold text-white text-base group-hover:text-accent transition-colors">Helena Bonham Carter</h3>
+                                        <p class="text-sm text-white/60">Marla Singer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cast Member Card 4 -->
+                            <div class="flex-shrink-0 w-48 group cursor-pointer">
+                                <div class="relative overflow-hidden rounded-xl bg-dark-surface border border-white/5 hover:border-accent/30 transition-all duration-300 transform hover:scale-105">
+                                    <div class="aspect-[3/4] relative">
+                                        <img src="https://image.tmdb.org/t/p/w342/7Jahy5LZX2Fo8fGJltMreAI49hC.jpg" 
+                                             alt="Meat Loaf" 
+                                             class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-60"></div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                                        <h3 class="font-semibold text-white text-base group-hover:text-accent transition-colors">Meat Loaf</h3>
+                                        <p class="text-sm text-white/60">Robert Paulsen</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cast Member Card 5 -->
+                            <div class="flex-shrink-0 w-48 group cursor-pointer">
+                                <div class="relative overflow-hidden rounded-xl bg-dark-surface border border-white/5 hover:border-accent/30 transition-all duration-300 transform hover:scale-105">
+                                    <div class="aspect-[3/4] relative">
+                                        <img src="https://image.tmdb.org/t/p/w342/2B7RySy2WMVJKKEFN2XA3IFb8w0.jpg" 
+                                             alt="Jared Leto" 
+                                             class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-60"></div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                                        <h3 class="font-semibold text-white text-base group-hover:text-accent transition-colors">Jared Leto</h3>
+                                        <p class="text-sm text-white/60">Angel Face</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add more cast members as needed -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Details Section -->
+                <section class="mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 gradient-text">Details</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Information Card -->
+                        <div class="bg-gradient-to-br from-dark-surface to-dark-surface-light rounded-2xl p-6 border border-white/5 hover:border-white/10 transition-all duration-300">
+                            <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                                <div class="p-2 bg-accent/20 rounded-lg">
+                                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                Information
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-white/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <div>
+                                        <div class="text-sm text-white/50">Release Date</div>
+                                        <div class="text-white font-medium">October 15, 1999</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-white/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <div>
+                                        <div class="text-sm text-white/50">Runtime</div>
+                                        <div class="text-white font-medium">139 minutes</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-white/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                                    </svg>
+                                    <div>
+                                        <div class="text-sm text-white/50">Languages</div>
+                                        <div class="text-white font-medium">English</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box Office Card -->
+                        <div class="bg-gradient-to-br from-dark-surface to-dark-surface-light rounded-2xl p-6 border border-white/5 hover:border-white/10 transition-all duration-300">
+                            <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                                <div class="p-2 bg-neon-purple/20 rounded-lg">
+                                    <svg class="w-5 h-5 text-neon-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                Box Office
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-white/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <div>
+                                        <div class="text-sm text-white/50">Budget</div>
+                                        <div class="text-white font-medium">$63,000,000</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-white/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                    </svg>
+                                    <div>
+                                        <div class="text-sm text-white/50">Revenue</div>
+                                        <div class="text-white font-medium">$100,853,753</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-white/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                    </svg>
+                                    <div>
+                                        <div class="text-sm text-white/50">Profit</div>
+                                        <div class="text-green-400 font-medium">$37,853,753</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Crew Card -->
+                        <div class="bg-gradient-to-br from-dark-surface to-dark-surface-light rounded-2xl p-6 border border-white/5 hover:border-white/10 transition-all duration-300">
+                            <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                                <div class="p-2 bg-neon-blue/20 rounded-lg">
+                                    <svg class="w-5 h-5 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                </div>
+                                Crew
+                            </h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-sm text-white/50 mb-1">Writers</div>
+                                    <div class="text-white font-medium">Chuck Palahniuk, Jim Uhls</div>
+                                </div>
+                                
+                                <div>
+                                    <div class="text-sm text-white/50 mb-1">Producers</div>
+                                    <div class="text-white font-medium">Art Linson, Ceán Chaffin, Ross Grayson Bell</div>
+                                </div>
+                                
+                                <div>
+                                    <div class="text-sm text-white/50 mb-1">Cinematography</div>
+                                    <div class="text-white font-medium">Jeff Cronenweth</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Production Companies -->
+                <section class="mb-16">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-8 gradient-text">Production</h2>
+                    <div class="flex flex-wrap gap-6">
+                        <div class="flex items-center gap-4 bg-dark-surface/50 rounded-xl p-4 border border-white/5 hover:border-white/10 transition-all duration-300">
+                            <div class="w-24 h-12 bg-white rounded-lg p-2 flex items-center justify-center">
+                                <img src="https://image.tmdb.org/t/p/w200/o86DbpburjxrqAzEDhXZcyE8pDb.jpg" 
+                                     alt="20th Century Fox" 
+                                     class="w-full h-full object-contain">
+                            </div>
+                            <span class="text-white font-medium">20th Century Fox</span>
+                        </div>
+                        <div class="flex items-center gap-4 bg-dark-surface/50 rounded-xl p-4 border border-white/5 hover:border-white/10 transition-all duration-300">
+                            <div class="w-24 h-12 bg-white rounded-lg p-2 flex items-center justify-center">
+                                <img src="https://image.tmdb.org/t/p/w200/bvGt9LrZ8PjIKFWQbYWWYKvgH9e.jpg" 
+                                     alt="Regency Enterprises" 
+                                     class="w-full h-full object-contain">
+                            </div>
+                            <span class="text-white font-medium">Regency Enterprises</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Carousel Controls -->
+    <script>
+        // Cast carousel controls
+        const castContainer = document.getElementById('castContainer');
+        const castPrev = document.getElementById('castPrev');
+        const castNext = document.getElementById('castNext');
+
+        castPrev.addEventListener('click', () => {
+            castContainer.scrollBy({ left: -200, behavior: 'smooth' });
+        });
+
+        castNext.addEventListener('click', () => {
+            castContainer.scrollBy({ left: 200, behavior: 'smooth' });
+        });
+
+        // Add parallax effect to hero background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('.absolute.inset-0 img');
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.5}px) scale(1.1)`;
+            }
+        });
+    </script>
+</body>
+</html>

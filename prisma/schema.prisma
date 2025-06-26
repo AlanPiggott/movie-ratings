@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum MediaType {
+  MOVIE
+  TV_SHOW
+}
+
+model MediaItem {
+  id                    String      @id @default(cuid())
+  tmdbId                Int         @unique
+  mediaType             MediaType
+  title                 String
+  releaseDate           DateTime?
+  posterPath            String?
+  overview              String?     @db.Text
+  alsoLikedPercentage   Int?        // Google's "% liked" score
+  searchCount           Int         @default(0)
+  lastSearched          DateTime?
+  createdAt             DateTime    @default(now())
+  updatedAt             DateTime    @updatedAt
+  
+  // Additional fields for enhanced data
+  originalTitle         String?
+  backdropPath          String?
+  popularity            Float?
+  voteAverage           Float?
+  voteCount             Int?
+  runtime               Int?
+  status                String?
+  
+  // Relations
+  genres                MediaGenre[]
+  
+  // Indexes for performance
+  @@index([title])
+  @@index([mediaType])
+  @@index([releaseDate])
+  @@index([alsoLikedPercentage])
+  @@index([searchCount])
+  @@index([mediaType, releaseDate])
+  @@index([title, releaseDate])
+}
+
+model Genre {
+  id          String        @id @default(cuid())
+  tmdbId      Int           @unique
+  name        String        @unique
+  
+  // Relations
+  mediaItems  MediaGenre[]
+  
+  @@index([name])
+}
+
+model MediaGenre {
+  id          String      @id @default(cuid())
+  mediaItemId String
+  genreId     String
+  
+  // Relations
+  mediaItem   MediaItem   @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  genre       Genre       @relation(fields: [genreId], references: [id])
+  
+  @@unique([mediaItemId, genreId])
+  @@index([mediaItemId])
+  @@index([genreId])
+}
+
+
+model ApiFetchLog {
+  id              String      @id @default(cuid())
+  endpoint        String
+  method          String      @default("GET")
+  statusCode      Int?
+  responseTime    Int?        // in milliseconds
+  cost            Float?      // API cost if applicable
+  errorMessage    String?
+  metadata        Json?       // Additional data like rate limits
+  createdAt       DateTime    @default(now())
+  
+  @@index([endpoint])
+  @@index([createdAt])
+  @@index([statusCode])
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "tmdbId": 603,
+    "title": "The Matrix",
+    "year": 1999,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 76600,
+    "title": "Avatar: The Way of Water",
+    "year": 2022,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 1124,
+    "title": "The Prestige",
+    "year": 2006,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 872585,
+    "title": "Oppenheimer",
+    "year": 2023,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 346698,
+    "title": "Barbie",
+    "year": 2023,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 569094,
+    "title": "Spider-Man: Across the Spider-Verse",
+    "year": 2023,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 361743,
+    "title": "Top Gun: Maverick",
+    "year": 2022,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 13,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 424,
+    "title": "Schindler's List",
+    "year": 1993,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 238,
+    "title": "The Godfather",
+    "year": 1972,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 11,
+    "title": "Star Wars",
+    "original_title": "Star Wars",
+    "year": 1977,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 157336,
+    "title": "Interstellar",
+    "year": 2014,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 27205,
+    "title": "Inception",
+    "year": 2010,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 496243,
+    "title": "Parasite",
+    "original_title": "기생충",
+    "year": 2019,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 545611,
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 129,
+    "title": "Spirited Away",
+    "original_title": "千と千尋の神隠し",
+    "year": 2001,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 920,
+    "title": "Cars",
+    "year": 2006,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 680,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 155,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "mediaType": "MOVIE"
+  },
+  {
+    "tmdbId": 24428,
+    "title": "The Avengers",
+    "year": 2012,
+    "mediaType": "MOVIE"
+  }
+]

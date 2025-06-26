@@ -1,0 +1,519 @@
+import { MediaType, Prisma } from '@prisma/client'
+import { BaseService, DatabaseError, PaginatedResponse, PaginationOptions } from './base.service'
+import type { MediaItem } from '@/types'
+
+export interface MediaFilters {
+  query?: string
+  mediaType?: MediaType
+  genres?: string[]
+  yearFrom?: number
+  yearTo?: number
+  ratingMin?: number
+  ratingMax?: number
+  hasAlsoLiked?: boolean
+  sortBy?: 'popularity' | 'releaseDate' | 'alsoLikedPercentage' | 'searchCount' | 'title'
+  sortOrder?: 'asc' | 'desc'
+}
+
+export interface CreateOrUpdateMediaData {
+  tmdbId: number
+  mediaType: MediaType
+  title: string
+  releaseDate?: Date | string | null
+  posterPath?: string | null
+  overview?: string | null
+  alsoLikedPercentage?: number | null
+  originalTitle?: string | null
+  backdropPath?: string | null
+  popularity?: number | null
+  voteAverage?: number | null
+  voteCount?: number | null
+  runtime?: number | null
+  status?: string | null
+  genres?: { tmdbId: number; name: string }[]
+}
+
+/**
+ * Service for handling all media-related database operations
+ */
+export class MediaService extends BaseService {
+  /**
+   * Search for media items with filters and pagination
+   * @param query - Search query string
+   * @param filters - Filter options
+   * @param pagination - Pagination options
+   * @returns Paginated list of media items
+   */
+  async searchMedia(
+    query: string,
+    filters: MediaFilters = {},
+    pagination: PaginationOptions = {}
+  ): Promise<PaginatedResponse<MediaItem>> {
+    try {
+      const {
+        page = 1,
+        limit = 20,
+        orderBy = 'searchCount',
+        order = 'desc'
+      } = pagination
+
+      const skip = (page - 1) * limit
+
+      // Build where clause
+      const where: Prisma.MediaItemWhereInput = {}
+
+      // Text search
+      if (query) {
+        where.OR = [
+          { title: { contains: query, mode: 'insensitive' } },
+          { originalTitle: { contains: query, mode: 'insensitive' } },
+          { overview: { contains: query, mode: 'insensitive' } }
+        ]
+      }
+
+      // Media type filter
+      if (filters.mediaType) {
+        where.mediaType = filters.mediaType
+      }
+
+      // Genre filter
+      if (filters.genres && filters.genres.length > 0) {
+        where.genres = {
+          some: {
+            genre: {
+              name: { in: filters.genres }
+            }
+          }
+        }
+      }
+
+      // Year range filter
+      if (filters.yearFrom || filters.yearTo) {
+        where.releaseDate = {}
+        if (filters.yearFrom) {
+          where.releaseDate.gte = new Date(`${filters.yearFrom}-01-01`)
+        }
+        if (filters.yearTo) {
+          where.releaseDate.lte = new Date(`${filters.yearTo}-12-31`)
+        }
+      }
+
+      // Rating filter
+      if (filters.ratingMin !== undefined || filters.ratingMax !== undefined) {
+        where.voteAverage = {}
+        if (filters.ratingMin !== undefined) {
+          where.voteAverage.gte = filters.ratingMin
+        }
+        if (filters.ratingMax !== undefined) {
+          where.voteAverage.lte = filters.ratingMax
+        }
+      }
+
+      // Has also liked percentage filter
+      if (filters.hasAlsoLiked !== undefined) {
+        where.alsoLikedPercentage = filters.hasAlsoLiked
+          ? { not: null }
+          : null
+      }
+
+      // Build order by clause
+      const orderByField = this.mapSortField(filters.sortBy || orderBy)
+      const orderByClause = { [orderByField]: filters.sortOrder || order }
+
+      // Execute queries in parallel
+      const [items, total] = await Promise.all([
+        this.prisma.mediaItem.findMany({
+          where,
+          skip,
+          take: limit,
+          orderBy: orderByClause,
+          include: {
+            genres: {
+              include: {
+                genre: true
+              }
+            }
+          }
+        }),
+        this.prisma.mediaItem.count({ where })
+      ])
+
+      // Transform the results
+      const transformedItems = items.map(item => ({
+        ...item,
+        genres: item.genres.map(mg => mg.genre)
+      }))
+
+      return {
+        items: transformedItems as MediaItem[],
+        total,
+        page,
+        totalPages: Math.ceil(total / limit),
+        hasMore: page * limit < total
+      }
+    } catch (error) {
+      this.handleError(error, 'searchMedia')
+    }
+  }
+
+  /**
+   * Get a single media item by ID
+   * @param id - Media item ID
+   * @returns Media item or null
+   */
+  async getMediaById(id: string): Promise<MediaItem | null> {
+    try {
+      const item = await this.prisma.mediaItem.findUnique({
+        where: { id },
+        include: {
+          genres: {
+            include: {
+              genre: true
+            }
+          }
+        }
+      })
+
+      if (!item) {
+        return null
+      }
+
+      return {
+        ...item,
+        genres: item.genres.map(mg => mg.genre)
+      } as MediaItem
+    } catch (error) {
+      this.handleError(error, 'getMediaById')
+    }
+  }
+
+  /**
+   * Create or update a media item
+   * @param data - Media item data
+   * @returns Created or updated media item
+   */
+  async createOrUpdateMedia(data: CreateOrUpdateMediaData): Promise<MediaItem> {
+    try {
+      return await this.executeWithRetry(async () => {
+        // Prepare genre connections
+        const genreConnections = data.genres
+          ? await this.prepareGenreConnections(data.genres)
+          : undefined
+
+        // Convert date if string
+        const releaseDate = data.releaseDate
+          ? new Date(data.releaseDate)
+          : null
+
+        // Upsert the media item
+        const item = await this.prisma.mediaItem.upsert({
+          where: { tmdbId: data.tmdbId },
+          create: {
+            tmdbId: data.tmdbId,
+            mediaType: data.mediaType,
+            title: data.title,
+            releaseDate,
+            posterPath: data.posterPath,
+            overview: data.overview,
+            alsoLikedPercentage: data.alsoLikedPercentage,
+            originalTitle: data.originalTitle,
+            backdropPath: data.backdropPath,
+            popularity: data.popularity,
+            voteAverage: data.voteAverage,
+            voteCount: data.voteCount,
+            runtime: data.runtime,
+            status: data.status,
+            genres: genreConnections ? {
+              create: genreConnections
+            } : undefined
+          },
+          update: {
+            title: data.title,
+            releaseDate,
+            posterPath: data.posterPath,
+            overview: data.overview,
+            alsoLikedPercentage: data.alsoLikedPercentage,
+            originalTitle: data.originalTitle,
+            backdropPath: data.backdropPath,
+            popularity: data.popularity,
+            voteAverage: data.voteAverage,
+            voteCount: data.voteCount,
+            runtime: data.runtime,
+            status: data.status,
+            updatedAt: new Date()
+          },
+          include: {
+            genres: {
+              include: {
+                genre: true
+              }
+            }
+          }
+        })
+
+        // Update genres if provided
+        if (data.genres && genreConnections) {
+          // Remove existing genre connections
+          await this.prisma.mediaGenre.deleteMany({
+            where: { mediaItemId: item.id }
+          })
+
+          // Create new connections
+          await this.prisma.mediaGenre.createMany({
+            data: genreConnections.map(gc => ({
+              mediaItemId: item.id,
+              genreId: gc.genreId
+            }))
+          })
+
+          // Fetch updated item with genres
+          const updatedItem = await this.prisma.mediaItem.findUnique({
+            where: { id: item.id },
+            include: {
+              genres: {
+                include: {
+                  genre: true
+                }
+              }
+            }
+          })
+
+          return {
+            ...updatedItem!,
+            genres: updatedItem!.genres.map(mg => mg.genre)
+          } as MediaItem
+        }
+
+        return {
+          ...item,
+          genres: item.genres.map(mg => mg.genre)
+        } as MediaItem
+      })
+    } catch (error) {
+      this.handleError(error, 'createOrUpdateMedia')
+    }
+  }
+
+  /**
+   * Increment search count for a media item
+   * @param id - Media item ID
+   * @returns Updated media item
+   */
+  async incrementSearchCount(id: string): Promise<MediaItem> {
+    try {
+      const item = await this.prisma.mediaItem.update({
+        where: { id },
+        data: {
+          searchCount: { increment: 1 },
+          lastSearched: new Date()
+        },
+        include: {
+          genres: {
+            include: {
+              genre: true
+            }
+          }
+        }
+      })
+
+      return {
+        ...item,
+        genres: item.genres.map(mg => mg.genre)
+      } as MediaItem
+    } catch (error) {
+      this.handleError(error, 'incrementSearchCount')
+    }
+  }
+
+  /**
+   * Get popular media items by type
+   * @param type - Media type (optional)
+   * @param limit - Number of items to return
+   * @returns List of popular media items
+   */
+  async getPopularMedia(type?: MediaType, limit = 10): Promise<MediaItem[]> {
+    try {
+      const where: Prisma.MediaItemWhereInput = type ? { mediaType: type } : {}
+
+      const items = await this.prisma.mediaItem.findMany({
+        where,
+        orderBy: [
+          { searchCount: 'desc' },
+          { popularity: 'desc' }
+        ],
+        take: limit,
+        include: {
+          genres: {
+            include: {
+              genre: true
+            }
+          }
+        }
+      })
+
+      return items.map(item => ({
+        ...item,
+        genres: item.genres.map(mg => mg.genre)
+      })) as MediaItem[]
+    } catch (error) {
+      this.handleError(error, 'getPopularMedia')
+    }
+  }
+
+  /**
+   * Get media items missing "also liked" percentage
+   * @param limit - Number of items to return
+   * @returns List of media items without sentiment data
+   */
+  async getMediaMissingAlsoLiked(limit = 50): Promise<MediaItem[]> {
+    try {
+      const items = await this.prisma.mediaItem.findMany({
+        where: {
+          alsoLikedPercentage: null,
+          searchCount: { gt: 0 } // Only items that have been searched
+        },
+        orderBy: [
+          { searchCount: 'desc' },
+          { popularity: 'desc' }
+        ],
+        take: limit,
+        include: {
+          genres: {
+            include: {
+              genre: true
+            }
+          }
+        }
+      })
+
+      return items.map(item => ({
+        ...item,
+        genres: item.genres.map(mg => mg.genre)
+      })) as MediaItem[]
+    } catch (error) {
+      this.handleError(error, 'getMediaMissingAlsoLiked')
+    }
+  }
+
+  /**
+   * Get media items by genre
+   * @param genreName - Genre name
+   * @param limit - Number of items to return
+   * @returns List of media items in the genre
+   */
+  async getMediaByGenre(genreName: string, limit = 20): Promise<MediaItem[]> {
+    try {
+      const items = await this.prisma.mediaItem.findMany({
+        where: {
+          genres: {
+            some: {
+              genre: {
+                name: genreName
+              }
+            }
+          }
+        },
+        orderBy: [
+          { popularity: 'desc' },
+          { searchCount: 'desc' }
+        ],
+        take: limit,
+        include: {
+          genres: {
+            include: {
+              genre: true
+            }
+          }
+        }
+      })
+
+      return items.map(item => ({
+        ...item,
+        genres: item.genres.map(mg => mg.genre)
+      })) as MediaItem[]
+    } catch (error) {
+      this.handleError(error, 'getMediaByGenre')
+    }
+  }
+
+  /**
+   * Get trending media based on recent searches
+   * @param hours - Number of hours to look back
+   * @param limit - Number of items to return
+   * @returns List of trending media items
+   */
+  async getTrendingMedia(hours = 24, limit = 10): Promise<MediaItem[]> {
+    try {
+      const since = new Date()
+      since.setHours(since.getHours() - hours)
+
+      const items = await this.prisma.mediaItem.findMany({
+        where: {
+          lastSearched: {
+            gte: since
+          }
+        },
+        orderBy: [
+          { searchCount: 'desc' },
+          { lastSearched: 'desc' }
+        ],
+        take: limit,
+        include: {
+          genres: {
+            include: {
+              genre: true
+            }
+          }
+        }
+      })
+
+      return items.map(item => ({
+        ...item,
+        genres: item.genres.map(mg => mg.genre)
+      })) as MediaItem[]
+    } catch (error) {
+      this.handleError(error, 'getTrendingMedia')
+    }
+  }
+
+  /**
+   * Helper: Prepare genre connections for create/update
+   */
+  private async prepareGenreConnections(genres: { tmdbId: number; name: string }[]) {
+    // Ensure all genres exist
+    const genrePromises = genres.map(genre =>
+      this.prisma.genre.upsert({
+        where: { tmdbId: genre.tmdbId },
+        create: {
+          tmdbId: genre.tmdbId,
+          name: genre.name
+        },
+        update: {}
+      })
+    )
+
+    const createdGenres = await Promise.all(genrePromises)
+
+    return createdGenres.map(genre => ({
+      genreId: genre.id
+    }))
+  }
+
+  /**
+   * Helper: Map sort field names to Prisma field names
+   */
+  private mapSortField(field: string): string {
+    const fieldMap: Record<string, string> = {
+      popularity: 'popularity',
+      releaseDate: 'releaseDate',
+      alsoLikedPercentage: 'alsoLikedPercentage',
+      searchCount: 'searchCount',
+      title: 'title'
+    }
+
+    return fieldMap[field] || 'searchCount'
+  }
+}
+
+// Export singleton instance
+export const mediaService = new MediaService()

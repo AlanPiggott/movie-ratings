@@ -1,0 +1,1564 @@
+{
+  "summary": {
+    "totalUniqueProviders": 114,
+    "knownProviders": 11,
+    "unknownProviders": 103,
+    "totalMediaItems": 939
+  },
+  "providers": [
+    {
+      "id": 10,
+      "name": "Amazon Video",
+      "flatrateCount": 0,
+      "rentCount": 567,
+      "buyCount": 778,
+      "totalCount": 1345,
+      "isKnownProvider": true,
+      "configuredName": "Amazon Video"
+    },
+    {
+      "id": 2,
+      "name": "Apple TV",
+      "flatrateCount": 0,
+      "rentCount": 560,
+      "buyCount": 774,
+      "totalCount": 1334,
+      "isKnownProvider": true,
+      "configuredName": "Apple TV Plus"
+    },
+    {
+      "id": 3,
+      "name": "Google Play Movies",
+      "flatrateCount": 0,
+      "rentCount": 561,
+      "buyCount": 760,
+      "totalCount": 1321,
+      "isKnownProvider": true,
+      "configuredName": "Google Play Movies & TV"
+    },
+    {
+      "id": 7,
+      "name": "Fandango At Home",
+      "flatrateCount": 0,
+      "rentCount": 555,
+      "buyCount": 758,
+      "totalCount": 1313,
+      "isKnownProvider": true,
+      "configuredName": "Vudu"
+    },
+    {
+      "id": 192,
+      "name": "YouTube",
+      "flatrateCount": 0,
+      "rentCount": 558,
+      "buyCount": 576,
+      "totalCount": 1134,
+      "isKnownProvider": true,
+      "configuredName": "YouTube"
+    },
+    {
+      "id": 68,
+      "name": "Microsoft Store",
+      "flatrateCount": 0,
+      "rentCount": 465,
+      "buyCount": 516,
+      "totalCount": 981,
+      "isKnownProvider": false
+    },
+    {
+      "id": 486,
+      "name": "Spectrum On Demand",
+      "flatrateCount": 14,
+      "rentCount": 248,
+      "buyCount": 0,
+      "totalCount": 262,
+      "isKnownProvider": false
+    },
+    {
+      "id": 538,
+      "name": "Plex",
+      "flatrateCount": 0,
+      "rentCount": 201,
+      "buyCount": 0,
+      "totalCount": 201,
+      "isKnownProvider": false
+    },
+    {
+      "id": 257,
+      "name": "fuboTV",
+      "flatrateCount": 165,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 165,
+      "isKnownProvider": false
+    },
+    {
+      "id": 15,
+      "name": "Hulu",
+      "flatrateCount": 155,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 155,
+      "isKnownProvider": true,
+      "configuredName": "Hulu"
+    },
+    {
+      "id": 8,
+      "name": "Netflix",
+      "flatrateCount": 148,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 148,
+      "isKnownProvider": true,
+      "configuredName": "Netflix"
+    },
+    {
+      "id": 337,
+      "name": "Disney Plus",
+      "flatrateCount": 142,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 142,
+      "isKnownProvider": true,
+      "configuredName": "Disney Plus"
+    },
+    {
+      "id": 2528,
+      "name": "Youtube TV",
+      "flatrateCount": 133,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 133,
+      "isKnownProvider": false
+    },
+    {
+      "id": 1796,
+      "name": "Netflix Standard with Ads",
+      "flatrateCount": 132,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 132,
+      "isKnownProvider": false
+    },
+    {
+      "id": 1899,
+      "name": "Max",
+      "flatrateCount": 119,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 119,
+      "isKnownProvider": false
+    },
+    {
+      "id": 9,
+      "name": "Amazon Prime Video",
+      "flatrateCount": 114,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 114,
+      "isKnownProvider": true,
+      "configuredName": "Amazon Prime Video"
+    },
+    {
+      "id": 1825,
+      "name": "Max Amazon Channel",
+      "flatrateCount": 114,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 114,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2100,
+      "name": "Amazon Prime Video with Ads",
+      "flatrateCount": 112,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 112,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2383,
+      "name": "Philo",
+      "flatrateCount": 111,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 111,
+      "isKnownProvider": false
+    },
+    {
+      "id": 582,
+      "name": "Paramount+ Amazon Channel",
+      "flatrateCount": 105,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 105,
+      "isKnownProvider": false
+    },
+    {
+      "id": 531,
+      "name": "Paramount Plus",
+      "flatrateCount": 100,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 100,
+      "isKnownProvider": true,
+      "configuredName": "Paramount Plus"
+    },
+    {
+      "id": 633,
+      "name": "Paramount+ Roku Premium Channel",
+      "flatrateCount": 100,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 100,
+      "isKnownProvider": false
+    },
+    {
+      "id": 387,
+      "name": "Peacock Premium Plus",
+      "flatrateCount": 96,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 96,
+      "isKnownProvider": false
+    },
+    {
+      "id": 386,
+      "name": "Peacock Premium",
+      "flatrateCount": 95,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 95,
+      "isKnownProvider": true,
+      "configuredName": "Peacock"
+    },
+    {
+      "id": 1853,
+      "name": "Paramount Plus Apple TV Channel ",
+      "flatrateCount": 84,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 84,
+      "isKnownProvider": false
+    },
+    {
+      "id": 331,
+      "name": "FlixFling",
+      "flatrateCount": 1,
+      "rentCount": 49,
+      "buyCount": 2,
+      "totalCount": 52,
+      "isKnownProvider": false
+    },
+    {
+      "id": 79,
+      "name": "NBC",
+      "flatrateCount": 37,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 37,
+      "isKnownProvider": false
+    },
+    {
+      "id": 34,
+      "name": "MGM Plus",
+      "flatrateCount": 27,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 27,
+      "isKnownProvider": false
+    },
+    {
+      "id": 1855,
+      "name": "Starz Apple TV Channel",
+      "flatrateCount": 26,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 26,
+      "isKnownProvider": false
+    },
+    {
+      "id": 583,
+      "name": "MGM+ Amazon Channel",
+      "flatrateCount": 25,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 25,
+      "isKnownProvider": false
+    },
+    {
+      "id": 528,
+      "name": "AMC+ Amazon Channel",
+      "flatrateCount": 21,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 21,
+      "isKnownProvider": false
+    },
+    {
+      "id": 322,
+      "name": "USA Network",
+      "flatrateCount": 17,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 17,
+      "isKnownProvider": false
+    },
+    {
+      "id": 634,
+      "name": "Starz Roku Premium Channel",
+      "flatrateCount": 17,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 17,
+      "isKnownProvider": false
+    },
+    {
+      "id": 1794,
+      "name": "Starz Amazon Channel",
+      "flatrateCount": 17,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 17,
+      "isKnownProvider": false
+    },
+    {
+      "id": 1854,
+      "name": "AMC Plus Apple TV Channel ",
+      "flatrateCount": 17,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 17,
+      "isKnownProvider": false
+    },
+    {
+      "id": 43,
+      "name": "Starz",
+      "flatrateCount": 16,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 16,
+      "isKnownProvider": false
+    },
+    {
+      "id": 283,
+      "name": "Crunchyroll",
+      "flatrateCount": 15,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 15,
+      "isKnownProvider": false
+    },
+    {
+      "id": 1968,
+      "name": "Crunchyroll Amazon Channel",
+      "flatrateCount": 15,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 15,
+      "isKnownProvider": false
+    },
+    {
+      "id": 526,
+      "name": "AMC+",
+      "flatrateCount": 15,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 15,
+      "isKnownProvider": false
+    },
+    {
+      "id": 289,
+      "name": "Cinemax Amazon Channel",
+      "flatrateCount": 13,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 13,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2061,
+      "name": "Cinemax Apple TV Channel",
+      "flatrateCount": 13,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 13,
+      "isKnownProvider": false
+    },
+    {
+      "id": 350,
+      "name": "Apple TV+",
+      "flatrateCount": 11,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 11,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2243,
+      "name": "Apple TV Plus Amazon Channel",
+      "flatrateCount": 11,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 11,
+      "isKnownProvider": false
+    },
+    {
+      "id": 80,
+      "name": "AMC",
+      "flatrateCount": 11,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 11,
+      "isKnownProvider": false
+    },
+    {
+      "id": 506,
+      "name": "TBS",
+      "flatrateCount": 10,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 10,
+      "isKnownProvider": false
+    },
+    {
+      "id": 636,
+      "name": "MGM Plus Roku Premium Channel",
+      "flatrateCount": 9,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 9,
+      "isKnownProvider": false
+    },
+    {
+      "id": 99,
+      "name": "Shudder",
+      "flatrateCount": 9,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 9,
+      "isKnownProvider": false
+    },
+    {
+      "id": 204,
+      "name": "Shudder Amazon Channel",
+      "flatrateCount": 8,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 8,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2049,
+      "name": "Shudder Apple TV Channel",
+      "flatrateCount": 8,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 8,
+      "isKnownProvider": false
+    },
+    {
+      "id": 363,
+      "name": "TNT",
+      "flatrateCount": 7,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 7,
+      "isKnownProvider": false
+    },
+    {
+      "id": 318,
+      "name": "Adult Swim",
+      "flatrateCount": 7,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 7,
+      "isKnownProvider": false
+    },
+    {
+      "id": 635,
+      "name": "AMC+ Roku Premium Channel",
+      "flatrateCount": 7,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 7,
+      "isKnownProvider": false
+    },
+    {
+      "id": 1770,
+      "name": "Paramount+ with Showtime",
+      "flatrateCount": 7,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 7,
+      "isKnownProvider": false
+    },
+    {
+      "id": 211,
+      "name": "Freeform",
+      "flatrateCount": 6,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 6,
+      "isKnownProvider": false
+    },
+    {
+      "id": 507,
+      "name": "tru TV",
+      "flatrateCount": 6,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 6,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2445,
+      "name": "MovieSphere+ Amazon Channel",
+      "flatrateCount": 5,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 5,
+      "isKnownProvider": false
+    },
+    {
+      "id": 197,
+      "name": "BritBox Amazon Channel",
+      "flatrateCount": 5,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 5,
+      "isKnownProvider": false
+    },
+    {
+      "id": 175,
+      "name": "Netflix Kids",
+      "flatrateCount": 5,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 5,
+      "isKnownProvider": false
+    },
+    {
+      "id": 278,
+      "name": "Pure Flix",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 701,
+      "name": "FilmBox+",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 290,
+      "name": "Hallmark+ Amazon Channel",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2058,
+      "name": "Hallmark+ Apple TV Channel",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 196,
+      "name": "AcornTV Amazon Channel",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2034,
+      "name": "Acorn TV Apple TV",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2475,
+      "name": "Paramount+ MTV Amazon Channel",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 1852,
+      "name": "Britbox Apple TV Channel ",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 151,
+      "name": "BritBox",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 328,
+      "name": "Fox",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2474,
+      "name": "Paramount+ Originals Amazon Channel",
+      "flatrateCount": 4,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 4,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2433,
+      "name": "Great American Pure Flix Amazon Channel",
+      "flatrateCount": 3,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 3,
+      "isKnownProvider": false
+    },
+    {
+      "id": 600,
+      "name": "Shout! Factory Amazon Channel",
+      "flatrateCount": 3,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 3,
+      "isKnownProvider": false
+    },
+    {
+      "id": 185,
+      "name": "Screambox",
+      "flatrateCount": 3,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 3,
+      "isKnownProvider": false
+    },
+    {
+      "id": 87,
+      "name": "Acorn TV",
+      "flatrateCount": 3,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 3,
+      "isKnownProvider": false
+    },
+    {
+      "id": 258,
+      "name": "Criterion Channel",
+      "flatrateCount": 3,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 3,
+      "isKnownProvider": false
+    },
+    {
+      "id": 508,
+      "name": "DisneyNOW",
+      "flatrateCount": 3,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 3,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2472,
+      "name": "Max  Originals Amazon Channel",
+      "flatrateCount": 3,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 3,
+      "isKnownProvider": false
+    },
+    {
+      "id": 202,
+      "name": "Screambox Amazon Channel",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2415,
+      "name": "Kidstream Amazon Channel",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2438,
+      "name": "Sensical Amazon Channel",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 191,
+      "name": "Kanopy",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 143,
+      "name": "Sundance Now",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 11,
+      "name": "MUBI",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 397,
+      "name": "BBC America",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 584,
+      "name": "Discovery+ Amazon Channel",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 365,
+      "name": "Bravo TV",
+      "flatrateCount": 2,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 2,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2325,
+      "name": "Best Westerns Ever Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 361,
+      "name": "TCM",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 284,
+      "name": "Lifetime Movie Club",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2055,
+      "name": "Lifetime Movie Club Apple TV Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2089,
+      "name": "Lifetime Movie Club Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2377,
+      "name": "DocuramaFilms Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 692,
+      "name": "Cultpix",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 403,
+      "name": "Discovery",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 413,
+      "name": "Travel Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 520,
+      "name": "Discovery +",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2441,
+      "name": "TCM Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 209,
+      "name": "PBS",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2430,
+      "name": "PBS Documentaries Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2057,
+      "name": "HISTORY Vault Apple TV Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2073,
+      "name": "HISTORY Vault Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 155,
+      "name": "History",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 509,
+      "name": "WeTV",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2045,
+      "name": "UP Faith & Family Apple TV Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2378,
+      "name": "Dove Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2066,
+      "name": "UP Faith & Family Amazon Channel ",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 212,
+      "name": "Hoopla",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2329,
+      "name": "Cartoon Network Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 188,
+      "name": "YouTube Premium",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 190,
+      "name": "Curiosity Stream",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2434,
+      "name": "REELZ Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 2403,
+      "name": "Hi-YAH Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 262,
+      "name": "Noggin Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 201,
+      "name": "MUBI Amazon Channel",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    },
+    {
+      "id": 344,
+      "name": "Rakuten Viki",
+      "flatrateCount": 1,
+      "rentCount": 0,
+      "buyCount": 0,
+      "totalCount": 1,
+      "isKnownProvider": false
+    }
+  ],
+  "unknownProviders": [
+    {
+      "id": 68,
+      "name": "Microsoft Store",
+      "totalCount": 981
+    },
+    {
+      "id": 486,
+      "name": "Spectrum On Demand",
+      "totalCount": 262
+    },
+    {
+      "id": 538,
+      "name": "Plex",
+      "totalCount": 201
+    },
+    {
+      "id": 257,
+      "name": "fuboTV",
+      "totalCount": 165
+    },
+    {
+      "id": 2528,
+      "name": "Youtube TV",
+      "totalCount": 133
+    },
+    {
+      "id": 1796,
+      "name": "Netflix Standard with Ads",
+      "totalCount": 132
+    },
+    {
+      "id": 1899,
+      "name": "Max",
+      "totalCount": 119
+    },
+    {
+      "id": 1825,
+      "name": "Max Amazon Channel",
+      "totalCount": 114
+    },
+    {
+      "id": 2100,
+      "name": "Amazon Prime Video with Ads",
+      "totalCount": 112
+    },
+    {
+      "id": 2383,
+      "name": "Philo",
+      "totalCount": 111
+    },
+    {
+      "id": 582,
+      "name": "Paramount+ Amazon Channel",
+      "totalCount": 105
+    },
+    {
+      "id": 633,
+      "name": "Paramount+ Roku Premium Channel",
+      "totalCount": 100
+    },
+    {
+      "id": 387,
+      "name": "Peacock Premium Plus",
+      "totalCount": 96
+    },
+    {
+      "id": 1853,
+      "name": "Paramount Plus Apple TV Channel ",
+      "totalCount": 84
+    },
+    {
+      "id": 331,
+      "name": "FlixFling",
+      "totalCount": 52
+    },
+    {
+      "id": 79,
+      "name": "NBC",
+      "totalCount": 37
+    },
+    {
+      "id": 34,
+      "name": "MGM Plus",
+      "totalCount": 27
+    },
+    {
+      "id": 1855,
+      "name": "Starz Apple TV Channel",
+      "totalCount": 26
+    },
+    {
+      "id": 583,
+      "name": "MGM+ Amazon Channel",
+      "totalCount": 25
+    },
+    {
+      "id": 528,
+      "name": "AMC+ Amazon Channel",
+      "totalCount": 21
+    },
+    {
+      "id": 322,
+      "name": "USA Network",
+      "totalCount": 17
+    },
+    {
+      "id": 634,
+      "name": "Starz Roku Premium Channel",
+      "totalCount": 17
+    },
+    {
+      "id": 1794,
+      "name": "Starz Amazon Channel",
+      "totalCount": 17
+    },
+    {
+      "id": 1854,
+      "name": "AMC Plus Apple TV Channel ",
+      "totalCount": 17
+    },
+    {
+      "id": 43,
+      "name": "Starz",
+      "totalCount": 16
+    },
+    {
+      "id": 283,
+      "name": "Crunchyroll",
+      "totalCount": 15
+    },
+    {
+      "id": 1968,
+      "name": "Crunchyroll Amazon Channel",
+      "totalCount": 15
+    },
+    {
+      "id": 526,
+      "name": "AMC+",
+      "totalCount": 15
+    },
+    {
+      "id": 289,
+      "name": "Cinemax Amazon Channel",
+      "totalCount": 13
+    },
+    {
+      "id": 2061,
+      "name": "Cinemax Apple TV Channel",
+      "totalCount": 13
+    },
+    {
+      "id": 350,
+      "name": "Apple TV+",
+      "totalCount": 11
+    },
+    {
+      "id": 2243,
+      "name": "Apple TV Plus Amazon Channel",
+      "totalCount": 11
+    },
+    {
+      "id": 80,
+      "name": "AMC",
+      "totalCount": 11
+    },
+    {
+      "id": 506,
+      "name": "TBS",
+      "totalCount": 10
+    },
+    {
+      "id": 636,
+      "name": "MGM Plus Roku Premium Channel",
+      "totalCount": 9
+    },
+    {
+      "id": 99,
+      "name": "Shudder",
+      "totalCount": 9
+    },
+    {
+      "id": 204,
+      "name": "Shudder Amazon Channel",
+      "totalCount": 8
+    },
+    {
+      "id": 2049,
+      "name": "Shudder Apple TV Channel",
+      "totalCount": 8
+    },
+    {
+      "id": 363,
+      "name": "TNT",
+      "totalCount": 7
+    },
+    {
+      "id": 318,
+      "name": "Adult Swim",
+      "totalCount": 7
+    },
+    {
+      "id": 635,
+      "name": "AMC+ Roku Premium Channel",
+      "totalCount": 7
+    },
+    {
+      "id": 1770,
+      "name": "Paramount+ with Showtime",
+      "totalCount": 7
+    },
+    {
+      "id": 211,
+      "name": "Freeform",
+      "totalCount": 6
+    },
+    {
+      "id": 507,
+      "name": "tru TV",
+      "totalCount": 6
+    },
+    {
+      "id": 2445,
+      "name": "MovieSphere+ Amazon Channel",
+      "totalCount": 5
+    },
+    {
+      "id": 197,
+      "name": "BritBox Amazon Channel",
+      "totalCount": 5
+    },
+    {
+      "id": 175,
+      "name": "Netflix Kids",
+      "totalCount": 5
+    },
+    {
+      "id": 278,
+      "name": "Pure Flix",
+      "totalCount": 4
+    },
+    {
+      "id": 701,
+      "name": "FilmBox+",
+      "totalCount": 4
+    },
+    {
+      "id": 290,
+      "name": "Hallmark+ Amazon Channel",
+      "totalCount": 4
+    },
+    {
+      "id": 2058,
+      "name": "Hallmark+ Apple TV Channel",
+      "totalCount": 4
+    },
+    {
+      "id": 196,
+      "name": "AcornTV Amazon Channel",
+      "totalCount": 4
+    },
+    {
+      "id": 2034,
+      "name": "Acorn TV Apple TV",
+      "totalCount": 4
+    },
+    {
+      "id": 2475,
+      "name": "Paramount+ MTV Amazon Channel",
+      "totalCount": 4
+    },
+    {
+      "id": 1852,
+      "name": "Britbox Apple TV Channel ",
+      "totalCount": 4
+    },
+    {
+      "id": 151,
+      "name": "BritBox",
+      "totalCount": 4
+    },
+    {
+      "id": 328,
+      "name": "Fox",
+      "totalCount": 4
+    },
+    {
+      "id": 2474,
+      "name": "Paramount+ Originals Amazon Channel",
+      "totalCount": 4
+    },
+    {
+      "id": 2433,
+      "name": "Great American Pure Flix Amazon Channel",
+      "totalCount": 3
+    },
+    {
+      "id": 600,
+      "name": "Shout! Factory Amazon Channel",
+      "totalCount": 3
+    },
+    {
+      "id": 185,
+      "name": "Screambox",
+      "totalCount": 3
+    },
+    {
+      "id": 87,
+      "name": "Acorn TV",
+      "totalCount": 3
+    },
+    {
+      "id": 258,
+      "name": "Criterion Channel",
+      "totalCount": 3
+    },
+    {
+      "id": 508,
+      "name": "DisneyNOW",
+      "totalCount": 3
+    },
+    {
+      "id": 2472,
+      "name": "Max  Originals Amazon Channel",
+      "totalCount": 3
+    },
+    {
+      "id": 202,
+      "name": "Screambox Amazon Channel",
+      "totalCount": 2
+    },
+    {
+      "id": 2415,
+      "name": "Kidstream Amazon Channel",
+      "totalCount": 2
+    },
+    {
+      "id": 2438,
+      "name": "Sensical Amazon Channel",
+      "totalCount": 2
+    },
+    {
+      "id": 191,
+      "name": "Kanopy",
+      "totalCount": 2
+    },
+    {
+      "id": 143,
+      "name": "Sundance Now",
+      "totalCount": 2
+    },
+    {
+      "id": 11,
+      "name": "MUBI",
+      "totalCount": 2
+    },
+    {
+      "id": 397,
+      "name": "BBC America",
+      "totalCount": 2
+    },
+    {
+      "id": 584,
+      "name": "Discovery+ Amazon Channel",
+      "totalCount": 2
+    },
+    {
+      "id": 365,
+      "name": "Bravo TV",
+      "totalCount": 2
+    },
+    {
+      "id": 2325,
+      "name": "Best Westerns Ever Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 361,
+      "name": "TCM",
+      "totalCount": 1
+    },
+    {
+      "id": 284,
+      "name": "Lifetime Movie Club",
+      "totalCount": 1
+    },
+    {
+      "id": 2055,
+      "name": "Lifetime Movie Club Apple TV Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 2089,
+      "name": "Lifetime Movie Club Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 2377,
+      "name": "DocuramaFilms Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 692,
+      "name": "Cultpix",
+      "totalCount": 1
+    },
+    {
+      "id": 403,
+      "name": "Discovery",
+      "totalCount": 1
+    },
+    {
+      "id": 413,
+      "name": "Travel Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 520,
+      "name": "Discovery +",
+      "totalCount": 1
+    },
+    {
+      "id": 2441,
+      "name": "TCM Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 209,
+      "name": "PBS",
+      "totalCount": 1
+    },
+    {
+      "id": 2430,
+      "name": "PBS Documentaries Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 2057,
+      "name": "HISTORY Vault Apple TV Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 2073,
+      "name": "HISTORY Vault Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 155,
+      "name": "History",
+      "totalCount": 1
+    },
+    {
+      "id": 509,
+      "name": "WeTV",
+      "totalCount": 1
+    },
+    {
+      "id": 2045,
+      "name": "UP Faith & Family Apple TV Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 2378,
+      "name": "Dove Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 2066,
+      "name": "UP Faith & Family Amazon Channel ",
+      "totalCount": 1
+    },
+    {
+      "id": 212,
+      "name": "Hoopla",
+      "totalCount": 1
+    },
+    {
+      "id": 2329,
+      "name": "Cartoon Network Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 188,
+      "name": "YouTube Premium",
+      "totalCount": 1
+    },
+    {
+      "id": 190,
+      "name": "Curiosity Stream",
+      "totalCount": 1
+    },
+    {
+      "id": 2434,
+      "name": "REELZ Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 2403,
+      "name": "Hi-YAH Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 262,
+      "name": "Noggin Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 201,
+      "name": "MUBI Amazon Channel",
+      "totalCount": 1
+    },
+    {
+      "id": 344,
+      "name": "Rakuten Viki",
+      "totalCount": 1
+    }
+  ]
+}

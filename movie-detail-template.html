@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Dynamic Movie Title] - Movie Score</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-[#0D0D0D] text-white min-h-screen">
+    <!-- Header/Hero Section -->
+    <header class="relative overflow-hidden">
+        <!-- Background Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0D0D0D]/50 to-[#0D0D0D] z-10"></div>
+        
+        <!-- Container -->
+        <div class="relative z-20 px-4 sm:px-6 lg:px-8 pt-6 pb-12">
+            <!-- Back Navigation -->
+            <a href="#" class="inline-flex items-center text-gray-400 hover:text-white hover:underline transition-colors mb-8">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                Back to Browse
+            </a>
+            
+            <!-- Hero Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                <!-- Movie Poster -->
+                <div class="md:col-span-1">
+                    <div class="relative group">
+                        <img src="https://via.placeholder.com/300x450" alt="[Movie Title]" 
+                             class="w-full rounded-2xl shadow-2xl shadow-sky-500/10 border border-gray-800/50 transition-transform group-hover:scale-105">
+                    </div>
+                </div>
+                
+                <!-- Movie Details -->
+                <div class="md:col-span-2 lg:col-span-3 space-y-6">
+                    <!-- Title and Tagline -->
+                    <div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3">
+                            [Dynamic Movie Title]
+                        </h1>
+                        <p class="text-lg text-gray-400 italic">
+                            "[Tagline Text]"
+                        </p>
+                    </div>
+                    
+                    <!-- Year and Runtime -->
+                    <div class="flex items-center text-gray-300 space-x-2">
+                        <span>[Year]</span>
+                        <span class="text-gray-500">•</span>
+                        <span>[Runtime]</span>
+                    </div>
+                    
+                    <!-- Ratings Section -->
+                    <div class="flex flex-wrap items-center gap-6">
+                        <!-- Audience Liked Badge -->
+                        <div class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-xl">
+                            <div class="text-xs font-medium">Audience Liked</div>
+                            <div class="text-2xl font-bold">[%]</div>
+                        </div>
+                        
+                        <!-- IMDb Rating -->
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <div>
+                                <div class="text-gray-400 text-xs">IMDb</div>
+                                <div class="text-sky-500 text-xl font-semibold">[Score]</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Critics Rating -->
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <div class="text-gray-400 text-xs">Critics</div>
+                                <div class="text-sky-500 text-xl font-semibold">[Score]</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <!-- Watch Trailer (Primary) -->
+                        <button class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2 transform hover:scale-105 transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Watch Trailer</span>
+                        </button>
+                        
+                        <!-- Add to My List (Secondary) -->
+                        <button class="bg-transparent border border-gray-600 hover:bg-gray-800 text-gray-300 hover:text-white font-medium px-6 py-3 rounded-full flex items-center space-x-2 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                            </svg>
+                            <span>Add to My List</span>
+                        </button>
+                        
+                        <!-- Like (Secondary) -->
+                        <button class="bg-transparent border border-gray-600 hover:bg-gray-800 text-gray-300 hover:text-white font-medium px-6 py-3 rounded-full flex items-center space-x-2 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <span>Like</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12 pb-16">
+        
+        <!-- Synopsis Section -->
+        <section class="bg-gray-900/30 rounded-2xl p-6 sm:p-8">
+            <h2 class="text-2xl font-semibold mb-4">Synopsis</h2>
+            <p class="text-gray-300 leading-relaxed mb-6">
+                [Long descriptive text about the movie plot and themes. This dynamic content will provide a detailed overview of the storyline without spoilers.]
+            </p>
+            
+            <!-- Where to Watch -->
+            <div class="border-t border-gray-800 pt-6">
+                <h3 class="text-lg font-medium mb-4">Where to Watch</h3>
+                <div class="flex flex-wrap gap-4 items-center">
+                    <!-- Streaming Service Logos -->
+                    <div class="w-20 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
+                        <span class="text-xs text-gray-500">[Logo]</span>
+                    </div>
+                    <div class="w-20 h-12 bg-gray-800 rounded-lg flex items-center justify-center">
+                        <span class="text-xs text-gray-500">[Logo]</span>
+                    </div>
+                    <span class="text-sm text-gray-400 ml-4">[Region availability text]</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cast Section -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-6">Cast</h2>
+            <div class="flex overflow-x-auto space-x-4 pb-4 no-scrollbar">
+                <!-- Cast Member Cards (Repeat for each cast member) -->
+                <div class="flex-none w-40">
+                    <div class="bg-gray-900/30 rounded-xl p-4 hover:bg-gray-900/50 transition-colors">
+                        <img src="https://via.placeholder.com/150x200" alt="[Actor Name]" class="w-full h-48 object-cover rounded-lg mb-3">
+                        <h4 class="font-medium text-sm">[Actor Name]</h4>
+                        <p class="text-xs text-gray-400">[Character Name]</p>
+                    </div>
+                </div>
+                <!-- Repeat cast cards... -->
+                <div class="flex-none w-40">
+                    <div class="bg-gray-900/30 rounded-xl p-4 hover:bg-gray-900/50 transition-colors">
+                        <img src="https://via.placeholder.com/150x200" alt="[Actor Name]" class="w-full h-48 object-cover rounded-lg mb-3">
+                        <h4 class="font-medium text-sm">[Actor Name]</h4>
+                        <p class="text-xs text-gray-400">[Character Name]</p>
+                    </div>
+                </div>
+                <div class="flex-none w-40">
+                    <div class="bg-gray-900/30 rounded-xl p-4 hover:bg-gray-900/50 transition-colors">
+                        <img src="https://via.placeholder.com/150x200" alt="[Actor Name]" class="w-full h-48 object-cover rounded-lg mb-3">
+                        <h4 class="font-medium text-sm">[Actor Name]</h4>
+                        <p class="text-xs text-gray-400">[Character Name]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Information -->
+            <div class="bg-gray-900/30 rounded-2xl p-6">
+                <h3 class="text-lg font-semibold mb-4 text-sky-500">Information</h3>
+                <dl class="space-y-3">
+                    <div>
+                        <dt class="text-sm text-gray-400">Release Date</dt>
+                        <dd class="text-gray-200">[Date]</dd>
+                    </div>
+                    <div>
+                        <dt class="text-sm text-gray-400">Runtime</dt>
+                        <dd class="text-gray-200">[Runtime]</dd>
+                    </div>
+                    <div>
+                        <dt class="text-sm text-gray-400">Languages</dt>
+                        <dd class="text-gray-200">[Languages]</dd>
+                    </div>
+                </dl>
+            </div>
+            
+            <!-- Box Office -->
+            <div class="bg-gray-900/30 rounded-2xl p-6">
+                <h3 class="text-lg font-semibold mb-4 text-sky-500">Box Office</h3>
+                <dl class="space-y-3">
+                    <div>
+                        <dt class="text-sm text-gray-400">Budget</dt>
+                        <dd class="text-gray-200">[Budget]</dd>
+                    </div>
+                    <div>
+                        <dt class="text-sm text-gray-400">Revenue</dt>
+                        <dd class="text-gray-200">[Revenue]</dd>
+                    </div>
+                </dl>
+            </div>
+            
+            <!-- Crew -->
+            <div class="bg-gray-900/30 rounded-2xl p-6">
+                <h3 class="text-lg font-semibold mb-4 text-sky-500">Crew</h3>
+                <dl class="space-y-3">
+                    <div>
+                        <dt class="text-sm text-gray-400">Director</dt>
+                        <dd class="text-gray-200">[Director Name]</dd>
+                    </div>
+                    <div>
+                        <dt class="text-sm text-gray-400">Producers</dt>
+                        <dd class="text-gray-200">[Producer Names]</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Videos & Trailers Section -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-6">Videos & Trailers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Video Thumbnail Cards -->
+                <div class="relative group cursor-pointer">
+                    <img src="https://via.placeholder.com/400x225" alt="[Video Title]" class="w-full rounded-xl">
+                    <div class="absolute inset-0 bg-black/50 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="bg-sky-500 w-16 h-16 rounded-full flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="mt-3 font-medium">[Video Title]</h4>
+                </div>
+                <!-- Repeat for more videos... -->
+            </div>
+        </section>
+
+        <!-- Production Section -->
+        <section class="bg-gray-900/30 rounded-2xl p-6 sm:p-8">
+            <h2 class="text-2xl font-semibold mb-6">Production</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <!-- Production Company Items -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-20 h-20 bg-gray-800 rounded-lg mb-2 flex items-center justify-center">
+                        <span class="text-xs text-gray-500">[Logo]</span>
+                    </div>
+                    <span class="text-sm text-gray-300">[Company Name]</span>
+                </div>
+                <!-- Repeat for more companies... -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>

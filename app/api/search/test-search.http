@@ -1,0 +1,41 @@
+### Search API Tests
+
+# Search for Batman (will likely need external API on first run)
+GET http://localhost:3000/api/search?q=Batman
+Accept: application/json
+
+###
+
+# Search for a specific movie
+GET http://localhost:3000/api/search?q=The%20Dark%20Knight
+Accept: application/json
+
+###
+
+# Search with pagination
+GET http://localhost:3000/api/search?q=Star%20Wars&page=1&limit=10
+Accept: application/json
+
+###
+
+# Search for TV shows
+GET http://localhost:3000/api/search?q=Breaking%20Bad
+Accept: application/json
+
+###
+
+# Search with special characters
+GET http://localhost:3000/api/search?q=Spider-Man%3A%20No%20Way%20Home
+Accept: application/json
+
+###
+
+# Empty search (should return 400 error)
+GET http://localhost:3000/api/search?q=
+Accept: application/json
+
+###
+
+# Search that might return no results
+GET http://localhost:3000/api/search?q=asdfghjklzxcvbnm123456
+Accept: application/json
