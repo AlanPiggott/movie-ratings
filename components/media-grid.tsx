@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { MediaType } from '@/types'
+import { AudienceVerdictCompact } from '@/components/audience-verdict'
 
 interface MediaItem {
   id: string
@@ -26,6 +27,11 @@ export function MediaGrid({ items }: MediaGridProps) {
           href={`/${item.mediaType === 'MOVIE' ? 'movie' : 'tv'}/${item.id}`}
           className="group relative aspect-[2/3] overflow-hidden rounded-lg bg-zinc-800 hover:ring-2 hover:ring-[#F5C518] transition-all"
         >
+          {/* Audience Verdict badge - Top Left */}
+          <div className="absolute top-2 left-2 z-10 transition-all duration-300 group-hover:scale-110">
+            <AudienceVerdictCompact percentage={item.alsoLikedPercentage} />
+          </div>
+
           {item.posterPath ? (
             <Image
               src={`https://image.tmdb.org/t/p/w342${item.posterPath}`}
@@ -40,17 +46,12 @@ export function MediaGrid({ items }: MediaGridProps) {
             </div>
           )}
           
-          {/* Hover overlay with score */}
+          {/* Hover overlay with title */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
             <div className="absolute bottom-0 left-0 right-0 p-3">
               <h3 className="text-white text-sm font-medium mb-1 line-clamp-2">{item.title}</h3>
               {item.year && (
-                <p className="text-zinc-400 text-xs mb-1">{item.year}</p>
-              )}
-              {item.alsoLikedPercentage !== null && (
-                <p className="text-[#F5C518] text-sm font-bold">
-                  {item.alsoLikedPercentage}% liked
-                </p>
+                <p className="text-zinc-400 text-xs">{item.year}</p>
               )}
             </div>
           </div>

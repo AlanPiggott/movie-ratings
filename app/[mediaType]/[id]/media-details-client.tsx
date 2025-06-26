@@ -371,7 +371,7 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                     {media.genres.map((genre) => (
                       <Link
                         key={genre.id}
-                        href={`/genres/${media.media_type === 'MOVIE' ? 'movie' : 'tv'}/${genre.name.toLowerCase().replace(/\s+/g, '-')}`}
+                        href={`/${media.media_type === 'MOVIE' ? 'movie' : 'tv'}/genre/${genre.name.toLowerCase().replace(/\s+/g, '-')}`}
                         className="inline-block px-3 py-1 xl:px-4 xl:py-1.5 bg-transparent text-gray-400 text-xs xl:text-sm rounded-full border border-[#F5C518]/30 hover:text-white hover:border-[#F5C518]/60 hover:bg-[#F5C518]/10 transition-all duration-200 cursor-pointer"
                       >
                         {genre.name}

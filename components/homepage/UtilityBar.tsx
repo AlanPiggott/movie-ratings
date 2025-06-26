@@ -120,7 +120,7 @@ export function UtilityBar({
                 {genres.map((genre) => (
                   <Link
                     key={genre.slug}
-                    href={`/genres/${mediaType}/${genre.slug}`}
+                    href={`/${mediaType}/genre/${genre.slug}`}
                     className={cn(
                       'flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200',
                       'border scroll-snap-align-start',
