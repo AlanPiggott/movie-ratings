@@ -118,7 +118,7 @@ export default function HomePage() {
             {/* Top-Rated Movies */}
             {data?.topRatedMovies && data.topRatedMovies.length > 0 && (
               <PosterCarousel
-                title="Top-Rated Movies (Google 90%+)"
+                title="Most Popular Movies"
                 items={data.topRatedMovies}
                 loading={loading}
               />
@@ -127,7 +127,7 @@ export default function HomePage() {
             {/* Top-Rated TV Shows */}
             {data?.topRatedShows && data.topRatedShows.length > 0 && (
               <PosterCarousel
-                title="Top-Rated TV Shows (Google 90%+)"
+                title="Most Popular TV Shows"
                 items={data.topRatedShows}
                 loading={loading}
               />

@@ -53,25 +53,27 @@ export async function GET() {
         .order('popularity', { ascending: false })
         .limit(20),
 
-      // Top-rated movies (90%+)
+      // Most popular classic movies
       supabaseAdmin
         .from('media_items')
         .select('*')
         .eq('media_type', 'MOVIE')
-        .gte('also_liked_percentage', 90)
+        .gte('also_liked_percentage', 85)
+        .gte('vote_count', 5000)
         .not('release_date', 'is', null)
-        .order('also_liked_percentage', { ascending: false })
         .order('vote_count', { ascending: false })
+        .order('also_liked_percentage', { ascending: false })
         .limit(20),
 
-      // Top-rated TV shows (90%+)
+      // Most popular TV shows
       supabaseAdmin
         .from('media_items')
         .select('*')
         .eq('media_type', 'TV_SHOW')
-        .gte('also_liked_percentage', 90)
-        .order('also_liked_percentage', { ascending: false })
+        .gte('also_liked_percentage', 85)
+        .gte('vote_count', 1000)
         .order('vote_count', { ascending: false })
+        .order('also_liked_percentage', { ascending: false })
         .limit(20)
     ])
 
