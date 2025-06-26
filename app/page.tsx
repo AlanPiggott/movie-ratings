@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { ErrorBoundary } from '@/components/error-boundary'
 import { SearchBar } from '@/components/homepage/SearchBar'
 import { USPCard } from '@/components/homepage/USPCard'
-import { DataSourceShowcase } from '@/components/homepage/DataSourceShowcase'
+import { TrustComparison } from '@/components/homepage/TrustComparison'
 import { PosterCarousel } from '@/components/homepage/PosterCarousel'
 import { Footer } from '@/components/footer'
 
@@ -81,41 +81,28 @@ export default function HomePage() {
         <main className="flex-1">
           {/* Hero Section */}
           <div className="max-w-5xl mx-auto px-4 md:px-6 pt-12 pb-8 md:pt-20 md:pb-12">
-            {/* Green pill badge */}
-            <div className="flex justify-center mb-6">
-              <div className="inline-flex items-center gap-2 px-6 py-2.5 bg-green-600/20 border border-green-600/50 rounded-full">
-                <span className="text-yellow-400">✨</span>
-                <span className="text-green-400 font-medium">100% Free • No Sign-up Required</span>
-              </div>
+            {/* Main headline */}
+            <div className="text-center mb-8 font-heading leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">
+                Stop trusting critics.
+              </h1>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
+                Search <span className="text-[#4285F4]">real</span> ratings.
+              </h1>
             </div>
-
-            {/* Main headline with Google colors */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center mb-8 font-heading leading-tight">
-              Finally,{' '}
-              <span className="inline-flex">
-                <span className="text-[#4285F4]">G</span>
-                <span className="text-[#EA4335]">o</span>
-                <span className="text-[#FBBC05]">o</span>
-                <span className="text-[#4285F4]">g</span>
-                <span className="text-[#34A853]">l</span>
-                <span className="text-[#EA4335]">e</span>
-                <span className="text-[#FBBC05]">&apos;s</span>
-              </span>{' '}
-              Movie Ratings,
-              <br />
-              Made Searchable
-            </h1>
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-gray-400 text-center mb-10 max-w-3xl mx-auto">
-              The authentic &quot;% liked&quot; scores from millions of Google users.. no longer buried in search results
+              Google collects ratings from millions of viewers.
+              <br />
+              We made them searchable.
             </p>
 
             <SearchBar className="w-full" />
           </div>
 
-          {/* Data Source Showcase */}
-          <DataSourceShowcase />
+          {/* Trust Comparison */}
+          <TrustComparison />
 
           {/* Error Message */}
           {error && (

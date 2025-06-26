@@ -96,7 +96,7 @@ export function SearchBar({ className }: SearchBarProps) {
             }}
             onFocus={() => setShowResults(true)}
             placeholder="Search any movie or TV show..."
-            className="w-full h-[72px] pl-16 pr-16 bg-white/5 border border-white/10 rounded-full text-xl text-white placeholder-gray-400 focus:outline-none focus:border-accent/50 focus:bg-white/10 focus:shadow-[0_0_40px_rgba(245,197,24,0.15)] transition-all duration-200"
+            className="w-full h-[72px] pl-16 pr-16 bg-[#1A1B1F] border border-white/10 rounded-full text-xl text-white placeholder-gray-500 focus:outline-none focus:border-white/20 focus:bg-[#202124] focus:shadow-[0_8px_32px_rgba(0,0,0,0.5),0_0_0_1px_rgba(255,255,255,0.1)] shadow-[0_4px_16px_rgba(0,0,0,0.3)] transition-all duration-200"
           />
           {query && (
             <button

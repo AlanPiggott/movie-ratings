@@ -125,7 +125,7 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="navbar bg-[#0E0F13]">
+    <nav className="navbar bg-[#0E0F13] sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo and Desktop Nav */}
