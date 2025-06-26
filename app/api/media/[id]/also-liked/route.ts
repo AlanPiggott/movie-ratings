@@ -145,26 +145,49 @@ export async function POST(
     const queries: string[] = []
     
     // Build query strategies in order of preference
-    if (year) {
-      queries.push(`${media.title} ${year} ${mediaTypeStr}`)
-      
-      // Add clean version if different
-      if (cleanTitle !== media.title) {
-        queries.push(`${cleanTitle} ${year} ${mediaTypeStr}`)
+    if (media.media_type === 'TV_SHOW') {
+      // TV shows - prioritize "tv show" queries
+      if (year) {
+        queries.push(`${media.title} ${year} tv show`)
+        queries.push(`${media.title} (${year}) tv show`)
+        
+        // Add clean version if different
+        if (cleanTitle !== media.title) {
+          queries.push(`${cleanTitle} ${year} tv show`)
+        }
+        
+        // For titles with colons, try without subtitle
+        if (media.title.includes(':')) {
+          const mainTitle = media.title.split(':')[0].trim()
+          queries.push(`${mainTitle} ${year} tv show`)
+        }
       }
-      
-      // For titles with colons, try without subtitle
-      if (media.title.includes(':')) {
-        const mainTitle = media.title.split(':')[0].trim()
-        queries.push(`${mainTitle} ${year} ${mediaTypeStr}`)
+      queries.push(`${media.title} tv show`)
+      queries.push(`${media.title} series`)
+    } else {
+      // Movies - prioritize "movie" queries
+      if (year) {
+        queries.push(`${media.title} ${year} movie`)
+        queries.push(`${media.title} (${year}) movie`)
+        queries.push(`"${media.title}" ${year} film`)
+        
+        // Add clean version if different
+        if (cleanTitle !== media.title) {
+          queries.push(`${cleanTitle} ${year} movie`)
+        }
+        
+        // For titles with colons, try without subtitle
+        if (media.title.includes(':')) {
+          const mainTitle = media.title.split(':')[0].trim()
+          queries.push(`${mainTitle} ${year} movie`)
+        }
+        
+        queries.push(`${media.title} ${year} film`)
       }
-      
-      queries.push(`"${media.title}" ${year} film`)
-      queries.push(`${media.title} (${year}) ${mediaTypeStr}`)
+      queries.push(`${media.title} movie`)
     }
     
-    // Always add without year as fallback
-    queries.push(`${media.title} ${mediaTypeStr}`)
+    // Add clean version without year if different
     if (cleanTitle !== media.title) {
       queries.push(`${cleanTitle} ${mediaTypeStr}`)
     }
