@@ -23,7 +23,7 @@ export function MediaGrid({ items }: MediaGridProps) {
       {items.map((item) => (
         <Link
           key={item.id}
-          href={`/${item.mediaType.toLowerCase()}/${item.id}`}
+          href={`/${item.mediaType === 'MOVIE' ? 'movie' : 'tv'}/${item.id}`}
           className="group relative aspect-[2/3] overflow-hidden rounded-lg bg-zinc-800 hover:ring-2 hover:ring-[#F5C518] transition-all"
         >
           {item.posterPath ? (

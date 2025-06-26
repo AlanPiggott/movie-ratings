@@ -17,26 +17,19 @@ const genreIdMap: Record<string, number> = {
   'mystery': 9648,
   'romance': 10749,
   'science-fiction': 878,
+  'sci-fi': 878,
   'tv-movie': 10770,
   'thriller': 53,
   'war': 10752,
-  'western': 37,
-  'reality': 10764,
-  'sci-fi-fantasy': 10765,
-  'action-adventure': 10759,
-  'kids': 10762,
-  'news': 10763,
-  'soap': 10766,
-  'talk': 10767,
-  'war-politics': 10768
+  'western': 37
 }
 
 export async function GET(
   request: Request,
-  { params }: { params: { mediaType: string; genre: string } }
+  { params }: { params: { genre: string } }
 ) {
   try {
-    const { mediaType, genre } = params
+    const { genre } = params
     const genreId = genreIdMap[genre]
     
     if (!genreId) {
@@ -44,7 +37,6 @@ export async function GET(
     }
 
     const supabase = createClient()
-    const mediaTypeEnum = mediaType === 'movie' ? 'MOVIE' : 'TV_SHOW'
 
     // First, get the genre UUID from the TMDB ID
     const { data: genreData, error: genreError } = await supabase
@@ -73,7 +65,7 @@ export async function GET(
         overview,
         media_genres!inner(genre_id)
       `)
-      .eq('media_type', mediaTypeEnum)
+      .eq('media_type', 'MOVIE')
       .eq('media_genres.genre_id', genreData.id)
       .order('popularity', { ascending: false })
       .limit(50)
@@ -102,7 +94,7 @@ export async function GET(
       }
     )
   } catch (error) {
-    console.error('Error in browse API:', error)
+    console.error('Error in movie genre API:', error)
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }

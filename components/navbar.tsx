@@ -204,7 +204,7 @@ export function Navbar() {
                         {(genreTab === 'movies' ? movieGenres : tvGenres).map((genre) => (
                           <Link
                             key={genre.slug}
-                            href={`/browse/${genreTab === 'movies' ? 'movie' : 'tv'}/${genre.slug}`}
+                            href={`/genres/${genreTab === 'movies' ? 'movie' : 'tv'}/${genre.slug}`}
                             className="px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded transition-colors"
                             onClick={() => setIsGenresOpen(false)}
                           >
@@ -391,7 +391,7 @@ export function Navbar() {
                 {movieGenres.slice(0, 6).map((genre) => (
                   <Link
                     key={genre.slug}
-                    href={`/browse/movie/${genre.slug}`}
+                    href={`/genres/movie/${genre.slug}`}
                     className="block px-8 py-2 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded transition-colors"
                   >
                     {genre.name}
@@ -401,7 +401,7 @@ export function Navbar() {
                 {tvGenres.slice(0, 6).map((genre) => (
                   <Link
                     key={genre.slug}
-                    href={`/browse/tv/${genre.slug}`}
+                    href={`/genres/tv/${genre.slug}`}
                     className="block px-8 py-2 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded transition-colors"
                   >
                     {genre.name}

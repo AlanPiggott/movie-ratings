@@ -58,9 +58,8 @@ export function slugify(text: string): string {
 }
 
 export function createMediaUrl(mediaType: 'movie' | 'tv', title: string, id: string): string {
-  const slug = slugify(title)
-  // For now, use full ID until we set up partial ID search
-  return `/${mediaType}/${slug}-${id}`
+  // Remove slug to avoid routing conflicts with genre pages
+  return `/${mediaType}/${id}`
 }
 
 export function extractIdFromSlug(slug: string): string {
