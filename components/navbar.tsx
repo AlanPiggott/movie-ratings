@@ -344,72 +344,75 @@ export function Navbar() {
 
       {/* Mobile Menu Drawer */}
       <div className={cn(
-        'fixed inset-y-0 left-0 z-50 w-80 bg-[#0E0F13] border-r border-white/10 transform transition-transform duration-300 lg:hidden',
+        'fixed inset-y-0 left-0 z-50 w-80 bg-[#0E0F13] border-r border-white/10 transform transition-transform duration-300 lg:hidden flex flex-col',
         isMenuOpen ? 'translate-x-0' : '-translate-x-full'
       )}>
-        <div className="p-4">
-          {/* Mobile Menu Header */}
-          <div className="flex items-center justify-between mb-8">
-            <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl">
-              <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-                <span className="text-black text-sm font-bold">MS</span>
-              </div>
-              <span>Movie Score</span>
-            </Link>
-            <button
-              onClick={() => setIsMenuOpen(false)}
-              className="p-2 text-gray-400 hover:text-white transition-colors"
-            >
-              <X className="w-6 h-6" />
-            </button>
-          </div>
-
-          {/* Mobile Navigation */}
-          <nav className="space-y-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'block px-4 py-3 text-base font-medium rounded-lg transition-colors',
-                  pathname === link.href
-                    ? 'bg-white/10 text-white'
-                    : 'text-gray-400 hover:text-white hover:bg-white/5'
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
-
-            {/* Genres Section */}
-            <div className="pt-4 border-t border-white/10">
-              <h3 className="px-4 py-2 text-sm font-medium text-gray-500 uppercase tracking-wider">
-                Genres
-              </h3>
-              <div className="mt-2 space-y-1">
-                <h4 className="px-4 py-2 text-sm font-medium text-white">Movies</h4>
-                {movieGenres.slice(0, 6).map((genre) => (
-                  <Link
-                    key={genre.slug}
-                    href={`/movie/genre/${genre.slug}`}
-                    className="block px-8 py-2 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded transition-colors"
-                  >
-                    {genre.name}
-                  </Link>
-                ))}
-                <h4 className="px-4 py-2 text-sm font-medium text-white mt-4">TV Shows</h4>
-                {tvGenres.slice(0, 6).map((genre) => (
-                  <Link
-                    key={genre.slug}
-                    href={`/tv/genre/${genre.slug}`}
-                    className="block px-8 py-2 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded transition-colors"
-                  >
-                    {genre.name}
-                  </Link>
-                ))}
-              </div>
+        {/* Mobile Menu Header - Fixed */}
+        <div className="flex items-center justify-between p-4 border-b border-white/10">
+          <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl">
+            <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
+              <span className="text-black text-sm font-bold">MS</span>
             </div>
-          </nav>
+            <span>Movie Score</span>
+          </Link>
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="p-2 text-gray-400 hover:text-white transition-colors"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
+        {/* Scrollable Content */}
+        <div className="flex-1 overflow-y-auto">
+          <div className="p-4">
+            {/* Mobile Navigation */}
+            <nav className="space-y-2">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    'block px-4 py-3 text-base font-medium rounded-lg transition-colors',
+                    pathname === link.href
+                      ? 'bg-white/10 text-white'
+                      : 'text-gray-400 hover:text-white hover:bg-white/5'
+                  )}
+                >
+                  {link.name}
+                </Link>
+              ))}
+
+              {/* Genres Section */}
+              <div className="pt-4 border-t border-white/10">
+                <h3 className="px-4 py-2 text-sm font-medium text-gray-500 uppercase tracking-wider">
+                  Genres
+                </h3>
+                <div className="mt-2 space-y-1">
+                  <h4 className="px-4 py-2 text-sm font-medium text-white">Movies</h4>
+                  {movieGenres.map((genre) => (
+                    <Link
+                      key={genre.slug}
+                      href={`/movie/genre/${genre.slug}`}
+                      className="block px-8 py-2 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded transition-colors"
+                    >
+                      {genre.name}
+                    </Link>
+                  ))}
+                  <h4 className="px-4 py-2 text-sm font-medium text-white mt-4">TV Shows</h4>
+                  {tvGenres.map((genre) => (
+                    <Link
+                      key={genre.slug}
+                      href={`/tv/genre/${genre.slug}`}
+                      className="block px-8 py-2 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded transition-colors"
+                    >
+                      {genre.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
 

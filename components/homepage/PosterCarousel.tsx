@@ -91,7 +91,7 @@ export function PosterCarousel({
         </div>
 
         {/* Carousel Container */}
-        <div className="relative group">
+        <div className="relative group/carousel">
           {/* Left Arrow - Desktop Only */}
           <button
             onClick={() => scroll('left')}
@@ -101,7 +101,7 @@ export function PosterCarousel({
               'hidden xl:flex items-center justify-start pl-2',
               'transition-opacity duration-200',
               canScrollLeft
-                ? 'opacity-0 group-hover:opacity-100'
+                ? 'opacity-0 group-hover/carousel:opacity-100'
                 : 'opacity-0 pointer-events-none'
             )}
             aria-label="Scroll left"
@@ -120,7 +120,7 @@ export function PosterCarousel({
               'hidden xl:flex items-center justify-end pr-2',
               'transition-opacity duration-200',
               canScrollRight
-                ? 'opacity-0 group-hover:opacity-100'
+                ? 'opacity-0 group-hover/carousel:opacity-100'
                 : 'opacity-0 pointer-events-none'
             )}
             aria-label="Scroll right"

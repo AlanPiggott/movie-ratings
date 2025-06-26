@@ -11,6 +11,7 @@ import {
 import RadialGauge from '@/components/radial-gauge'
 import Breadcrumbs from '@/components/breadcrumbs'
 import { useRatingRequest } from '@/lib/rating-requests'
+import { AudienceVerdictCompact } from '@/components/audience-verdict'
 
 interface MediaDetails {
   id: string
@@ -949,11 +950,9 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                   )}
                   
                   {/* Audience Score Badge */}
-                  {item.also_liked_percentage && (
-                    <div className="absolute top-2 left-2 bg-black/80 backdrop-blur-sm rounded-md px-2 py-1">
-                      <span className="text-xs font-bold text-white">{item.also_liked_percentage}%</span>
-                    </div>
-                  )}
+                  <div className="absolute top-2 left-2 z-10 transition-all duration-300 group-hover:scale-110">
+                    <AudienceVerdictCompact percentage={item.also_liked_percentage} />
+                  </div>
                 </div>
                 
                 <div className="mt-2">

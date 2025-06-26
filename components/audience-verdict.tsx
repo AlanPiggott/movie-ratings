@@ -424,18 +424,12 @@ export function AudienceVerdictCompact({
   }
 
   return (
-    <div className="relative">
-      {/* Backdrop for better visibility */}
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm rounded-md" />
-      
-      {/* Rating content */}
-      <div className={cn(
-        'relative inline-flex items-center gap-1 px-2 py-1 rounded-md text-white text-xs font-bold ring-1 ring-white/20',
-        getScoreColor(percentage)
-      )}>
-        <span>{percentage}%</span>
-        <span className="opacity-80 font-normal">Users liked this</span>
-      </div>
+    <div className={cn(
+      'inline-flex items-center gap-1 px-2 py-1 rounded-md text-white text-xs font-bold shadow-lg',
+      getScoreColor(percentage)
+    )}>
+      <span>{percentage}%</span>
+      <span className="opacity-80 font-normal">Users liked this</span>
     </div>
   )
 }
