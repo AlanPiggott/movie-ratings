@@ -95,7 +95,7 @@ export function SearchBar({ className }: SearchBarProps) {
               setShowResults(true)
             }}
             onFocus={() => setShowResults(true)}
-            placeholder="Search movies & shows..."
+            placeholder="Search any movie or TV show..."
             className="w-full h-[72px] pl-16 pr-16 bg-white/5 border border-white/10 rounded-full text-xl text-white placeholder-gray-400 focus:outline-none focus:border-accent/50 focus:bg-white/10 focus:shadow-[0_0_40px_rgba(245,197,24,0.15)] transition-all duration-200"
           />
           {query && (

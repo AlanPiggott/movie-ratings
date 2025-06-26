@@ -131,9 +131,9 @@ export function Navbar() {
           {/* Logo and Desktop Nav */}
           <div className="flex items-center gap-8">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl">
-              <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-                <span className="text-black text-sm font-bold">MS</span>
+            <Link href="/" className="flex items-center gap-2 text-white font-bold text-2xl">
+              <div className="w-10 h-10 bg-accent rounded flex items-center justify-center">
+                <span className="text-black text-base font-bold">MS</span>
               </div>
               <span className="hidden sm:inline">Movie Score</span>
             </Link>
@@ -145,7 +145,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'text-sm font-medium transition-colors hover:text-accent',
+                    'text-base font-medium transition-colors hover:text-accent',
                     pathname === link.href ? 'text-white' : 'text-gray-400'
                   )}
                 >
@@ -158,7 +158,7 @@ export function Navbar() {
                 <button
                   onClick={() => setIsGenresOpen(!isGenresOpen)}
                   className={cn(
-                    'flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent',
+                    'flex items-center gap-1 text-base font-medium transition-colors hover:text-accent',
                     isGenresOpen ? 'text-white' : 'text-gray-400'
                   )}
                 >
@@ -177,7 +177,7 @@ export function Navbar() {
                       <button
                         onClick={() => setGenreTab('movies')}
                         className={cn(
-                          'flex-1 px-4 py-3 text-sm font-medium transition-colors',
+                          'flex-1 px-4 py-3 text-base font-medium transition-colors',
                           genreTab === 'movies'
                             ? 'text-white border-b-2 border-accent'
                             : 'text-gray-400 hover:text-white'
@@ -188,7 +188,7 @@ export function Navbar() {
                       <button
                         onClick={() => setGenreTab('tv')}
                         className={cn(
-                          'flex-1 px-4 py-3 text-sm font-medium transition-colors',
+                          'flex-1 px-4 py-3 text-base font-medium transition-colors',
                           genreTab === 'tv'
                             ? 'text-white border-b-2 border-accent'
                             : 'text-gray-400 hover:text-white'
@@ -205,7 +205,7 @@ export function Navbar() {
                           <Link
                             key={genre.slug}
                             href={`/${genreTab === 'movies' ? 'movie' : 'tv'}/genre/${genre.slug}`}
-                            className="px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded transition-colors"
+                            className="px-3 py-2 text-base text-gray-300 hover:text-white hover:bg-white/5 rounded transition-colors"
                             onClick={() => setIsGenresOpen(false)}
                           >
                             {genre.name}
@@ -325,20 +325,6 @@ export function Navbar() {
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </div>
-
-        {/* Mobile Search Bar - Always visible */}
-        <div className="lg:hidden pb-4">
-          <div className="relative">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search movies & shows..."
-              className="w-full h-10 pl-10 pr-4 bg-white/5 border border-white/10 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-accent/50 transition-all duration-200"
-            />
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-          </div>
         </div>
       </div>
 
