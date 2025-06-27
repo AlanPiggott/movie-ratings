@@ -14,7 +14,7 @@ interface AudienceVerdictProps {
   className?: string
   mediaId?: string
   onRequestRating?: () => Promise<void>
-  requestStatus?: 'idle' | 'pending' | 'fetching' | 'completed' | 'failed'
+  requestStatus?: 'idle' | 'pending' | 'fetching' | 'completed' | 'failed' | 'limit_reached'
 }
 
 export default function AudienceVerdict({ 
@@ -59,6 +59,8 @@ export default function AudienceVerdict({
           return 'Loading...'
         case 'failed':
           return 'No data yet :('
+        case 'limit_reached':
+          return 'Daily limit reached'
         default:
           return 'No rating yet • Click to update'
       }
@@ -127,6 +129,30 @@ export default function AudienceVerdict({
       )
     }
 
+    // Define size classes before using them
+    const sizeClasses = {
+      small: {
+        container: 'px-3 py-2',
+        percentage: 'text-xl',
+        label: 'text-xs',
+        header: 'text-xs'
+      },
+      medium: {
+        container: 'px-4 py-3',
+        percentage: 'text-3xl',
+        label: 'text-sm',
+        header: 'text-sm'
+      },
+      large: {
+        container: 'px-6 py-4',
+        percentage: 'text-4xl',
+        label: 'text-base',
+        header: 'text-base'
+      }
+    }
+
+    const sizes = sizeClasses[size]
+
     // Box version placeholder
     return (
       <div className={cn('relative', className)}>
@@ -175,28 +201,6 @@ export default function AudienceVerdict({
     return <TrendingDown className="w-4 h-4" />
   }
 
-  const sizeClasses = {
-    small: {
-      container: 'px-3 py-2',
-      percentage: 'text-xl',
-      label: 'text-xs',
-      header: 'text-xs'
-    },
-    medium: {
-      container: 'px-4 py-3',
-      percentage: 'text-3xl',
-      label: 'text-sm',
-      header: 'text-sm'
-    },
-    large: {
-      container: 'px-6 py-4',
-      percentage: 'text-4xl',
-      label: 'text-base',
-      header: 'text-base'
-    }
-  }
-
-  const sizes = sizeClasses[size]
   const percentageColor = getScoreColor(percentage)
 
   // Modern no-box design
@@ -351,7 +355,7 @@ interface AudienceVerdictCompactProps {
   percentage: number | null
   mediaId?: string
   onRequestRating?: () => Promise<void>
-  requestStatus?: 'idle' | 'pending' | 'fetching' | 'completed' | 'failed'
+  requestStatus?: 'idle' | 'pending' | 'fetching' | 'completed' | 'failed' | 'limit_reached'
 }
 
 export function AudienceVerdictCompact({ 
@@ -391,6 +395,8 @@ export function AudienceVerdictCompact({
           return 'Loading...'
         case 'failed':
           return 'No data :('
+        case 'limit_reached':
+          return 'Limit reached'
         default:
           return 'Get rating'
       }
