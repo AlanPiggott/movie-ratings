@@ -107,11 +107,17 @@ export default function MediaFilters({
   }
   
   const handleGenreToggle = (genreName: string) => {
-    setSelectedGenres(prev => 
-      prev.includes(genreName) 
-        ? prev.filter(name => name !== genreName)
-        : [...prev, genreName]
-    )
+    setSelectedGenres(prev => {
+      if (prev.includes(genreName)) {
+        // Remove if already selected
+        return prev.filter(name => name !== genreName)
+      } else if (prev.length < 6) {
+        // Add if under limit
+        return [...prev, genreName]
+      }
+      // Don't add if at limit
+      return prev
+    })
   }
   
   const applyFilters = () => {
@@ -184,22 +190,38 @@ export default function MediaFilters({
       {/* Genre Selection */}
       {showGenreFilter && !currentGenre && (
         <div className="space-y-4">
-          <h3 className="text-base font-semibold text-white">Genres</h3>
+          <div className="flex items-center justify-between">
+        <h3 className="text-base font-semibold text-white">Genres</h3>
+        {selectedGenres.length > 0 && (
+          <span className="text-xs text-gray-400">
+            {selectedGenres.length}/6 selected
+          </span>
+        )}
+      </div>
           <div className="flex flex-wrap gap-2">
-            {genres.map((genre) => (
-              <button
-                key={genre.name}
-                onClick={() => handleGenreToggle(genre.name)}
-                className={cn(
-                  'px-3 py-1.5 text-sm rounded-full border transition-all',
-                  selectedGenres.includes(genre.name)
-                    ? 'bg-accent text-black border-accent'
-                    : 'bg-transparent text-gray-300 border-gray-600 hover:border-gray-400'
-                )}
-              >
-                {genre.name}
-              </button>
-            ))}
+            {genres.map((genre) => {
+              const isSelected = selectedGenres.includes(genre.name)
+              const isDisabled = !isSelected && selectedGenres.length >= 6
+              
+              return (
+                <button
+                  key={genre.name}
+                  onClick={() => handleGenreToggle(genre.name)}
+                  disabled={isDisabled}
+                  className={cn(
+                    'px-3 py-1.5 text-sm rounded-full border transition-all',
+                    isSelected
+                      ? 'bg-accent text-black border-accent'
+                      : isDisabled
+                      ? 'bg-transparent text-gray-600 border-gray-700 cursor-not-allowed opacity-50'
+                      : 'bg-transparent text-gray-300 border-gray-600 hover:border-gray-400'
+                  )}
+                  title={isDisabled ? 'Maximum 6 genres can be selected' : undefined}
+                >
+                  {genre.name}
+                </button>
+              )
+            })}
           </div>
         </div>
       )}

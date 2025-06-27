@@ -32,6 +32,15 @@ export async function GET(request: NextRequest) {
     let genreIds: string[] = []
     if (genres) {
       const genreNames = genres.split(',').filter(Boolean)
+      
+      // Limit the number of genres to prevent URL length issues
+      if (genreNames.length > 6) {
+        return NextResponse.json(
+          { error: 'Too many genres selected. Please select up to 6 genres.' },
+          { status: 400 }
+        )
+      }
+      
       if (genreNames.length > 0) {
         // Get genre IDs from genre names
         const { data: genreData, error: genreError } = await supabaseAdmin
@@ -41,39 +50,32 @@ export async function GET(request: NextRequest) {
         
         if (genreError) {
           console.error('Genre lookup error:', genreError)
+          throw new Error('Failed to lookup genres')
         } else if (genreData) {
           genreIds = genreData.map(g => g.id)
         }
       }
     }
 
-    // Build base query
-    let query = supabaseAdmin
-      .from('media_items')
-      .select('*', { count: 'exact' })
-      .eq('media_type', mediaType)
+    // Build the query with optimized genre filtering
+    let query
     
-    // Apply genre filter if we have genre IDs
     if (genreIds.length > 0) {
-      // Use a subquery to filter by genres
-      const { data: mediaIds } = await supabaseAdmin
-        .from('media_genres')
-        .select('media_item_id')
-        .in('genre_id', genreIds)
-      
-      if (mediaIds && mediaIds.length > 0) {
-        const uniqueMediaIds = Array.from(new Set(mediaIds.map(m => m.media_item_id)))
-        query = query.in('id', uniqueMediaIds)
-      } else {
-        // No media items match the genre filter
-        return NextResponse.json({
-          items: [],
-          total: 0,
-          page,
-          pageSize: limit,
-          totalPages: 0
-        })
-      }
+      // Use a more efficient query approach with joins
+      query = supabaseAdmin
+        .from('media_items')
+        .select(`
+          *,
+          media_genres!inner(genre_id)
+        `, { count: 'exact' })
+        .eq('media_type', mediaType)
+        .in('media_genres.genre_id', genreIds)
+    } else {
+      // Simple query without genre filtering
+      query = supabaseAdmin
+        .from('media_items')
+        .select('*', { count: 'exact' })
+        .eq('media_type', mediaType)
     }
     
     // Apply year range filter
@@ -125,8 +127,20 @@ export async function GET(request: NextRequest) {
 
     if (error) {
       console.error('Database error:', error)
+      
+      // Check if it's a specific error we can handle
+      if (error.message && error.message.includes('too many')) {
+        return NextResponse.json(
+          { error: 'Query too complex. Please try fewer filters.' },
+          { status: 400 }
+        )
+      }
+      
       return NextResponse.json(
-        { error: 'Failed to fetch media items' },
+        { 
+          error: 'Failed to fetch media items',
+          message: error.message || 'Unknown database error'
+        },
         { status: 500 }
       )
     }
@@ -147,7 +161,8 @@ export async function GET(request: NextRequest) {
       alsoLikedPercentage: item.also_liked_percentage,
       mediaType: item.media_type,
       popularity: item.popularity,
-      voteAverage: item.vote_average
+      voteAverage: item.vote_average,
+      voteCount: item.vote_count
     }))
     
     return NextResponse.json({
@@ -157,10 +172,15 @@ export async function GET(request: NextRequest) {
       pageSize: limit,
       totalPages: Math.ceil((count || 0) / limit)
     })
-  } catch (error) {
+    
+  } catch (error: any) {
     console.error('API error:', error)
+    
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { 
+        error: 'Internal server error',
+        message: error?.message || 'An unexpected error occurred'
+      },
       { status: 500 }
     )
   }
