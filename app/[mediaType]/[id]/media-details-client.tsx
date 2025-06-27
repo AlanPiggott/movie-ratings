@@ -90,11 +90,17 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
   const [isExpanded, setIsExpanded] = useState(false)
   const [showGaugeTooltip, setShowGaugeTooltip] = useState(false)
   const [showRatingInfo, setShowRatingInfo] = useState(false)
+  
+  // Log component mount for debugging
+  useEffect(() => {
+    console.log('[MediaDetailsClient] Component mounted for media:', initialMedia.id, initialMedia.title)
+  }, [])
 
   // Use rating request hook
   const { requestStatus, percentage: fetchedPercentage, handleRequestRating } = useRatingRequest(
     media.id,
-    media.also_liked_percentage !== null && media.also_liked_percentage > 0
+    media.also_liked_percentage !== null && media.also_liked_percentage > 0,
+    true // Enable auto-fetch to automatically get ratings
   )
   
   // Update media percentage if fetched
@@ -211,21 +217,50 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                 <div className="md:hidden flex flex-col items-center gap-2">
                   <div className="flex items-center gap-3">
                     <div className="relative">
-                      <RadialGauge 
-                        percentage={media.also_liked_percentage}
-                        size={120}
-                        strokeWidth={8}
-                        className="motion-safe:animate-fadeIn"
-                        onClick={() => {
-                          if (media.also_liked_percentage === null || media.also_liked_percentage === 0) {
-                            handleRequestRating()
-                          } else {
-                            setShowGaugeTooltip(!showGaugeTooltip)
-                          }
-                        }}
-                        requestStatus={requestStatus}
-                        isClickable={true}
-                      />
+                      {media.also_liked_percentage === null || media.also_liked_percentage === 0 ? (
+                        <div className="relative w-[120px] h-[120px] rounded-full flex items-center justify-center" style={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                          border: '3px solid rgba(255, 255, 255, 0.08)'
+                        }}>
+                          {(requestStatus === 'pending' || requestStatus === 'fetching') ? (
+                            <div className="absolute inset-0 rounded-full flex items-center justify-center">
+                              <div className="absolute inset-0 rounded-full p-[3px]">
+                                <div 
+                                  className="w-full h-full rounded-full animate-spin"
+                                  style={{
+                                    background: `conic-gradient(from 0deg, rgba(66, 133, 244, 0.1) 0deg, #4285f4 90deg, #4285f4 180deg, rgba(66, 133, 244, 0.1) 360deg)`,
+                                    maskImage: 'radial-gradient(transparent 60%, black 60%)',
+                                    WebkitMaskImage: 'radial-gradient(transparent 60%, black 60%)'
+                                  }}
+                                />
+                              </div>
+                              <span className="text-xs text-gray-400 font-medium px-2 text-center">
+                                Fetching<br/>rating...
+                              </span>
+                            </div>
+                          ) : requestStatus === 'failed' || requestStatus === 'limit_reached' ? (
+                            <div className="flex flex-col items-center justify-center">
+                              <div className="text-2xl font-medium text-gray-500 leading-none">N/A</div>
+                              <div className="text-[0.625rem] text-gray-600 uppercase tracking-wider mt-1">NO DATA</div>
+                            </div>
+                          ) : (
+                            <div className="flex flex-col items-center justify-center">
+                              <span className="text-[2rem] opacity-50" style={{ filter: 'grayscale(1)' }}>📊</span>
+                              <span className="text-[0.75rem] font-medium text-gray-400">Loading</span>
+                            </div>
+                          )}
+                        </div>
+                      ) : (
+                        <RadialGauge 
+                          percentage={media.also_liked_percentage}
+                          size={120}
+                          strokeWidth={8}
+                          className="motion-safe:animate-fadeIn"
+                          onClick={() => setShowGaugeTooltip(!showGaugeTooltip)}
+                          requestStatus={requestStatus}
+                          isClickable={false}
+                        />
+                      )}
                       
                       {/* Tooltip */}
                       {showGaugeTooltip && media.also_liked_percentage === null && (
@@ -266,10 +301,6 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                     )}
                   </div>
                   
-                  {/* "Audience score coming soon" label */}
-                  {media.also_liked_percentage === null && (
-                    <span className="text-xs text-gray-500">Audience score coming soon</span>
-                  )}
                 </div>
                 
                 {/* Metadata Row - Mobile: below gauge, Desktop: with inline rating */}
@@ -305,21 +336,50 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                       onMouseEnter={() => media.also_liked_percentage === null && setShowGaugeTooltip(true)}
                       onMouseLeave={() => setShowGaugeTooltip(false)}
                     >
-                      <RadialGauge 
-                        percentage={media.also_liked_percentage}
-                        size={120}
-                        strokeWidth={8}
-                        className="motion-safe:animate-fadeIn"
-                        onClick={() => {
-                          if (media.also_liked_percentage === null || media.also_liked_percentage === 0) {
-                            handleRequestRating()
-                          } else {
-                            setShowGaugeTooltip(!showGaugeTooltip)
-                          }
-                        }}
-                        requestStatus={requestStatus}
-                        isClickable={true}
-                      />
+                      {media.also_liked_percentage === null || media.also_liked_percentage === 0 ? (
+                        <div className="relative w-[120px] h-[120px] rounded-full flex items-center justify-center" style={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                          border: '3px solid rgba(255, 255, 255, 0.08)'
+                        }}>
+                          {(requestStatus === 'pending' || requestStatus === 'fetching') ? (
+                            <div className="absolute inset-0 rounded-full flex items-center justify-center">
+                              <div className="absolute inset-0 rounded-full p-[3px]">
+                                <div 
+                                  className="w-full h-full rounded-full animate-spin"
+                                  style={{
+                                    background: `conic-gradient(from 0deg, rgba(66, 133, 244, 0.1) 0deg, #4285f4 90deg, #4285f4 180deg, rgba(66, 133, 244, 0.1) 360deg)`,
+                                    maskImage: 'radial-gradient(transparent 60%, black 60%)',
+                                    WebkitMaskImage: 'radial-gradient(transparent 60%, black 60%)'
+                                  }}
+                                />
+                              </div>
+                              <span className="text-xs text-gray-400 font-medium px-2 text-center">
+                                Fetching<br/>rating...
+                              </span>
+                            </div>
+                          ) : requestStatus === 'failed' || requestStatus === 'limit_reached' ? (
+                            <div className="flex flex-col items-center justify-center">
+                              <div className="text-2xl font-medium text-gray-500 leading-none">N/A</div>
+                              <div className="text-[0.625rem] text-gray-600 uppercase tracking-wider mt-1">NO DATA</div>
+                            </div>
+                          ) : (
+                            <div className="flex flex-col items-center justify-center">
+                              <span className="text-[2rem] opacity-50" style={{ filter: 'grayscale(1)' }}>📊</span>
+                              <span className="text-[0.75rem] font-medium text-gray-400">Loading</span>
+                            </div>
+                          )}
+                        </div>
+                      ) : (
+                        <RadialGauge 
+                          percentage={media.also_liked_percentage}
+                          size={120}
+                          strokeWidth={8}
+                          className="motion-safe:animate-fadeIn"
+                          onClick={() => setShowGaugeTooltip(!showGaugeTooltip)}
+                          requestStatus={requestStatus}
+                          isClickable={false}
+                        />
+                      )}
                       
                       {/* Tooltip */}
                       {showGaugeTooltip && media.also_liked_percentage === null && (
@@ -360,10 +420,6 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                     )}
                   </div>
                   
-                  {/* "Audience score coming soon" label */}
-                  {media.also_liked_percentage === null && (
-                    <span className="text-xs text-gray-500">Audience score coming soon</span>
-                  )}
                 </div>
                 
                 {/* Genres */}

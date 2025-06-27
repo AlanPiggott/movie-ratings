@@ -1,5 +1,4 @@
 import { config } from '@/lib/config'
-import { prisma } from '@/lib/prisma/client'
 import { parseGoogleKnowledgePanel, hasKnowledgePanel } from '@/lib/parsers/google-knowledge-panel'
 
 interface DataForSEOResponse {
@@ -50,7 +49,7 @@ interface SearchResult {
 export class DataForSEOService {
   private baseUrl = config.dataForSeo.baseUrl
   private authHeader: string
-  private maxRetries = 3
+  private maxRetries = 1 // Reduced from 3 to avoid duplicate logs
   private retryDelay = 1000 // 1 second
 
   constructor() {
@@ -307,6 +306,7 @@ export class DataForSEOService {
 
   /**
    * Log API call for tracking and debugging
+   * Currently disabled to avoid database connection issues
    */
   private async logApiCall(data: {
     endpoint: string
@@ -317,21 +317,10 @@ export class DataForSEOService {
     errorMessage?: string
     metadata?: any
   }) {
-    try {
-      await prisma.apiFetchLog.create({
-        data: {
-          endpoint: `${this.baseUrl}${data.endpoint}`,
-          method: data.method,
-          statusCode: data.statusCode,
-          responseTime: data.responseTime,
-          cost: data.cost,
-          errorMessage: data.errorMessage,
-          metadata: data.metadata,
-        },
-      })
-    } catch (error) {
-      // Don't throw if logging fails, just console error
-      console.error('Failed to log API call:', error)
+    // Logging disabled - was causing database connection errors
+    // If logging is needed, implement using Supabase instead
+    if (data.errorMessage) {
+      console.error(`API Error: ${data.endpoint} - ${data.errorMessage}`)
     }
   }
 
@@ -344,56 +333,28 @@ export class DataForSEOService {
 
   /**
    * Get total API costs for a time period
+   * Currently disabled due to database connection issues
    */
   async getTotalCosts(since: Date): Promise<number> {
-    const logs = await prisma.apiFetchLog.aggregate({
-      where: {
-        endpoint: {
-          contains: 'dataforseo.com',
-        },
-        createdAt: {
-          gte: since,
-        },
-      },
-      _sum: {
-        cost: true,
-      },
-    })
-
-    return logs._sum.cost || 0
+    // Disabled - was causing database connection errors
+    // TODO: Implement using Supabase if needed
+    return 0
   }
 
   /**
    * Get API usage statistics
+   * Currently disabled due to database connection issues
    */
   async getUsageStats(since: Date) {
-    const logs = await prisma.apiFetchLog.findMany({
-      where: {
-        endpoint: {
-          contains: 'dataforseo.com',
-        },
-        createdAt: {
-          gte: since,
-        },
-      },
-      orderBy: {
-        createdAt: 'desc',
-      },
-    })
-
-    const totalCalls = logs.length
-    const successfulCalls = logs.filter(log => log.statusCode === 200).length
-    const failedCalls = totalCalls - successfulCalls
-    const totalCost = logs.reduce((sum, log) => sum + (log.cost || 0), 0)
-    const avgResponseTime = logs.reduce((sum, log) => sum + (log.responseTime || 0), 0) / totalCalls
-
+    // Disabled - was causing database connection errors
+    // TODO: Implement using Supabase if needed
     return {
-      totalCalls,
-      successfulCalls,
-      failedCalls,
-      totalCost,
-      avgResponseTime,
-      successRate: (successfulCalls / totalCalls) * 100,
+      totalCalls: 0,
+      successfulCalls: 0,
+      failedCalls: 0,
+      totalCost: 0,
+      avgResponseTime: 0,
+      successRate: 0,
     }
   }
 }
