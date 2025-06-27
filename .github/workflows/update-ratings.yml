@@ -1,0 +1,94 @@
+name: Update Movie Ratings
+
+on:
+  schedule:
+    # Run daily at 3 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Run in test mode (10 items only)'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  update-ratings:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Run rating updates
+      env:
+        NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+        DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+        RATING_UPDATE_ENABLED: 'true'
+        RATING_UPDATE_DAILY_LIMIT: ${{ vars.RATING_UPDATE_DAILY_LIMIT || '1000' }}
+        RATING_UPDATE_BATCH_SIZE: ${{ vars.RATING_UPDATE_BATCH_SIZE || '100' }}
+        TEST_MODE: ${{ inputs.test_mode }}
+      run: |
+        if [ "${{ inputs.test_mode }}" = "true" ]; then
+          echo "Running in TEST MODE (10 items only)"
+          ./scripts/update-ratings-scheduled.ts --test
+        else
+          echo "Running production update"
+          ./scripts/update-ratings-scheduled.ts
+        fi
+    
+    - name: Upload logs
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: rating-update-logs
+        path: |
+          data/rating-update-*.log
+        retention-days: 7
+    
+    - name: Send notification on failure
+      if: failure()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `Rating Update Failed - ${new Date().toISOString().split('T')[0]}`,
+            body: `The scheduled rating update workflow failed. Please check the logs.`
+          })
+
+  # Optional: Run tier reassignment weekly
+  reassign-tiers:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 2 * * 0' # Sunday at 2 AM UTC
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Reassign tiers
+      env:
+        NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+      run: ./scripts/assign-rating-tiers.ts
