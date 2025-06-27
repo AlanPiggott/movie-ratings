@@ -10,7 +10,7 @@ interface RadialGaugeProps {
   className?: string
   onClick?: () => void
   title?: string
-  requestStatus?: 'idle' | 'pending' | 'fetching' | 'completed' | 'failed'
+  requestStatus?: 'idle' | 'pending' | 'fetching' | 'completed' | 'failed' | 'limit_reached'
   isClickable?: boolean
 }
 
@@ -55,6 +55,8 @@ export default function RadialGauge({
         return 'Loading...'
       case 'failed':
         return 'No data yet :('
+      case 'limit_reached':
+        return 'Limit reached'
       default:
         if (showClickable) {
           return size >= 100 ? 'No rating yet' : 'Get rating'
