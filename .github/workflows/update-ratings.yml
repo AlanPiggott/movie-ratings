@@ -42,12 +42,13 @@ jobs:
       run: |
         if [ "${{ inputs.test_mode }}" = "true" ]; then
           echo "Running in TEST MODE (10 items only)"
-          ./scripts/update-ratings-scheduled.ts --test
+          npx tsx scripts/update-ratings-scheduled.ts --test
         else
           echo "Running production update"
-          ./scripts/update-ratings-scheduled.ts
+          npx tsx scripts/update-ratings-scheduled.ts
         fi
     
+    # Optional: Upload logs if they exist
     - name: Upload logs
       if: always()
       uses: actions/upload-artifact@v4
@@ -56,18 +57,7 @@ jobs:
         path: |
           data/rating-update-*.log
         retention-days: 7
-    
-    - name: Send notification on failure
-      if: failure()
-      uses: actions/github-script@v6
-      with:
-        script: |
-          await github.rest.issues.create({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            title: `Rating Update Failed - ${new Date().toISOString().split('T')[0]}`,
-            body: `The scheduled rating update workflow failed. Please check the logs.`
-          })
+        if-no-files-found: ignore
 
   # Optional: Run tier reassignment weekly
   reassign-tiers:
@@ -91,4 +81,4 @@ jobs:
       env:
         NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
         SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-      run: ./scripts/assign-rating-tiers.ts
+      run: npx tsx scripts/assign-rating-tiers.ts
