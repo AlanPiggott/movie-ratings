@@ -44,9 +44,10 @@ export async function GET(request: Request) {
     })
     
     // Get items needing update
-    const { count: itemsDue } = await supabaseAdmin
+    const { data: itemsDueData } = await supabaseAdmin
       .rpc('get_items_due_for_rating_update', { p_limit: 1000, p_dry_run: true })
-      .select('*', { count: 'exact', head: true })
+    
+    const itemsDue = itemsDueData?.length || 0
     
     // Get recently updated items
     const { data: recentUpdates } = await supabaseAdmin
