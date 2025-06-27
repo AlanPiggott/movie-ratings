@@ -32,6 +32,7 @@ export interface CreateOrUpdateMediaData {
   runtime?: number | null
   status?: string | null
   genres?: { tmdbId: number; name: string }[]
+  contentSource?: string
 }
 
 // Extended MediaItem type with genres
@@ -260,7 +261,8 @@ export class MediaService extends BaseService {
               vote_average: data.voteAverage,
               vote_count: data.voteCount,
               runtime: data.runtime,
-              status: data.status
+              status: data.status,
+              content_source: data.contentSource || 'user_search'
             })
             .select()
             .single()

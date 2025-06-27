@@ -1,0 +1,68 @@
+name: Fetch New & Trending Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Fetch mode'
+        required: true
+        type: choice
+        options:
+          - all
+          - new-releases
+          - trending
+          - backfill
+        default: 'all'
+      dry_run:
+        description: 'Run in dry-run mode (no changes)'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  fetch-content:
+    name: Fetch Content
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Fetch content based on mode
+      env:
+        CI: 'true'
+        GITHUB_ACTIONS: 'true'
+        NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+        SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+        DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+        TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      run: |
+        echo "Running in mode: ${{ inputs.mode }}"
+        
+        if [ "${{ inputs.dry_run }}" = "true" ]; then
+          echo "DRY RUN MODE - No changes will be made"
+          npx tsx scripts/fetch-new-and-trending-ci.ts ${{ inputs.mode }} --dry-run
+        else
+          npx tsx scripts/fetch-new-and-trending-ci.ts ${{ inputs.mode }}
+        fi
+    
+    # Optional: Upload logs if they exist
+    - name: Upload logs
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: fetch-content-logs
+        path: |
+          data/fetch-*.log
+        retention-days: 7
+        if-no-files-found: ignore

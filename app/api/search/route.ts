@@ -33,6 +33,135 @@ interface SearchResponse {
 // Genre cache to avoid repeated API calls
 let genreCache: { movies: Map<number, string>, tv: Map<number, string> } | null = null
 
+// Helper function to clean title for special characters
+function cleanTitle(title: string): string {
+  return title
+    .replace(/['']/g, '')
+    .replace(/[éèêë]/g, 'e')
+    .replace(/[áàäâ]/g, 'a')
+    .replace(/[ñ]/g, 'n')
+    .replace(/[öô]/g, 'o')
+    .replace(/[üùû]/g, 'u')
+    .replace(/[ç]/g, 'c')
+}
+
+// Fetch rating in background
+async function fetchRatingInBackground(item: any) {
+  try {
+    const auth = Buffer.from(
+      `${process.env.DATAFORSEO_LOGIN}:${process.env.DATAFORSEO_PASSWORD}`
+    ).toString('base64')
+    
+    // Build queries
+    const queries: string[] = []
+    const cleanedTitle = cleanTitle(item.title)
+    const year = item.release_date ? new Date(item.release_date).getFullYear() : null
+    
+    if (item.media_type === 'TV_SHOW') {
+      if (year) {
+        queries.push(`${item.title} ${year} tv show`)
+        if (cleanedTitle !== item.title) {
+          queries.push(`${cleanedTitle} ${year} tv show`)
+        }
+      }
+      queries.push(`${item.title} tv show`)
+    } else {
+      if (year) {
+        queries.push(`${item.title} ${year} movie`)
+        if (cleanedTitle !== item.title) {
+          queries.push(`${cleanedTitle} ${year} movie`)
+        }
+      }
+      queries.push(`${item.title} movie`)
+    }
+    
+    // Try first query only for background fetch (to keep it fast)
+    const query = queries[0]
+    
+    // Create task
+    const createResponse = await fetch('https://api.dataforseo.com/v3/serp/google/organic/task_post', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Basic ' + auth,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify([{
+        language_code: 'en',
+        location_code: 2840,
+        keyword: query,
+        device: 'desktop',
+        os: 'windows'
+      }])
+    })
+    
+    if (!createResponse.ok) return
+    
+    const createData = await createResponse.json()
+    if (createData.status_code !== 20000 || !createData.tasks?.[0]?.id) return
+    
+    const taskId = createData.tasks[0].id
+    
+    // Wait for completion
+    await new Promise(resolve => setTimeout(resolve, 5000))
+    
+    // Fetch HTML
+    const htmlResponse = await fetch(
+      `https://api.dataforseo.com/v3/serp/google/organic/task_get/html/${taskId}`,
+      {
+        method: 'GET',
+        headers: { 'Authorization': 'Basic ' + auth }
+      }
+    )
+    
+    if (!htmlResponse.ok) return
+    
+    const htmlData = await htmlResponse.json()
+    if (htmlData.status_code !== 20000) return
+    
+    const html = htmlData.tasks?.[0]?.result?.[0]?.items?.[0]?.html
+    if (!html) return
+    
+    // Extract percentage
+    const patterns = [
+      /(\d{1,3})%\s*liked\s*this\s*(movie|film|show|series)/gi,
+      /(\d{1,3})%\s*of\s*(?:Google\s*)?users\s*liked/gi,
+      />(\d{1,3})%\s*liked\s*this/gi,
+      /(\d{1,3})%\s*liked/gi
+    ]
+    
+    for (const pattern of patterns) {
+      const matches = html.match(pattern)
+      if (matches) {
+        for (const match of matches) {
+          const percentMatch = match.match(/(\d{1,3})/)
+          if (percentMatch) {
+            const percentage = parseInt(percentMatch[1])
+            if (percentage >= 0 && percentage <= 100) {
+              // Update database with rating
+              const { createClient } = await import('@supabase/supabase-js')
+              const supabase = createClient(
+                process.env.NEXT_PUBLIC_SUPABASE_URL!,
+                process.env.SUPABASE_SERVICE_KEY!
+              )
+              
+              await supabase.rpc('record_rating_update', {
+                p_media_id: item.id,
+                p_new_rating: percentage,
+                p_previous_rating: null
+              })
+              
+              console.log(`Background rating fetch: ${item.title} - ${percentage}%`)
+              return
+            }
+          }
+        }
+      }
+    }
+  } catch (error) {
+    // Silently fail - this is background processing
+  }
+}
+
 export async function GET(request: NextRequest) {
   try {
     // Parse and validate query parameters
@@ -113,7 +242,7 @@ export async function GET(request: NextRequest) {
               }
 
               try {
-                // Save to database
+                // Save to database with source tracking
                 const savedItem = await mediaService.createOrUpdateMedia({
                   tmdbId: transformed.tmdbId,
                   mediaType: transformed.mediaType,
@@ -125,8 +254,19 @@ export async function GET(request: NextRequest) {
                   popularity: transformed.popularity,
                   voteAverage: transformed.voteAverage,
                   voteCount: transformed.voteCount,
-                  genres
+                  genres,
+                  contentSource: 'user_search'
                 })
+                
+                // Immediately fetch Google rating for new item
+                if (savedItem.also_liked_percentage === null && 
+                    process.env.DATAFORSEO_LOGIN && 
+                    process.env.DATAFORSEO_PASSWORD) {
+                  // Queue for rating fetch in background
+                  fetchRatingInBackground(savedItem).catch(error => {
+                    console.error('Background rating fetch failed:', error)
+                  })
+                }
 
                 return {
                   id: savedItem.id,

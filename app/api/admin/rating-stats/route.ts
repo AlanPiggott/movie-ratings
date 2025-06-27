@@ -56,6 +56,32 @@ export async function GET(request: Request) {
       .order('rating_last_updated', { ascending: false })
       .limit(20)
     
+    // Get content source distribution
+    const { data: sourceStats } = await supabaseAdmin
+      .from('media_items')
+      .select('content_source')
+      .not('content_source', 'is', null)
+    
+    const sourceDistribution: Record<string, number> = {}
+    sourceStats?.forEach(item => {
+      sourceDistribution[item.content_source] = (sourceDistribution[item.content_source] || 0) + 1
+    })
+    
+    // Get new items added in last 30 days by source
+    const { data: newItemsData } = await supabaseAdmin
+      .from('rating_update_logs')
+      .select('update_source, new_items_added')
+      .gte('run_date', monthAgo)
+      .not('new_items_added', 'is', null)
+      .gt('new_items_added', 0)
+    
+    const newItemsBySource: Record<string, number> = {}
+    newItemsData?.forEach(log => {
+      if (log.update_source) {
+        newItemsBySource[log.update_source] = (newItemsBySource[log.update_source] || 0) + (log.new_items_added || 0)
+      }
+    })
+    
     // Calculate aggregates
     const weekTotal = weekLogs.data?.reduce((sum, log) => ({
       items_updated: sum.items_updated + (log.items_updated || 0),
@@ -118,6 +144,11 @@ export async function GET(request: Request) {
         annual_cost: annualEstimate,
         monthly_cost: annualEstimate / 12,
         daily_cost: annualEstimate / 365
+      },
+      content_sources: {
+        distribution: sourceDistribution,
+        total_items: Object.values(sourceDistribution).reduce((a, b) => a + b, 0),
+        new_items_last_30_days: newItemsBySource
       },
       recent_updates: recentUpdates?.map(item => ({
         title: item.title,

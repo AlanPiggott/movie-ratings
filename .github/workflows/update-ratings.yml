@@ -70,10 +70,9 @@ jobs:
         retention-days: 7
         if-no-files-found: ignore
 
-  # Optional: Run tier reassignment weekly
-  reassign-tiers:
+  # Fetch new releases daily  
+  fetch-new-releases:
     runs-on: ubuntu-latest
-    if: github.event.schedule == '0 2 * * 0' # Sunday at 2 AM UTC
     
     steps:
     - name: Checkout code
@@ -88,10 +87,13 @@ jobs:
     - name: Install dependencies
       run: npm ci
     
-    - name: Reassign tiers
+    - name: Fetch new releases
       env:
         CI: 'true'
         GITHUB_ACTIONS: 'true'
         NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
         SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-      run: npx tsx scripts/assign-rating-tiers-ci.ts
+        DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+        DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+        TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      run: npx tsx scripts/fetch-new-and-trending-ci.ts new-releases
