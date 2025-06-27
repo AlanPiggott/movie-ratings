@@ -31,6 +31,8 @@ jobs:
     
     - name: Run rating updates
       env:
+        CI: 'true'
+        GITHUB_ACTIONS: 'true'
         NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
         SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
@@ -40,12 +42,21 @@ jobs:
         RATING_UPDATE_BATCH_SIZE: ${{ vars.RATING_UPDATE_BATCH_SIZE || '100' }}
         TEST_MODE: ${{ inputs.test_mode }}
       run: |
+        echo "Environment check:"
+        echo "CI=$CI"
+        echo "GITHUB_ACTIONS=$GITHUB_ACTIONS"
+        echo "NEXT_PUBLIC_SUPABASE_URL is set: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL != '' }}"
+        echo "SUPABASE_SERVICE_KEY is set: ${{ secrets.SUPABASE_SERVICE_KEY != '' }}"
+        echo "DATAFORSEO_LOGIN is set: ${{ secrets.DATAFORSEO_LOGIN != '' }}"
+        echo "DATAFORSEO_PASSWORD is set: ${{ secrets.DATAFORSEO_PASSWORD != '' }}"
+        echo ""
+        
         if [ "${{ inputs.test_mode }}" = "true" ]; then
           echo "Running in TEST MODE (10 items only)"
-          npx tsx scripts/update-ratings-scheduled.ts --test
+          npx tsx scripts/update-ratings-scheduled-ci.ts --test
         else
           echo "Running production update"
-          npx tsx scripts/update-ratings-scheduled.ts
+          npx tsx scripts/update-ratings-scheduled-ci.ts
         fi
     
     # Optional: Upload logs if they exist
@@ -79,6 +90,8 @@ jobs:
     
     - name: Reassign tiers
       env:
+        CI: 'true'
+        GITHUB_ACTIONS: 'true'
         NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
         SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-      run: npx tsx scripts/assign-rating-tiers.ts
+      run: npx tsx scripts/assign-rating-tiers-ci.ts
