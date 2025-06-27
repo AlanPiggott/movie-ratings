@@ -50,6 +50,9 @@ const stats = {
   startTime: Date.now()
 }
 
+// Track processed items to avoid duplicates within same run
+const processedItems = new Set<string>()
+
 // Genre cache
 let genreCache: { movies: Map<number, string>, tv: Map<number, string> } | null = null
 
@@ -293,10 +296,18 @@ async function processItem(tmdbItem: any, mediaType: 'MOVIE' | 'TV_SHOW', source
       return
     }
     
+    // Skip if already processed in this run
+    const itemKey = `${mediaType}-${transformed.tmdbId}`
+    if (processedItems.has(itemKey)) {
+      console.log(`  ⏭️  Skipping ${transformed.title} - already processed in this run`)
+      return
+    }
+    processedItems.add(itemKey)
+    
     // Check if already in database
     const { data: existing } = await supabase
       .from('media_items')
-      .select('id, title, also_liked_percentage, rating_last_updated')
+      .select('id, title, also_liked_percentage, rating_last_updated, created_at')
       .eq('tmdb_id', transformed.tmdbId)
       .eq('media_type', mediaType)
       .single()
@@ -309,6 +320,15 @@ async function processItem(tmdbItem: any, mediaType: 'MOVIE' | 'TV_SHOW', source
         const daysSinceUpdate = (Date.now() - new Date(existing.rating_last_updated).getTime()) / (1000 * 60 * 60 * 24)
         if (daysSinceUpdate < 7) {
           console.log(`  ✓ ${transformed.title} - already has recent rating (${existing.also_liked_percentage}%)`)
+          return
+        }
+      }
+      
+      // Skip if item was created very recently (within 24 hours) to avoid duplicate processing
+      if (existing.created_at) {
+        const hoursSinceCreation = (Date.now() - new Date(existing.created_at).getTime()) / (1000 * 60 * 60)
+        if (hoursSinceCreation < 24 && existing.also_liked_percentage === null) {
+          console.log(`  ⏭️  ${transformed.title} - recently added, skipping to avoid duplication`)
           return
         }
       }
@@ -432,20 +452,7 @@ async function fetchNewReleases() {
     }
   }
   
-  // Fetch upcoming movies
-  console.log('\n🎞️  Upcoming Movies:')
-  const upcoming = await fetchFromTMDB('/movie/upcoming', {
-    page: '1',
-    'primary_release_date.gte': today,
-    'primary_release_date.lte': thirtyDaysFromNow
-  })
-  stats.fetched += upcoming.results.length
-  
-  for (const movie of upcoming.results) {
-    if (movie.popularity >= CONFIG.POPULARITY_THRESHOLD.NEW_RELEASES) {
-      await processItem(movie, 'MOVIE', 'upcoming')
-    }
-  }
+  // Removed upcoming movies - they don't have ratings yet!
   
   // Fetch on the air TV shows
   console.log('\n📺 On The Air TV Shows:')

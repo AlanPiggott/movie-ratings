@@ -70,24 +70,40 @@ jobs:
         retention-days: 7
         if-no-files-found: ignore
 
-  # Fetch new releases daily  
+  # Fetch new releases every 3 days (Monday and Thursday)
   fetch-new-releases:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Check if today is fetch day
+      id: check_day
+      run: |
+        DAY=$(date +%u)
+        # Monday = 1, Thursday = 4
+        if [[ "$DAY" == "1" || "$DAY" == "4" ]]; then
+          echo "should_run=true" >> $GITHUB_OUTPUT
+        else
+          echo "should_run=false" >> $GITHUB_OUTPUT
+        fi
+        echo "Today is day $DAY of the week"
+    
     - name: Checkout code
+      if: steps.check_day.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
       uses: actions/checkout@v3
     
     - name: Setup Node.js
+      if: steps.check_day.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
       uses: actions/setup-node@v3
       with:
         node-version: '18'
         cache: 'npm'
     
     - name: Install dependencies
+      if: steps.check_day.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
       run: npm ci
     
     - name: Fetch new releases
+      if: steps.check_day.outputs.should_run == 'true' || github.event_name == 'workflow_dispatch'
       env:
         CI: 'true'
         GITHUB_ACTIONS: 'true'
