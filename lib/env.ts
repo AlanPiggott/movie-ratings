@@ -52,7 +52,7 @@ const client = z.object({
 const processEnv = {
   // Server
   DATABASE_URL: process.env.DATABASE_URL || undefined,
-  SUPABASE_SERVICE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY,
+  SUPABASE_SERVICE_KEY: process.env.SUPABASE_SERVICE_KEY,
   TMDB_API_KEY: process.env.TMDB_API_KEY || undefined,
   TMDB_API_READ_ACCESS_TOKEN: process.env.TMDB_API_READ_ACCESS_TOKEN || undefined,
   DATAFORSEO_LOGIN: process.env.DATAFORSEO_LOGIN || undefined,

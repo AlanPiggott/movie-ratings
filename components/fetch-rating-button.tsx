@@ -52,7 +52,7 @@ export default function FetchRatingButton({
         className={cn(
           "relative w-[140px] h-[140px] rounded-full",
           "flex flex-col items-center justify-center gap-1",
-          "transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]",
+          "transition-all duration-300 ease-out",
           "focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E0F13]",
           showLoadingState && "cursor-wait",
           !showLoadingState && !hasFailed && !isLimitReached && "cursor-pointer hover:scale-105",
