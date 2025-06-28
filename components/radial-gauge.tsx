@@ -129,10 +129,7 @@ export default function RadialGauge({
             {showClickable && size >= 100 ? (
               <div className="space-y-0.5">
                 <div className="text-xs text-gray-400">Oops!</div>
-                <div className={cn(
-                  "font-medium text-gray-500",
-                  (requestStatus === 'pending' || requestStatus === 'fetching') && "animate-pulse"
-                )}>
+                <div className="font-medium text-gray-500">
                   {getStatusText()}
                 </div>
                 <div className="text-[10px] text-gray-600">Click to update</div>
@@ -140,8 +137,7 @@ export default function RadialGauge({
             ) : (
               <span className={cn(
                 "font-medium text-gray-500",
-                size >= 100 ? "text-base" : size >= 60 ? "text-xs" : "text-[10px]",
-                (requestStatus === 'pending' || requestStatus === 'fetching') && "animate-pulse"
+                size >= 100 ? "text-base" : size >= 60 ? "text-xs" : "text-[10px]"
               )}>
                 {getStatusText()}
               </span>

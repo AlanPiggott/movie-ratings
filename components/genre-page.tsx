@@ -44,7 +44,7 @@ interface MediaItem {
   posterPath: string | null
   year: number | null
   alsoLikedPercentage: number | null
-  mediaType: string
+  mediaType: 'MOVIE' | 'TV_SHOW'
 }
 
 interface PageData {

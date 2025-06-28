@@ -32,6 +32,30 @@ export default function AudienceVerdict({
   const [showInfo, setShowInfo] = useState(false)
   const [isRequesting, setIsRequesting] = useState(false)
 
+  // Define size classes at the top of the component
+  const sizeClasses = {
+    small: {
+      container: 'px-3 py-2',
+      percentage: 'text-xl',
+      label: 'text-xs',
+      header: 'text-xs'
+    },
+    medium: {
+      container: 'px-4 py-3',
+      percentage: 'text-3xl',
+      label: 'text-sm',
+      header: 'text-sm'
+    },
+    large: {
+      container: 'px-6 py-4',
+      percentage: 'text-4xl',
+      label: 'text-base',
+      header: 'text-base'
+    }
+  }
+
+  const sizes = sizeClasses[size]
+
   const handleRequestRating = async () => {
     if (!mediaId || !onRequestRating || isRequesting || requestStatus !== 'idle') return
     
@@ -128,30 +152,6 @@ export default function AudienceVerdict({
         </div>
       )
     }
-
-    // Define size classes before using them
-    const sizeClasses = {
-      small: {
-        container: 'px-3 py-2',
-        percentage: 'text-xl',
-        label: 'text-xs',
-        header: 'text-xs'
-      },
-      medium: {
-        container: 'px-4 py-3',
-        percentage: 'text-3xl',
-        label: 'text-sm',
-        header: 'text-sm'
-      },
-      large: {
-        container: 'px-6 py-4',
-        percentage: 'text-4xl',
-        label: 'text-base',
-        header: 'text-base'
-      }
-    }
-
-    const sizes = sizeClasses[size]
 
     // Box version placeholder
     return (
