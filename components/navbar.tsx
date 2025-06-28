@@ -131,11 +131,8 @@ export function Navbar() {
           {/* Logo and Desktop Nav */}
           <div className="flex items-center gap-8">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl">
-              <div className="w-10 h-10 bg-accent rounded flex items-center justify-center">
-                <span className="text-black text-base font-bold">RR</span>
-              </div>
-              <span className="hidden sm:inline">realreviews.tv</span>
+            <Link href="/" className="font-bold text-xl tracking-wider">
+              <span className="text-accent">REAL</span><span className="text-white">REVIEWS.TV</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -335,11 +332,8 @@ export function Navbar() {
       )}>
         {/* Mobile Menu Header - Fixed */}
         <div className="flex items-center justify-between p-4 border-b border-white/10">
-          <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl">
-            <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-              <span className="text-black text-sm font-bold">RR</span>
-            </div>
-            <span>realreviews.tv</span>
+          <Link href="/" className="font-bold text-lg tracking-wider">
+            <span className="text-accent">REAL</span><span className="text-white">REVIEWS.TV</span>
           </Link>
           <button
             onClick={() => setIsMenuOpen(false)}

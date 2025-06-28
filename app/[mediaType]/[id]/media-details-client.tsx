@@ -162,7 +162,7 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
         }
       `}</style>
       {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-16 pb-2">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-2 pb-2">
         <Breadcrumbs 
           items={[
             { label: 'Home', href: '/' },

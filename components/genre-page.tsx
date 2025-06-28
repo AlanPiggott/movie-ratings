@@ -197,7 +197,7 @@ export default function GenrePage({ genreSlug, mediaType }: GenrePageProps) {
   }, [loading, data, scoreMin, scoreMax, yearMin, yearMax])
 
   return (
-    <div className="min-h-screen bg-[#0E0F13] pt-16">
+    <div className="min-h-screen bg-[#0E0F13] pt-2">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-4">
         {/* Breadcrumbs */}
         <div className="mb-6">
