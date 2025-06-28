@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase'
 import { z } from 'zod'
 
+export const dynamic = 'force-dynamic'
+
 // Genre mapping for URL to display name
 const genreMap: Record<string, string> = {
   'action': 'Action',

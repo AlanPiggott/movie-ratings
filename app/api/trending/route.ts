@@ -3,6 +3,8 @@ import { mediaService } from '@/services/database'
 import { tmdbService } from '@/services/tmdb.service'
 import type { MediaItemWithGenres } from '@/services/database/media.service'
 
+export const dynamic = 'force-dynamic'
+
 // Cache for 6 hours
 const CACHE_DURATION = 6 * 60 * 60 * 1000
 const cache = new Map<string, { data: any; timestamp: number }>()
