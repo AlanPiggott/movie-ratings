@@ -132,7 +132,7 @@ export function Navbar() {
           <div className="flex items-center gap-8">
             {/* Logo */}
             <Link href="/" className="font-bold text-xl tracking-wider">
-              <span className="text-accent">REAL</span><span className="text-white">REVIEWS.TV</span>
+              <span className="text-accent">TRUE</span><span className="text-white">REVIEWS.TV</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -333,7 +333,7 @@ export function Navbar() {
         {/* Mobile Menu Header - Fixed */}
         <div className="flex items-center justify-between p-4 border-b border-white/10">
           <Link href="/" className="font-bold text-lg tracking-wider">
-            <span className="text-accent">REAL</span><span className="text-white">REVIEWS.TV</span>
+            <span className="text-accent">TRUE</span><span className="text-white">REVIEWS.TV</span>
           </Link>
           <button
             onClick={() => setIsMenuOpen(false)}

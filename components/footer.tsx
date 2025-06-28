@@ -15,7 +15,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-6 border-t border-white/5 text-center">
           <p className="text-xs text-gray-600">
-            © {new Date().getFullYear()} realreviews.tv. All rights reserved.
+            © {new Date().getFullYear()} truereviews.tv. All rights reserved.
           </p>
         </div>
       </div>
