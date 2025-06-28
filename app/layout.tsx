@@ -28,8 +28,8 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
-  title: 'Movie Score - Discover Movies by Audience Sentiment',
-  description: 'Find movies and TV shows based on Google\'s audience sentiment scores. No login required.',
+  title: 'RealReviews.tv - Real Audience Scores for Movies & TV Shows',
+  description: 'Discover what viewers really think. Find movies and TV shows based on authentic Google audience sentiment scores. No login required.',
 }
 
 export default function RootLayout({
