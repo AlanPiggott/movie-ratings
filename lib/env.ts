@@ -5,8 +5,8 @@ import { z } from 'zod'
  * This way you can ensure the app isn't built with invalid env vars.
  */
 const server = z.object({
-  // Database (optional since we're using Supabase)
-  DATABASE_URL: z.string().url().optional().describe('PostgreSQL connection string'),
+  // Database (required for Prisma)
+  DATABASE_URL: z.string().url().describe('PostgreSQL connection string'),
   
   // Supabase
   SUPABASE_SERVICE_KEY: z.string().min(1).describe('Supabase service role key'),
@@ -51,7 +51,7 @@ const client = z.object({
  */
 const processEnv = {
   // Server
-  DATABASE_URL: process.env.DATABASE_URL || undefined,
+  DATABASE_URL: process.env.DATABASE_URL,
   SUPABASE_SERVICE_KEY: process.env.SUPABASE_SERVICE_KEY,
   TMDB_API_KEY: process.env.TMDB_API_KEY || undefined,
   TMDB_API_READ_ACCESS_TOKEN: process.env.TMDB_API_READ_ACCESS_TOKEN || undefined,
