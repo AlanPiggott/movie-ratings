@@ -64,9 +64,9 @@ interface MediaDetails {
     site: string
   }>
   watch_providers?: {
-    flatrate?: Array<{ provider_name: string; logo_path: string }>
-    rent?: Array<{ provider_name: string; logo_path: string }>
-    buy?: Array<{ provider_name: string; logo_path: string }>
+    flatrate?: Array<{ provider_name: string; logo_path: string; link?: string }>
+    rent?: Array<{ provider_name: string; logo_path: string; link?: string }>
+    buy?: Array<{ provider_name: string; logo_path: string; link?: string }>
   }
   similar?: Array<{
     id: string
@@ -486,21 +486,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                         <span className="text-xs font-semibold text-[#F5C518] uppercase tracking-wider">Stream</span>
                         <div className="flex gap-2.5">
                           {media.watch_providers.flatrate.slice(0, 3).map((provider, index) => (
-                            <button
-                              key={`stream-md-${index}`}
-                              className="w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                              title={provider.provider_name}
-                            >
-                              {provider.logo_path && (
-                                <Image
-                                  src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                                  alt={provider.provider_name}
-                                  width={48}
-                                  height={48}
-                                  className="object-cover rounded-lg"
-                                />
-                              )}
-                            </button>
+                            provider.link ? (
+                              <a
+                                key={`stream-md-${index}`}
+                                href={provider.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={48}
+                                    height={48}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </a>
+                            ) : (
+                              <button
+                                key={`stream-md-${index}`}
+                                className="w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={48}
+                                    height={48}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </button>
+                            )
                           ))}
                         </div>
                       </div>
@@ -512,21 +533,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                         <span className="text-xs font-semibold text-[#F5C518] uppercase tracking-wider">Rent</span>
                         <div className="flex gap-2.5">
                           {media.watch_providers.rent.slice(0, 2).map((provider, index) => (
-                            <button
-                              key={`rent-md-${index}`}
-                              className="w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                              title={provider.provider_name}
-                            >
-                              {provider.logo_path && (
-                                <Image
-                                  src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                                  alt={provider.provider_name}
-                                  width={48}
-                                  height={48}
-                                  className="object-cover rounded-lg"
-                                />
-                              )}
-                            </button>
+                            provider.link ? (
+                              <a
+                                key={`rent-md-${index}`}
+                                href={provider.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={48}
+                                    height={48}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </a>
+                            ) : (
+                              <button
+                                key={`rent-md-${index}`}
+                                className="w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={48}
+                                    height={48}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </button>
+                            )
                           ))}
                         </div>
                       </div>
@@ -538,21 +580,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                         <span className="text-xs font-semibold text-[#F5C518] uppercase tracking-wider">Buy</span>
                         <div className="flex gap-2.5">
                           {media.watch_providers.buy.slice(0, 2).map((provider, index) => (
-                            <button
-                              key={`buy-md-${index}`}
-                              className="w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                              title={provider.provider_name}
-                            >
-                              {provider.logo_path && (
-                                <Image
-                                  src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                                  alt={provider.provider_name}
-                                  width={48}
-                                  height={48}
-                                  className="object-cover rounded-lg"
-                                />
-                              )}
-                            </button>
+                            provider.link ? (
+                              <a
+                                key={`buy-md-${index}`}
+                                href={provider.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={48}
+                                    height={48}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </a>
+                            ) : (
+                              <button
+                                key={`buy-md-${index}`}
+                                className="w-12 h-12 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={48}
+                                    height={48}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </button>
+                            )
                           ))}
                         </div>
                       </div>
@@ -583,21 +646,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                         <span className="text-xs font-semibold text-[#F5C518] uppercase tracking-wider">Stream</span>
                         <div className="flex gap-3">
                           {media.watch_providers.flatrate.slice(0, 4).map((provider, index) => (
-                            <button
-                              key={`stream-${index}`}
-                              className="w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                              title={provider.provider_name}
-                            >
-                              {provider.logo_path && (
-                                <Image
-                                  src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                                  alt={provider.provider_name}
-                                  width={56}
-                                  height={56}
-                                  className="object-cover rounded-lg"
-                                />
-                              )}
-                            </button>
+                            provider.link ? (
+                              <a
+                                key={`stream-${index}`}
+                                href={provider.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={56}
+                                    height={56}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </a>
+                            ) : (
+                              <button
+                                key={`stream-${index}`}
+                                className="w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={56}
+                                    height={56}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </button>
+                            )
                           ))}
                         </div>
                       </div>
@@ -614,21 +698,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                         <span className="text-xs font-semibold text-[#F5C518] uppercase tracking-wider">Rent</span>
                         <div className="flex gap-3">
                           {media.watch_providers.rent.slice(0, 3).map((provider, index) => (
-                            <button
-                              key={`rent-${index}`}
-                              className="w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                              title={provider.provider_name}
-                            >
-                              {provider.logo_path && (
-                                <Image
-                                  src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                                  alt={provider.provider_name}
-                                  width={56}
-                                  height={56}
-                                  className="object-cover rounded-lg"
-                                />
-                              )}
-                            </button>
+                            provider.link ? (
+                              <a
+                                key={`rent-${index}`}
+                                href={provider.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={56}
+                                    height={56}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </a>
+                            ) : (
+                              <button
+                                key={`rent-${index}`}
+                                className="w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={56}
+                                    height={56}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </button>
+                            )
                           ))}
                         </div>
                       </div>
@@ -645,21 +750,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
                         <span className="text-xs font-semibold text-[#F5C518] uppercase tracking-wider">Buy</span>
                         <div className="flex gap-3">
                           {media.watch_providers.buy.slice(0, 3).map((provider, index) => (
-                            <button
-                              key={`buy-${index}`}
-                              className="w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                              title={provider.provider_name}
-                            >
-                              {provider.logo_path && (
-                                <Image
-                                  src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                                  alt={provider.provider_name}
-                                  width={56}
-                                  height={56}
-                                  className="object-cover rounded-lg"
-                                />
-                              )}
-                            </button>
+                            provider.link ? (
+                              <a
+                                key={`buy-${index}`}
+                                href={provider.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={56}
+                                    height={56}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </a>
+                            ) : (
+                              <button
+                                key={`buy-${index}`}
+                                className="w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                                title={provider.provider_name}
+                              >
+                                {provider.logo_path && (
+                                  <Image
+                                    src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                                    alt={provider.provider_name}
+                                    width={56}
+                                    height={56}
+                                    className="object-cover rounded-lg"
+                                  />
+                                )}
+                              </button>
+                            )
                           ))}
                         </div>
                       </div>
@@ -684,21 +810,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
               <span className="flex-shrink-0 text-[10px] font-semibold text-[#F5C518] uppercase tracking-wider min-w-[45px]">Stream</span>
               <div className="flex gap-3">
                 {media.watch_providers.flatrate.map((provider, index) => (
-                  <button
-                    key={`stream-${index}`}
-                    className="flex-shrink-0 w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                    title={provider.provider_name}
-                  >
-                    {provider.logo_path && (
-                      <Image
-                        src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                        alt={provider.provider_name}
-                        width={56}
-                        height={56}
-                        className="rounded-lg"
-                      />
-                    )}
-                  </button>
+                  provider.link ? (
+                    <a
+                      key={`stream-${index}`}
+                      href={provider.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-shrink-0 block w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                      title={provider.provider_name}
+                    >
+                      {provider.logo_path && (
+                        <Image
+                          src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                          alt={provider.provider_name}
+                          width={56}
+                          height={56}
+                          className="rounded-lg"
+                        />
+                      )}
+                    </a>
+                  ) : (
+                    <button
+                      key={`stream-${index}`}
+                      className="flex-shrink-0 w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                      title={provider.provider_name}
+                    >
+                      {provider.logo_path && (
+                        <Image
+                          src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                          alt={provider.provider_name}
+                          width={56}
+                          height={56}
+                          className="rounded-lg"
+                        />
+                      )}
+                    </button>
+                  )
                 ))}
               </div>
             </div>
@@ -710,21 +857,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
               <span className="flex-shrink-0 text-[10px] font-semibold text-[#F5C518] uppercase tracking-wider min-w-[45px]">Rent</span>
               <div className="flex gap-3">
                 {media.watch_providers.rent.map((provider, index) => (
-                  <button
-                    key={`rent-${index}`}
-                    className="flex-shrink-0 w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                    title={provider.provider_name}
-                  >
-                    {provider.logo_path && (
-                      <Image
-                        src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                        alt={provider.provider_name}
-                        width={56}
-                        height={56}
-                        className="rounded-lg"
-                      />
-                    )}
-                  </button>
+                  provider.link ? (
+                    <a
+                      key={`rent-${index}`}
+                      href={provider.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-shrink-0 block w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                      title={provider.provider_name}
+                    >
+                      {provider.logo_path && (
+                        <Image
+                          src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                          alt={provider.provider_name}
+                          width={56}
+                          height={56}
+                          className="rounded-lg"
+                        />
+                      )}
+                    </a>
+                  ) : (
+                    <button
+                      key={`rent-${index}`}
+                      className="flex-shrink-0 w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                      title={provider.provider_name}
+                    >
+                      {provider.logo_path && (
+                        <Image
+                          src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                          alt={provider.provider_name}
+                          width={56}
+                          height={56}
+                          className="rounded-lg"
+                        />
+                      )}
+                    </button>
+                  )
                 ))}
               </div>
             </div>
@@ -736,21 +904,42 @@ export default function MediaDetailsClient({ initialMedia }: MediaDetailsClientP
               <span className="flex-shrink-0 text-[10px] font-semibold text-[#F5C518] uppercase tracking-wider min-w-[45px]">Buy</span>
               <div className="flex gap-3">
                 {media.watch_providers.buy.map((provider, index) => (
-                  <button
-                    key={`buy-${index}`}
-                    className="flex-shrink-0 w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
-                    title={provider.provider_name}
-                  >
-                    {provider.logo_path && (
-                      <Image
-                        src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
-                        alt={provider.provider_name}
-                        width={56}
-                        height={56}
-                        className="rounded-lg"
-                      />
-                    )}
-                  </button>
+                  provider.link ? (
+                    <a
+                      key={`buy-${index}`}
+                      href={provider.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-shrink-0 block w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                      title={provider.provider_name}
+                    >
+                      {provider.logo_path && (
+                        <Image
+                          src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                          alt={provider.provider_name}
+                          width={56}
+                          height={56}
+                          className="rounded-lg"
+                        />
+                      )}
+                    </a>
+                  ) : (
+                    <button
+                      key={`buy-${index}`}
+                      className="flex-shrink-0 w-14 h-14 rounded-lg overflow-hidden hover:ring-2 hover:ring-white/20 transition-all"
+                      title={provider.provider_name}
+                    >
+                      {provider.logo_path && (
+                        <Image
+                          src={`https://image.tmdb.org/t/p/w92${provider.logo_path}`}
+                          alt={provider.provider_name}
+                          width={56}
+                          height={56}
+                          className="rounded-lg"
+                        />
+                      )}
+                    </button>
+                  )
                 ))}
               </div>
             </div>
