@@ -1,7 +1,15 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase'
+import { verifyAdminAuth, unauthorizedResponse } from '@/lib/auth/admin'
 
-export async function GET(request: Request) {
+export const dynamic = 'force-dynamic'
+
+export async function GET(request: NextRequest) {
+  // Verify admin authentication
+  const isAuthenticated = await verifyAdminAuth(request)
+  if (!isAuthenticated) {
+    return unauthorizedResponse('Admin authentication required')
+  }
   try {
     // Get date ranges
     const today = new Date().toISOString().split('T')[0]

@@ -32,6 +32,9 @@ const server = z.object({
   
   // Node
   NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
+  
+  // Admin
+  ADMIN_PASSWORD: z.string().min(1).optional().describe('Admin password for protected routes'),
 })
 
 /**
@@ -63,6 +66,7 @@ const processEnv = {
   NEXTAUTH_URL: process.env.NEXTAUTH_URL || undefined,
   NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET || undefined,
   NODE_ENV: process.env.NODE_ENV,
+  ADMIN_PASSWORD: process.env.ADMIN_PASSWORD || undefined,
   // Client
   NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,

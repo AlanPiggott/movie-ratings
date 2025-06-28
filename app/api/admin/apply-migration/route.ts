@@ -1,12 +1,20 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase'
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { verifyAdminAuth, unauthorizedResponse } from '@/lib/auth/admin'
 
 // This endpoint applies the rating tracking migration
-// Only use in development - remove in production!
+// Protected by admin authentication
 
-export async function POST(request: Request) {
+export const dynamic = 'force-dynamic'
+
+export async function POST(request: NextRequest) {
+  // Verify admin authentication
+  const isAuthenticated = await verifyAdminAuth(request)
+  if (!isAuthenticated) {
+    return unauthorizedResponse('Admin authentication required')
+  }
   try {
     // First check if migration already applied
     const { error: checkError } = await supabaseAdmin
