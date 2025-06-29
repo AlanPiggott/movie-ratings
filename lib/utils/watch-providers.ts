@@ -9,6 +9,8 @@
  * - Regional variants: Uses region-specific domains
  */
 
+import { buildAmazonUrl, shouldUseOneLink } from './amazon-regions'
+
 interface WatchProviderLink {
   provider_id: number
   provider_name: string
@@ -293,6 +295,12 @@ export function generateWatchProviderLink(provider: WatchProviderLink, media: Me
   const searchQuery = `${media.title} ${media.year || ''}`.trim()
   const encodedQuery = encodeURIComponent(searchQuery)
   
+  // Get Amazon affiliate tag from environment variable
+  const amazonAffiliateTag = process.env.AMAZON_AFFILIATE_TAG || 'truereview08c-20'
+  
+  // For debugging: log when generating Amazon links
+  const isAmazonProvider = [9, 10, 119, 1969, 2100, 1853, 1854, 2243, 613].includes(provider.provider_id)
+  
   // Special handling for certain providers
   let link = ''
   
@@ -333,9 +341,29 @@ export function generateWatchProviderLink(provider: WatchProviderLink, media: Me
     case 1853: // Paramount+ Amazon Channel
     case 1854: // Max Amazon Channel
     case 2243: // Apple TV Plus Amazon Channel
-      // Amazon needs department specification
-      const dept = media.mediaType === 'movie' ? '&i=instant-video' : '&i=instant-video'
-      link = `${config.baseUrl}${config.searchPattern}${encodedQuery}${dept}`
+      // Amazon needs department specification and affiliate tag
+      const dept = 'instant-video'
+      
+      // For OneLink compatibility, always use .com domain unless explicitly disabled
+      // OneLink will automatically redirect to local stores
+      const amazonDomain = shouldUseOneLink() ? 'amazon.com' : 
+        (provider.provider_id === 119 ? 'amazon.co.uk' : 'amazon.com')
+      
+      // Special handling for Amazon Channels
+      if ([1853, 1854, 2243].includes(provider.provider_id)) {
+        // These are channel-specific pages
+        const channelPath = provider.provider_id === 1853 ? 'paramountplus' : 
+                           provider.provider_id === 1854 ? 'max' : 
+                           'appletv'
+        link = `https://www.${amazonDomain}/channels/${channelPath}?search=${encodedQuery}&tag=${amazonAffiliateTag}`
+      } else {
+        link = buildAmazonUrl({
+          query: searchQuery,
+          domain: amazonDomain,
+          affiliateTag: amazonAffiliateTag,
+          department: dept
+        })
+      }
       break
       
     case 538: // Plex
@@ -355,8 +383,14 @@ export function generateWatchProviderLink(provider: WatchProviderLink, media: Me
       break
       
     case 613: // Freevee
-      // Freevee uses Amazon's search with a filter
-      link = `https://www.amazon.com/s?k=${encodedQuery}&i=instant-video&bbn=138909171`
+      // Freevee uses Amazon's search with a filter and affiliate tag
+      link = buildAmazonUrl({
+        query: searchQuery,
+        domain: 'amazon.com', // Freevee is US-only
+        affiliateTag: amazonAffiliateTag,
+        department: 'instant-video',
+        additionalParams: { bbn: '138909171' }
+      })
       break
       
     case 300: // Pluto TV
