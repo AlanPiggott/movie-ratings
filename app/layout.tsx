@@ -4,6 +4,7 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import { Navbar } from '@/components/navbar'
 import GoogleAnalytics from '@/components/google-analytics'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -50,6 +51,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   )
