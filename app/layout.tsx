@@ -3,6 +3,7 @@ import { Inter, Inter_Tight, DM_Mono, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { Navbar } from '@/components/navbar'
+import GoogleAnalytics from '@/components/google-analytics'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -46,6 +47,7 @@ export default function RootLayout({
         playfairDisplay.variable,
         "min-h-screen bg-[#0E0F13] font-sans antialiased"
       )}>
+        <GoogleAnalytics />
         <Navbar />
         {children}
       </body>
